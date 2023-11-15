@@ -10,3 +10,9 @@ https://www.data.gouv.fr/fr/datasets/?q=immobiliers
 https://www.insee.fr/fr/accueil  
 https://www.seloger.com/vente.htm#?BD=Head_AC_1  
 
+### Autres sources:  
+https://moteurimmo.fr/  
+https://www.cyberpret.com/agregateurs-annonces-immo-moteurs-recherche-immobiliers.html  
+https://www.jinka.fr/  
+
+
