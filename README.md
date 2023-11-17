@@ -1,5 +1,5 @@
 # ANALYSE IMMOBILIÈRE
-Documentation d'analyse immobilière : Gentrifications, Estimations, Quartier prioritaire de la politique de la ville (QPV) 
+Documentation d'analyse immobilière : Gentrifications, Estimations et Quartier prioritaire de la politique de la ville (QPV).
 
 
 
