@@ -12,7 +12,7 @@ https://ouinvestir.net/rentabilite-par-ville
 https://www.meilleurtaux.com/
 
 #### Tops sites statistiques :  
-https://fr.statista.com/themes/6360/le-secteur-immobilier-en-france/#topicOverview  
+https://fr.statista.com/themes/6360/le-secteur-immobilier-en-france/#topicOverview
 https://www.ville-ideale.fr/nogent-sur-marne_94052  
 https://fr.wikipedia.org/wiki/Gentrification  
 https://www.data.gouv.fr/fr/datasets/?q=immobiliers  
