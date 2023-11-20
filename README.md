@@ -10,7 +10,10 @@ https://ouinvestir.net/
 https://ouinvestir.net/moteur-de-recherche-ou-investir-dans-immobilier-en-france
 https://ouinvestir.net/rentabilite-par-ville
 
-  
+#### Tops sites statitiques :  
+https://fr.statista.com/themes/6360/le-secteur-immobilier-en-france/#topicOverview
+
+
 
 
 https://www.ville-ideale.fr/nogent-sur-marne_94052  
