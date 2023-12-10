@@ -1,5 +1,5 @@
 # ANALYSE IMMOBILIÈRE
-NB : Google Earth peut enregistrer automatiquement des coordonnées géographiques en se géolocalisant et définir les points par (lon, lat).  
+**NB** : Google Earth peut enregistrer automatiquement des coordonnées géographiques en se géolocalisant et définir les points par (lon, lat).  
 Si jamais, il des difficultés, demandé à Djiantatba qui est ingénieur.   
 
 Documentation d'analyse immobilière : Gentrifications, Estimations et Quartier prioritaire de la politique de la ville (QPV).  
