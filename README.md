@@ -3,8 +3,7 @@
 Si jamais, il des difficultés, demandé à Djiantatba qui est ingénieur.   
 
   
-Documentation d'analyse immobilière : Gentrifications, Estimations et Quartier prioritaire de la politique de la ville (QPV).  
-
+**Documentation d'analyse immobilière** : Gentrifications, Estimations et Quartier prioritaire de la politique de la ville (QPV).  
 Il existe des sites internet comme [brose.ai](https://dashboard.browse.ai/teams/personal/robots/new/custom?originUrl=&purpose=extract) qui aide à scraper facilement des données de n'importe que sites afin de récupérer et stocker ces données.
 Il super important de pouvoir exploiter cette opportinuté pour trouver les meilleurs opportinutés business (immobilier, restaration, E-commerce etc.).  
 Dans le cas de l'analyse immoilière, nous allons récupérer des données de Airbnb pour voir la tendance des prix de locations et d'achats de logement.
