@@ -29,7 +29,7 @@ Voici une liste de localités à prêter attention.
 - Cap Skiring
 - pointe de sangomar
 - Malikounda
-- 
+- Kafountine
 
 
 ## Sources de données de comparaisons de l'immobilier :  
