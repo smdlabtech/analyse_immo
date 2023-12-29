@@ -15,16 +15,18 @@ Voici un critère pour une personne lambda 1,
 
 
 
-**Zones touristiques au Sénégal & zones à investir
+## Zones touristiques au Sénégal & zones à investir
 Voici une liste de localités à prêter attention.
 - Sébikotane
 - Toubab djalaw
 - Ngaparou
 - Ndayane
 - Nianing
-- Somone
+- Somone ou La Somone
 - Mbodiene
-
+- Ndagane
+- Ngor
+- 
 
 
 ## Sources de données de comparaisons de l'immobilier :  
