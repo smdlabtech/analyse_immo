@@ -30,6 +30,8 @@ Voici une liste de localités à prêter attention.
 - pointe de sangomar
 - Malikounda
 - Kafountine
+- Mbour
+- 
 
 
 ## Sources de données de comparaisons de l'immobilier :  
