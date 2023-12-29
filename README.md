@@ -1,4 +1,4 @@
-# ANALYSE IMMOBILIÈRE
+## ANALYSE IMMOBILIÈRE
 ## INTRODUCTION :
 **Cartographie de données** : [Google Earth](https://earth.google.com/web) peut enregistrer automatiquement des coordonnées géographiques en se géolocalisant et définir les points par (lon, lat). Si jamais, il des difficultés, demandé à Djiantatba qui est ingénieur. Il est égalememnt possible de visionné via des analyse statistique les données goégraphique via python ou R Shiny. Il également important de retenir que google hearth garde l'historique des données pendant plusieurs années. Ce qui pourrait aider dans l'analyse afin de savoir si une zone a évolué dans le temps et sa vitesse d'expensation. Il est également possible via ces analyses d'anticiper comment l'avenir d'une localité pour se densifier en terme de population au fil du temps.
 
@@ -26,6 +26,8 @@ Voici une liste de localités à prêter attention.
 - Mbodiene
 - Ndagane
 - Ngor
+- Cap Skiring
+- pointe de sangomar
 - 
 
 
