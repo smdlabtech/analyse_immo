@@ -28,6 +28,7 @@ Voici une liste de localités à prêter attention.
 - Ngor
 - Cap Skiring
 - pointe de sangomar
+- Malikounda
 - 
 
 
