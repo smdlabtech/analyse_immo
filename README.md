@@ -14,6 +14,19 @@ Voici un critère pour une personne lambda 1,
 
 
 
+
+**Zones touristiques au Sénégal & zones à investir
+Voici une liste de localités à prêter attention.
+- Sébikotane
+- Toubab djalaw
+- Ngaparou
+- Ndayane
+- Nianing
+- Somone
+- Mbodiene
+
+
+
 ## Sources de données de comparaisons de l'immobilier :  
 Les Tops sites data sources immo:  
 https://www.data.gouv.fr/fr/reuses/ou-investir-dans-limmobilier-en-france/  
