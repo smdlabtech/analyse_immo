@@ -17,20 +17,20 @@ Voici un critère pour une personne lambda 1,
 
 ## Zones touristiques au Sénégal & zones à investir
 Voici une liste de localités à prêter attention.
-- Sébikotane
-- Toubab djalaw
-- Ngaparou
-- Ndayane
-- Nianing
-- Somone ou La Somone
-- Mbodiene
-- Ndagane
-- Ngor
-- Cap Skiring
-- pointe de sangomar
-- Malikounda
-- Kafountine
-- Mbour
+- [Sébikotane](https://earth.google.com/web) 
+- [Toubab djalaw](https://earth.google.com/web)
+- Ngaparou [](https://earth.google.com/web) 
+- Ndayane [](https://earth.google.com/web) 
+- Nianing [](https://earth.google.com/web) 
+- Somone ou La Somone [](https://earth.google.com/web) 
+- Mbodiene [](https://earth.google.com/web) 
+- Ndagane [](https://earth.google.com/web) 
+- Ngor [](https://earth.google.com/web) 
+- Cap Skiring [](https://earth.google.com/web) 
+- pointe de sangomar [](https://earth.google.com/web) 
+- Malikounda [](https://earth.google.com/web) 
+- Kafountine [](https://earth.google.com/web) 
+- Mbour [](https://earth.google.com/web) 
 - 
 
 
