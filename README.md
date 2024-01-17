@@ -13,6 +13,11 @@ Allons donc faire une analyse statitistique.
 Voici un critère pour une personne lambda 1, 
 
 
+## FRANCE
+
+
+
+## SENEGAL
 
 
 ## Zones touristiques et à investir du Sénégal
