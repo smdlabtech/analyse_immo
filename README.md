@@ -22,7 +22,7 @@ Voici une liste de localités à prêter attention.
 - [Ngaparou](https://earth.google.com/web) 
 - [Ndayane](https://earth.google.com/web) 
 - [Nianing](https://earth.google.com/web) 
-- [Somone ou La Somone](https://earth.google.com/web) 
+- [Somone](https://earth.google.com/web) 
 - [Mbodiene](https://earth.google.com/web) 
 - [Ndagane](https://earth.google.com/web) 
 - [Ngor](https://earth.google.com/web) 
