@@ -15,7 +15,7 @@ Voici un critère pour une personne lambda 1,
 
 
 
-## Zones touristiques au Sénégal & zones à investir
+## Zones touristiques et à investir du Sénégal
 Voici une liste de localités à prêter attention.
 - [Sébikotane](https://earth.google.com/web) 
 - [Toubab djalaw](https://earth.google.com/web)
