@@ -39,7 +39,7 @@ Voici une liste de localités à prêter attention.
 - 
 
 
-## Sources de données de comparaisons de l'immobilier :  
+## sources de données de comparaisons de l'immobilier :  
 Les Tops sites data sources immo:  
 https://www.data.gouv.fr/fr/reuses/ou-investir-dans-limmobilier-en-france/  
 https://ouinvestir.net/  
@@ -58,7 +58,7 @@ https://www.seloger.com/vente.htm#?BD=Head_AC_1
 https://sig.ville.gouv.fr/  
 https://entreprendre.service-public.fr/vosdroits/R46124  
 
-### Autres sites ou moteurs de recherches immobilières (découverte immobilières):  
+### Autres sites ou moteurs de recherches immobiliers (découvertes immobilières):  
 https://moteurimmo.fr/  
 https://www.cyberpret.com/agregateurs-annonces-immo-moteurs-recherche-immobiliers.html  
 https://www.jinka.fr/  
