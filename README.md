@@ -56,7 +56,7 @@ Voici une liste de localités à prêter attention.
 - [Malikounda](https://earth.google.com/web) 
 - [Kafountine](https://earth.google.com/web) 
 - [Mbour](https://earth.google.com/web) 
-- 
+
 
 
 ## sources de données de comparaisons de l'immobilier pour l'analyse de données :  
