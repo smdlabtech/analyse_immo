@@ -2,23 +2,20 @@
 
 **Liste des sites pours la recherche de logements** :  
 
-[perplexity.ai](https://www.perplexity.ai/) 
-[jinka.fr](https://www.jinka.fr/asrenter/alert/list) 
-[moteurimmo.fr](https://moteurimmo.fr/) 
-
+[perplexity.ai](https://www.perplexity.ai/)  
+[jinka.fr](https://www.jinka.fr/asrenter/alert/list)  
+[moteurimmo.fr](https://moteurimmo.fr/)  
 [Seloger.com](www.seloger.com)  
-[Logic-Immo.com](www.logic-immo.com)   
-[Bien'ici](www.bienici.com)   
-[Le Bon Coin Immobilier](www.leboncoin.fr)   
-
-[PAP.fr (Particulier à Particulier)](www.pap.fr)   
+[Logic-Immo.com](www.logic-immo.com)  
+[Bien'ici](www.bienici.com)  
+[Le Bon Coin Immobilier](www.leboncoin.fr)  
+[PAP.fr (Particulier à Particulier)](www.pap.fr)  
 [Orpi](www.orpi.com)  
 [Century 21](www.century21.fr)  
-
 [Laforêt Immobilier](www.laforet.com)  
 [Guy Hoquet l'Immobilier](www.guy-hoquet.com)  
 [MeilleursAgents](www.meilleursagents.com)  
-[cyberpret.com](https://www.cyberpret.com/agregateurs-annonces-immo-moteurs-recherche-immobiliers.html)   
+[cyberpret.com](https://www.cyberpret.com/agregateurs-annonces-immo-moteurs-recherche-immobiliers.html)  
 
 
 ## INTRODUCTION :
