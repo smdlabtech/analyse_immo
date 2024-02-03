@@ -19,6 +19,7 @@ Voici un critère pour une personne lambda 1,
 
 ## SENEGAL
 
+[Google Earth - Sénégal](https://earth.google.com/web)
 
 ### Sénégal - zones touristiques et à investir
 Voici une liste de localités à prêter attention.
