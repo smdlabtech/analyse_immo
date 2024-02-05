@@ -2,20 +2,20 @@
 Mail utilisés -> dayauniv@gmail.com, yadzofirst@gmail.com ou smdlabtech@gmail.com   
 
 **Liste des sites pours la recherche de logements** *(cette liste n'est pas exhaustive)* :   
-[perplexity.ai](https://www.perplexity.ai/)  
-[jinka.fr](https://www.jinka.fr/asrenter/alert/list)  
-[moteurimmo.fr](https://moteurimmo.fr/)  
-[Seloger.com](https://www.seloger.com/)  
-[Logic-Immo.com](https://www.logic-immo.com)  
-[Bien'ici.com](https://www.bienici.com)  
-[Le Bon Coin Immobilier.fr](https://www.leboncoin.fr)  
-[PAP.fr (Particulier à Particulier)](https://www.pap.fr)  
-[Orpi.com](https://www.orpi.com)  
-[Century 21.fr](https://www.century21.fr)  
-[Laforêt Immobilier](https://www.laforet.com)  
-[Guy Hoquet l'Immobilier](https://www.guy-hoquet.com)  
-[MeilleursAgents.com](https://www.meilleursagents.com)  
-[cyberpret.com](https://www.cyberpret.com/agregateurs-annonces-immo-moteurs-recherche-immobiliers.html)  
+- [perplexity.ai](https://www.perplexity.ai/)  
+- [jinka.fr](https://www.jinka.fr/asrenter/alert/list)  
+- [moteurimmo.fr](https://moteurimmo.fr/)  
+- [Seloger.com](https://www.seloger.com/)  
+- [Logic-Immo.com](https://www.logic-immo.com)  
+- [Bien'ici.com](https://www.bienici.com)  
+- [Le Bon Coin Immobilier.fr](https://www.leboncoin.fr)  
+- [PAP.fr (Particulier à Particulier)](https://www.pap.fr)  
+- [Orpi.com](https://www.orpi.com)  
+- [Century 21.fr](https://www.century21.fr)  
+- [Laforêt Immobilier](https://www.laforet.com)  
+- [Guy Hoquet l'Immobilier](https://www.guy-hoquet.com)  
+- [MeilleursAgents.com](https://www.meilleursagents.com)  
+- [cyberpret.com](https://www.cyberpret.com/agregateurs-annonces-immo-moteurs-recherche-immobiliers.html)  
 
 
 ## INTRODUCTION :
