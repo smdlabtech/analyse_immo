@@ -1,8 +1,7 @@
 ## ANALYSE IMMOBILIÈRE
-
-**Liste des sites pours la recherche de logements** *(cette liste n'est pas exhaustive)* :   
 Mail utilisés -> dayauniv@gmail.com, yadzofirst@gmail.com ou smdlabtech@gmail.com)*  
 
+**Liste des sites pours la recherche de logements** *(cette liste n'est pas exhaustive)* :   
 [perplexity.ai](https://www.perplexity.ai/)  
 [jinka.fr](https://www.jinka.fr/asrenter/alert/list)  
 [moteurimmo.fr](https://moteurimmo.fr/)  
