@@ -34,6 +34,8 @@ Voici un critère pour une personne lambda 1,
 
 ## FRANCE
 
+[Google Earth - France](https://earth.google.com/web/search/%c3%8ele-de-France/@48.80271473,2.51521148,72.97274667a,252211.20456755d,35y,0h,0t,0r/data=CigiJgokCSqW8-dOpkhAERWGgn5iFkhAGTTm1M2J3BBAISR3tyBrr-c_MikKJwolCiExVTV6OEFieHpnYXk0cHVKSER3THQ3R2oyTUZ5WjVrQi0gAToDCgEw
+)
 
 
 ## SENEGAL
