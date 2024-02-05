@@ -1,5 +1,5 @@
 ## ANALYSE IMMOBILIÈRE
-Mail utilisés -> dayauniv@gmail.com, yadzofirst@gmail.com ou smdlabtech@gmail.com)*  
+Mail utilisés -> dayauniv@gmail.com, yadzofirst@gmail.com ou smdlabtech@gmail.com   
 
 **Liste des sites pours la recherche de logements** *(cette liste n'est pas exhaustive)* :   
 [perplexity.ai](https://www.perplexity.ai/)  
