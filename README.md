@@ -1,3 +1,5 @@
+[**PLATFORM - SMD LABTECH TASKS MANAGER**](https://lookerstudio.google.com/u/0/reporting/15699df7-d3bd-4b0f-8834-647745c6f882/page/p_khucsd4had)  
+
 ## ANALYSE IMMOBILIÈRE
 Mail utilisés -> dayauniv@gmail.com, yadzofirst@gmail.com ou smdlabtech@gmail.com   
 
