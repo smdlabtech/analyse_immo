@@ -1,7 +1,7 @@
-[**PLATFORME CENTRALE- SMD LABTECH TASKS MANAGER**](https://lookerstudio.google.com/u/0/reporting/15699df7-d3bd-4b0f-8834-647745c6f882/page/p_khucsd4had)  
+# ANALYSE IMMOBILIÈRE
 
-## ANALYSE IMMOBILIÈRE
-Mail utilisés -> dayauniv@gmail.com, yadzofirst@gmail.com ou smdlabtech@gmail.com   
+[**PLATFORME CENTRALE- SMD LABTECH TASKS MANAGER WEB APP**](https://lookerstudio.google.com/u/0/reporting/15699df7-d3bd-4b0f-8834-647745c6f882/page/p_khucsd4had)  
+
 
 **Liste des sites pours la recherche de logements** *(cette liste n'est pas exhaustive)* :   
 - [perplexity.ai](https://www.perplexity.ai/)  
