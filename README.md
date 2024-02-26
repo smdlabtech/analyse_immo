@@ -70,7 +70,7 @@ Voici une liste de localités à prêter attention.
 
 
 
-## sources de données de comparaisons de l'immobilier pour l'analyse de données :  
+## <ins>sources de données de comparaisons de l'immobilier pour l'analyse de données </ins>:  
 Les Tops sites data sources immo:  
 - https://www.data.gouv.fr/fr/reuses/ou-investir-dans-limmobilier-en-france/  
 - https://ouinvestir.net/  
@@ -78,7 +78,7 @@ Les Tops sites data sources immo:
 - https://ouinvestir.net/rentabilite-par-ville/  
 - https://www.meilleurtaux.com/  
 
-#### Tops sites statistiques sur l'immobilier en France :  
+#### <ins>Tops sites statistiques sur l'immobilier en France </ins>:  
 Voici une liste de sites qui permet avec ses analyses ou bien ses outils de prendre de meilleurs décisions sur les ventes ou ventes immobilères.  
 - https://fr.statista.com/themes/6360/le-secteur-immobilier-en-france/#topicOverview
 - https://www.ville-ideale.fr/nogent-sur-marne_94052  
