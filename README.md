@@ -47,7 +47,7 @@ Voici un critère pour une personne lambda 1,
 
 [Google Earth - Sénégal](https://earth.google.com/web)
 
-### Sénégal - zones géographiques et à investir
+### Sénégal - zones géographiques avec un meilleur potentiel ROI
 Voici une liste de localités à prêter attention.
 - [Sébikotane](https://earth.google.com/web) 
 - [Toubab djalaw](https://earth.google.com/web)
