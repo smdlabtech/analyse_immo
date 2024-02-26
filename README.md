@@ -49,6 +49,34 @@ Voici un critère pour une personne lambda 1,
 ### <ins>France - zones géographiques avec un meilleur potentiel ROI </ins>:
 
 
+
+
+## Données de comparaisons de l'immobilier en France :  
+#### <ins>Les Tops sites data sources immo</ins> :  
+- https://www.data.gouv.fr/fr/reuses/ou-investir-dans-limmobilier-en-france/  
+- https://ouinvestir.net/  
+- https://ouinvestir.net/moteur-de-recherche-ou-investir-dans-immobilier-en-france/  
+- https://ouinvestir.net/rentabilite-par-ville/  
+- https://www.meilleurtaux.com/  
+
+#### <ins>Tops sites statistiques sur l'immobilier en France </ins>:  
+Voici une liste de sites qui permet avec ses analyses ou bien ses outils de prendre de meilleurs décisions sur les ventes ou ventes immobilères.  
+- https://fr.statista.com/themes/6360/le-secteur-immobilier-en-france/#topicOverview
+- https://www.ville-ideale.fr/nogent-sur-marne_94052  
+- https://fr.wikipedia.org/wiki/Gentrification  
+- https://www.data.gouv.fr/fr/datasets/?q=immobiliers  
+- https://www.insee.fr/fr/accueil  
+- https://sig.ville.gouv.fr/  
+- https://entreprendre.service-public.fr/vosdroits/R46124    
+
+**<ins>Documentations</ins>** : [*Github documentations*](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+
+
+
+
+
+---
 ## SENEGAL
 
 [Google Earth - Sénégal](https://earth.google.com/web)
@@ -72,23 +100,4 @@ Voici une liste de localités à prêter attention.
 
 
 
-## Données de comparaisons de l'immobilier en France :  
-#### <ins>Les Tops sites data sources immo</ins> :  
-- https://www.data.gouv.fr/fr/reuses/ou-investir-dans-limmobilier-en-france/  
-- https://ouinvestir.net/  
-- https://ouinvestir.net/moteur-de-recherche-ou-investir-dans-immobilier-en-france/  
-- https://ouinvestir.net/rentabilite-par-ville/  
-- https://www.meilleurtaux.com/  
-
-#### <ins>Tops sites statistiques sur l'immobilier en France </ins>:  
-Voici une liste de sites qui permet avec ses analyses ou bien ses outils de prendre de meilleurs décisions sur les ventes ou ventes immobilères.  
-- https://fr.statista.com/themes/6360/le-secteur-immobilier-en-france/#topicOverview
-- https://www.ville-ideale.fr/nogent-sur-marne_94052  
-- https://fr.wikipedia.org/wiki/Gentrification  
-- https://www.data.gouv.fr/fr/datasets/?q=immobiliers  
-- https://www.insee.fr/fr/accueil  
-- https://sig.ville.gouv.fr/  
-- https://entreprendre.service-public.fr/vosdroits/R46124    
-
-**<ins>Documentations</ins>** : [*Github documentations*](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
