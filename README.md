@@ -36,6 +36,8 @@ Voici un critère pour une personne lambda 1,
 
 ## ANALYSE SUR LE TEMPS DE REMBOURSEMENTS
 
+[Cas d'usage 1 : Temps de remboursement prêt logement [pdf]](/docs/Temps_de_remboursement_prêt_logement.pdf)  
+
 
 ## FRANCE
 
