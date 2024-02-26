@@ -1,7 +1,7 @@
 # ANALYSE IMMOBILIÈRE
 
 [**PLATFORME CENTRALE- SMD LABTECH TASKS MANAGER WEB APP**](https://lookerstudio.google.com/u/0/reporting/15699df7-d3bd-4b0f-8834-647745c6f882/page/p_khucsd4had)  
-
+[Google Sheets](https://docs.google.com/spreadsheets/d/1RYlaLtMVAmeyaquIDPhcb1TQa342aynG8i7NWKBLhNw/edit#gid=1926546283)  
 
 **Liste des sites pours la recherche de logements** *(cette liste n'est pas exhaustive)* :   
 - [perplexity.ai](https://www.perplexity.ai/)  
