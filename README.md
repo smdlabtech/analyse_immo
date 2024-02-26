@@ -24,7 +24,7 @@
 
 
 **<ins>Action Logement</ins>**  : [Acheter-un-bien-immobilier](https://www.actionlogement.fr/moment-de-vie/acheter-un-bien-immobilier)  
-**<ins>Action Logement</ins>**  : [Type des prêts [primo-accedant](https://www.actionlogement.fr/guides/acheter-un-bien-immobilier/primo-accedant)  
+**<ins>Action Logement</ins>**  : [Type des prêts [primo-accedant]](https://www.actionlogement.fr/guides/acheter-un-bien-immobilier/primo-accedant)  
 
 
 
