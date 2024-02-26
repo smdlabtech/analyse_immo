@@ -44,14 +44,14 @@ Voici un critère pour une personne lambda 1,
 [Google Earth - France](https://earth.google.com/web/search/%c3%8ele-de-France/@48.80271473,2.51521148,72.97274667a,252211.20456755d,35y,0h,0t,0r/data=CigiJgokCSqW8-dOpkhAERWGgn5iFkhAGTTm1M2J3BBAISR3tyBrr-c_MikKJwolCiExVTV6OEFieHpnYXk0cHVKSER3THQ3R2oyTUZ5WjVrQi0gAToDCgEw
 )
 
-### France - zones géographiques avec un meilleur potentiel ROI
+### <ins>France - zones géographiques avec un meilleur potentiel ROI </ins>:
 
 
 ## SENEGAL
 
 [Google Earth - Sénégal](https://earth.google.com/web)
 
-### Sénégal - zones géographiques avec un meilleur potentiel ROI
+### <ins>Sénégal - zones géographiques avec un meilleur potentiel ROI </ins>:
 Voici une liste de localités à prêter attention.
 - [Sébikotane](https://earth.google.com/web) 
 - [Toubab djalaw](https://earth.google.com/web)
