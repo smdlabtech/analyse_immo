@@ -1,5 +1,3 @@
-[*Github documentation*](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
- 
 # ANALYSE IMMOBILIÈRE
 
 [**PLATFORME CENTRALE- SMD LABTECH TASKS MANAGER WEB APP**](https://lookerstudio.google.com/u/0/reporting/15699df7-d3bd-4b0f-8834-647745c6f882/page/p_khucsd4had)  
@@ -90,4 +88,5 @@ Voici une liste de sites qui permet avec ses analyses ou bien ses outils de pren
 - https://sig.ville.gouv.fr/  
 - https://entreprendre.service-public.fr/vosdroits/R46124  
 
+[*Github documentation*](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
