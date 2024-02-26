@@ -88,5 +88,5 @@ Voici une liste de sites qui permet avec ses analyses ou bien ses outils de pren
 - https://sig.ville.gouv.fr/  
 - https://entreprendre.service-public.fr/vosdroits/R46124    
 
-**<ins>Documentations 1</ins>** : [*Github documentations*](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+**<ins>Documentations</ins>** : [*Github documentations*](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
