@@ -70,7 +70,7 @@ Voici une liste de localités à prêter attention.
 
 
 
-## Données de comparaisons de l'immobilier :  
+## Données de comparaisons de l'immobilier en France :  
 #### <ins>Les Tops sites data sources immo</ins> :  
 - https://www.data.gouv.fr/fr/reuses/ou-investir-dans-limmobilier-en-france/  
 - https://ouinvestir.net/  
