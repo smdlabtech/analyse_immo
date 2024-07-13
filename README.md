@@ -19,8 +19,9 @@
 - [cyberpret.com](https://www.cyberpret.com/agregateurs-annonces-immo-moteurs-recherche-immobiliers.html)  
 
 
-**<ins>Comparateur de valeur immobilière</ins>**  : [➡️ Explorateur de données de valeur foncière [data.gouv.fr]](https://explore.data.gouv.fr/fr/immobilier?onglet=carte&filtre=tous)  
-**<ins>Où investir dans l'immobilier en France</ins>**  : [➡️ Moteur de recherche immobilier [ouinvestir.net]](https://ouinvestir.net/moteur-de-recherche-ou-investir-dans-immobilier-en-france)  
+### Comparateur de valeur immobilière :  
+[➡️ Explorateur de données de valeur foncière [data.gouv.fr]](https://explore.data.gouv.fr/fr/immobilier?onglet=carte&filtre=tous)  
+[➡️ Moteur de recherche immobilier [ouinvestir.net]](https://ouinvestir.net/moteur-de-recherche-ou-investir-dans-immobilier-en-france)  
 
 
 [➡️ Acheter-un-bien-immobilier](https://www.actionlogement.fr/moment-de-vie/acheter-un-bien-immobilier)  
@@ -59,7 +60,7 @@ Voici un critère pour une personne lambda 1,
 
 
 
-## Données de comparaisons de l'immobilier en France :  
+### Données de comparaisons de l'immobilier en France :  
 #### <ins>Les Tops sites data sources immo</ins> :  
 - https://www.data.gouv.fr/fr/reuses/ou-investir-dans-limmobilier-en-france/  
 - https://ouinvestir.net/  
