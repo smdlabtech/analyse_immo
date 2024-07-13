@@ -27,7 +27,7 @@
 **<ins>Action Logement</ins>**  : [➡️ Type des prêts [primo-accedant]](https://www.actionlogement.fr/guides/acheter-un-bien-immobilier/primo-accedant)  
 
 
-
+---
 ## INTRODUCTION :
 **Cartographie de données** : 🌎[Google Earth](https://earth.google.com/web) peut enregistrer automatiquement des coordonnées géographiques en se géolocalisant et définir les points par (lon, lat). Si jamais, il des difficultés, demandé à Djiantatba qui est ingénieur. Il est égalememnt possible de visionné via des analyse statistique les données goégraphique via python ou R Shiny. Il également important de retenir que google hearth garde l'historique des données pendant plusieurs années. Ce qui pourrait aider dans l'analyse afin de savoir si une zone a évolué dans le temps et sa vitesse d'expensation. Il est également possible via ces analyses d'anticiper comment l'avenir d'une localité pour se densifier en terme de population au fil du temps.
 
@@ -41,13 +41,14 @@ Allons donc faire une analyse statitistique.
 **Critères personne lambda 1** :
 Voici un critère pour une personne lambda 1, 
 
-
+---
 ## ANALYSE SUR LE TEMPS DE REMBOURSEMENTS
 
 **<ins>Cas d'usage 1</ins>** :  [➡️ Temps de remboursement de prêt logement](/docs/Temps_de_remboursement_prêt_logement.pdf)  
 **<ins>Cas d'usage 2</ins>** :  [➡️ Remboursement de prêt logement](/docs/Temps_de_remboursement_prêt_logement.pdf)  
 
 
+---
 ## FRANCE 🇫🇷
 
 🌎[Google Earth - France](https://earth.google.com/web/search/%c3%8ele-de-France/@48.80271473,2.51521148,72.97274667a,252211.20456755d,35y,0h,0t,0r/data=CigiJgokCSqW8-dOpkhAERWGgn5iFkhAGTTm1M2J3BBAISR3tyBrr-c_MikKJwolCiExVTV6OEFieHpnYXk0cHVKSER3THQ3R2oyTUZ5WjVrQi0gAToDCgEw
