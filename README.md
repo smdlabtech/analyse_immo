@@ -90,7 +90,7 @@ Voici une liste de sites qui permet avec ses analyses ou bien ses outils de pren
 
 🌎[Google Earth - Sénégal](https://earth.google.com/web)
 
-### <ins>Sénégal - zones géographiques avec un meilleur potentiel ROI </ins>:
+#### <ins>Sénégal - zones géographiques avec un meilleur potentiel ROI </ins>:
 Voici une liste de localités à prêter attention.
 - [Sébikotane](https://earth.google.com/web) 
 - [Toubab djalaw](https://earth.google.com/web)
