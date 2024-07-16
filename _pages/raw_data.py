@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import app_data_loader
 
+
+
+######################################
 # # Function to format float columns as currency
 def format_currency(val):
     if isinstance(val, float):
@@ -9,14 +12,32 @@ def format_currency(val):
     return val
 
 
-
-
-######################################
 # Fonction de formatage du montant
 def format_euro(amount):
     """Format a number as Euro currency with thousand separators."""
     return f"{amount:,.2f} €".replace(",", " ")
 
+######################################
+
+# Charger les données DVF avec cache
+@st.cache_data
+def load_dvf():
+    # Remplacez `load_data_dvf` par la fonction appropriée pour charger vos données DVF
+    data_dvf = app_data_loader.load_data_dvf()
+    return data_dvf
+
+# Classe pour afficher les détails DVF
+class DVFDetails:
+    def __init__(self):
+        self.data = load_dvf()
+
+    def display_summary(self):
+        with st.expander("🗄️ DVF Events : [raw data]"):
+            st.write(self.data)
+
+
+
+######################################
 # Classe pour afficher les détails LCL
 class LCLDetails:
     def __init__(self, data):
@@ -228,6 +249,11 @@ def page_raw_data():
         st.session_state['lcl_search_query'] = ""
         st.session_state['brsma_search_query'] = ""
 
+    # st.title("DVF Data Viewer")
+    dvf_details = DVFDetails()
+    dvf_details.display_summary()
+
+
     # Chargement des données LCL et BRSMA
     lcl_data = app_data_loader.load_lcl()
     brsma_data = app_data_loader.load_brsma()
@@ -239,6 +265,8 @@ def page_raw_data():
     # Affichage des details BRSMA
     brsma_expenses = BRSMAExpenses(brsma_data)
     brsma_expenses.display_summary(st.session_state['brsma_search_query'])
+
+
 
 
 

@@ -15,6 +15,12 @@ def load_csv_files_from_directory(directory, delimiter="\t", encoding="cp1252"):
     return data
 
 
+### LOAD DATA DVF
+@st.cache_data 
+def load_dvf():
+    data_dvf = load_data_dvf()
+    # data_lcl_processed = process_data_lcl(data_lcl)   
+    return data_dvf
 
 ### LOAD DATA LCL
 @st.cache_data 
@@ -45,6 +51,17 @@ def load_data_lcl():
     data_lcl.columns = expected_columns
     return data_lcl
 
+
+def load_data_dvf():
+    lcl_directory = "_data/dvf"
+    data_dvf = load_csv_files_from_directory(lcl_directory, delimiter=",", encoding="utf-8")
+    # data_lcl.columns = ["dateOp", "montant", "typeOp", "compteU", "operation", "type action", "etat", "autres"]
+    # expected_columns = ["dateOp", "montant", "typeOp", "compteU", "operation", "type action", "etat", "autres"]
+    
+    # if data_lcl.shape[1] != len(expected_columns):
+    #     raise ValueError(f"Expected {len(expected_columns)} columns, but got {data_lcl.shape[1]}")
+    # data_lcl.columns = expected_columns
+    return data_dvf
 
 # Remplacer les virgules par des points pour la conversion en float
 def process_data_lcl(data_lcl):
