@@ -1,0 +1,31 @@
+﻿dateOp;dateVal;label;category;categoryParent;supplierFound;amount;accountNum;accountLabel;accountBalance;comment;pointer
+28/05/2024;28/05/2024;"PRLV SEPA ONEY BANQUE ACCORD";"Epargne financière (retraite, prévoyance, PEA, assurance-vie…)";"Dépenses d'épargne";"banque accord";-21,76;00040250639;BoursoBank;-125,97;;Non
+28/05/2024;28/05/2024;"PRLV SEPA FITNESS PARK SUCCURSALES - FP";"Equipements sportifs et artistiques";"Vie quotidienne";fitnessboutique;-30,00;00040250639;BoursoBank;-125,97;;Non
+28/05/2024;28/05/2024;"CARTE 27/05/24 LIBON* VC0F5FFA6A CB*4477";"Non catégorisé";"Non catégorisé";"LIBON* VC0F5FFA6A2AB";-29,99;00040250639;BoursoBank;-125,97;;Non
+27/05/2024;27/05/2024;"CARTE 26/05/24 LIBON* V9E58189F9 CB*4477";"Non catégorisé";"Non catégorisé";"LIBON* V9E58189F967F";-9,99;00040250639;BoursoBank;-125,97;;Non
+22/05/2024;22/05/2024;"AVOIR 21/05/24 AMAZON PRIME FR 2 CB*4477";"Livres, CD/DVD, bijoux, jouets…";"Vie quotidienne";amazon;64,31;00040250639;BoursoBank;-125,97;;Non
+21/05/2024;21/05/2024;"CARTE 19/05/24 AMZN Mktp FR*H743 CB*4477";"Livres, CD/DVD, bijoux, jouets…";"Vie quotidienne";amazon;-96,02;00040250639;BoursoBank;-125,97;;Non
+21/05/2024;21/05/2024;"CARTE 18/05/24 SGS AUTOMOTIVE S CB*4477";"Entretien - Réparation";"Auto & Moto";"sgs automotive s";-30,00;00040250639;BoursoBank;-125,97;;Non
+17/05/2024;17/05/2024;"CARTE 16/05/24 AMAZON PRIME FR 2 CB*4477";"Livres, CD/DVD, bijoux, jouets…";"Vie quotidienne";amazon;-69,90;00040250639;BoursoBank;-125,97;;Non
+17/05/2024;17/05/2024;"CARTE 16/05/24 AMZN Mktp FR*H75E CB*4477";"Livres, CD/DVD, bijoux, jouets…";"Vie quotidienne";amazon;-36,85;00040250639;BoursoBank;-125,97;;Non
+17/05/2024;17/05/2024;"CARTE 15/05/24 HTTPS://SKILLS.GO CB*4477";"Electronique et informatique";"Vie quotidienne";google;-26,94;00040250639;BoursoBank;-125,97;;Non
+14/05/2024;14/05/2024;"CARTE 12/05/24 GITHUB, INC. CB*4477";"Vêtements et accessoires";"Vie quotidienne";github;-9,00;00040250639;BoursoBank;-125,97;;Non
+14/05/2024;14/05/2024;"CARTE 13/05/24 UBER *TRIP CB*4477";Taxis;"Voyages & Transports";uber;-24,08;00040250639;BoursoBank;-125,97;;Non
+14/05/2024;14/05/2024;"CARTE 13/05/24 UBER *TRIP CB*4477";Taxis;"Voyages & Transports";uber;-25,93;00040250639;BoursoBank;-125,97;;Non
+13/05/2024;13/05/2024;"CARTE 10/05/24 LE MIROIR CB*4477";"Restaurants, bars, discothèques…";"Loisirs et sorties";"le miroir";-13,00;00040250639;BoursoBank;-125,97;;Non
+13/05/2024;13/05/2024;"CARTE 11/05/24 SARL CALLE OCHO CB*4477";"Restaurants, bars, discothèques…";"Loisirs et sorties";"calle 8";-14,00;00040250639;BoursoBank;-125,97;;Non
+13/05/2024;13/05/2024;"CARTE 10/05/24 le miroir CB*4477";"Restaurants, bars, discothèques…";"Loisirs et sorties";"le miroir";-2,50;00040250639;BoursoBank;-125,97;;Non
+13/05/2024;13/05/2024;"CARTE 10/05/24 EDREAMS PRIME ANN CB*4477";"Agences de voyages";"Voyages & Transports";"edreams prime annual";-89,99;00040250639;BoursoBank;-125,97;;Non
+13/05/2024;13/05/2024;"CARTE 10/05/24 Spotify P2C161FF4 CB*4477";"Multimedia à domicile (TV, internet, téléphonie…)";"Abonnements & téléphonie";spotify;-10,99;00040250639;BoursoBank;-125,97;;Non
+13/05/2024;13/05/2024;"CARTE 10/05/24 UBER *TRIP CB*4477";Taxis;"Voyages & Transports";uber;-16,10;00040250639;BoursoBank;-125,97;;Non
+07/05/2024;07/05/2024;"VIR INST WORKLIFE BENEFITS";"Virements reçus";"Virements reçus";"worklife benefits";86,40;00040250639;BoursoBank;-125,97;;Non
+06/05/2024;06/05/2024;"CARTE 02/05/24 GITHUB, INC. CB*4477";"Vêtements et accessoires";"Vie quotidienne";github;-2,82;00040250639;BoursoBank;-125,97;;Non
+06/05/2024;06/05/2024;"CARTE 05/05/24 BE FOOD CB*4477";"Restaurants, bars, discothèques…";"Loisirs et sorties";"be food";-9,90;00040250639;BoursoBank;-125,97;;Non
+06/05/2024;06/05/2024;"PRLV SEPA TotalEnergies Electricite et G";"Energie (électricité, gaz, fuel, chauffage…)";Logement;"TOTALENERGIES ELECTRICITE ET GAZ";-35,00;00040250639;BoursoBank;-125,97;;Non
+06/05/2024;06/05/2024;"PRLV SEPA BOUYGUES TELECOM";"Téléphonie (fixe et mobile)";"Abonnements & téléphonie";"bouygues telecom";-18,99;00040250639;BoursoBank;-125,97;;Non
+03/05/2024;03/05/2024;"AVOIR 02/05/24 ASOS.COM 77,50 EU CB*4477";"Vêtements et accessoires";"Vie quotidienne";"asos com";77,50;00040250639;BoursoBank;-125,97;;Non
+03/05/2024;03/05/2024;"PRLV SEPA FONCIA VEXIN GERANCE";"Loyers, Charges";Logement;foncia;-801,85;00040250639;BoursoBank;-125,97;;Non
+03/05/2024;03/05/2024;"VIR SEPA M. SYLLA MAMADOU DAYA";"Virements reçus";"Virements reçus";"virement m sylla mamadou daya";300,00;00040250639;BoursoBank;-125,97;;Non
+02/05/2024;02/05/2024;"CARTE 30/04/24 SNCF OUIGO CB*4477";"Transports longue distance (avions, trains…)";"Voyages & Transports";sncf;-98,00;00040250639;BoursoBank;-125,97;;Non
+02/05/2024;02/05/2024;"*COTIS ASS.COMPTE";"Frais bancaires et de gestion (dont agios)";"Services financiers & professionnels";"Boursorama Banque";-2,00;00040250639;BoursoBank;-125,97;;Non
+02/05/2024;02/05/2024;"CARTE 01/05/24 Google CLOUD KTD4 CB*4477";"Electronique et informatique";"Vie quotidienne";google;-24,38;00040250639;BoursoBank;-125,97;;Non
