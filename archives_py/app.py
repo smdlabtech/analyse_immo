@@ -1,7 +1,7 @@
 import streamlit as st
 from app_data_loader import load_data_brsma, load_data_lcl, process_data_lcl, process_data_brsma
 import app_styles
-from _pages import home, details, raw_data, aboutme
+from _pages import homepage, details, raw_data, aboutme
 
 # Initialiser l'état de session pour la configuration de la page
 if 'page_layout' not in st.session_state:
@@ -9,8 +9,8 @@ if 'page_layout' not in st.session_state:
 
 # Configuration initiale de la page
 st.set_page_config(
-    page_title="Analyse Immo",
-    page_icon="🏡",
+    page_title="Expenses Tracker",
+    page_icon="💵",
     layout=st.session_state.page_layout,
     initial_sidebar_state="expanded",
     menu_items={
@@ -43,26 +43,26 @@ def apply_js(file_name):
         st.error(f"Erreur: {e}")
 
 def go_to_previous_page():
-    pages = ["🏠Home", "📊Details", "🗄️Raw Data","😎AboutMe"]
+    pages = ["🏠HomePage", "📊Details", "🗄️Raw Data","😎AboutMe"]
     current_index = pages.index(st.session_state.page)
     if current_index > 0:
         st.session_state.page = pages[current_index - 1]
 
 def go_to_next_page():
-    pages = ["🏠Home", "📊Details", "🗄️Raw Data", "😎AboutMe"]
+    pages = ["🏠HomePage", "📊Details", "🗄️Raw Data", "😎AboutMe"]
     current_index = pages.index(st.session_state.page)
     if current_index < len(pages) - 1:
         st.session_state.page = pages[current_index + 1]
 
 def main():
-    st.markdown("<h1 style='text-align: center;'>🏡Analyse Immo</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>💵Expenses Tracker</h1>", unsafe_allow_html=True)
 
     with st.sidebar:
         app_styles.load_img("senlab_ia_gen_rmv_bgrd.png", caption="🇸🇳 SenLab IA 🇫🇷", width=5, use_column_width=True, output_format='PNG')
         st.sidebar.markdown("<h1 style='text-align: left; color: grey;'>Sidebar Panel : </h1>", unsafe_allow_html=True)
 
         if "page" not in st.session_state:
-            st.session_state.page = "🏠Home"
+            st.session_state.page = "🏠HomePage"
             st.session_state.page_layout = "wide"
 
         # Ajout du bouton radio pour choisir la largeur de la page
@@ -77,7 +77,7 @@ def main():
             st.session_state.page_layout = "wide"
             st.rerun()
 
-        st.sidebar.button("🏠Home", on_click=lambda: st.session_state.update(page="🏠Home"))
+        st.sidebar.button("🏠HomePage", on_click=lambda: st.session_state.update(page="🏠HomePage"))
         st.sidebar.button("📊Details", on_click=lambda: st.session_state.update(page="📊Details"))
         st.sidebar.button("🗄️Raw Data", on_click=lambda: st.session_state.update(page="🗄️Raw Data"))
         st.sidebar.button("😎AboutMe", on_click=lambda: st.session_state.update(page="😎AboutMe"))
@@ -93,8 +93,8 @@ def main():
         if st.button("Next"):
             go_to_next_page()
 
-    if st.session_state.page == "🏠Home":
-        home.page_home()
+    if st.session_state.page == "🏠HomePage":
+        homepage.page_home()
     elif st.session_state.page == "📊Details":
         details.page_details()
     elif st.session_state.page == "🗄️Raw Data":
