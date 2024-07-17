@@ -1,4 +1,4 @@
-# [🏠 ANALYSE IMMOBILIÈRE](https://quizappdelpgcp.streamlit.app/)
+# [🏠 ANALYSE IMMO](https://quizappdelpgcp.streamlit.app/)
 
 <p align="left"> 
     <a href="https://app.netlify.com/teams/smdlabtech">

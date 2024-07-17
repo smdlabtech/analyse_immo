@@ -1,9 +1,10 @@
 import streamlit as st
 import os
 import json
+import latexifier
 import time
 import app_styles as app_styles
-from _pages import homepage, review, quiz, aboutme
+from _pages import homepage, topics, quiz, aboutme
 
 ### CONFIGURATIONS de la mise en page ###
 
@@ -13,7 +14,7 @@ if 'page_layout' not in st.session_state:
 
 # Initial page configuration
 st.set_page_config(
-    page_title="Real Estate Analysis",
+    page_title="Analyse Immo",
     page_icon="📕",
     layout=st.session_state.page_layout,
     initial_sidebar_state="expanded",
@@ -81,7 +82,7 @@ def go_to_previous_page():
     """
     Navigates to the previous page in the sequence.
     """
-    pages = ["🏠HomePage", "📖Review", "🚀Quiz", "😎AboutMe"]
+    pages = ["🏠HomePage", "📖Topics", "🚀Quiz", "😎AboutMe"]
     current_index = pages.index(st.session_state.page)
     if current_index > 0:
         st.session_state.page = pages[current_index - 1]
@@ -90,7 +91,7 @@ def go_to_next_page():
     """
     Navigates to the next page in the sequence.
     """
-    pages = ["🏠HomePage", "📖Review", "🚀Quiz", "😎AboutMe"]
+    pages = ["🏠HomePage", "📖Topics", "🚀Quiz", "😎AboutMe"]
     current_index = pages.index(st.session_state.page)
     if current_index < len(pages) - 1:
         st.session_state.page = pages[current_index + 1]
@@ -173,7 +174,7 @@ def main():
     """
     The main function to run the Streamlit app.
     """
-    st.markdown("<h1 style='text-align: center;'>🏡Real Estate Analysis</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>🏡Analyse Immo</h1>", unsafe_allow_html=True)
 
     with st.sidebar:
         app_styles.styles_img("senlab_ia_gen_rmv_bgrd.png", caption="SenLab IA", width=10, use_column_width=True, output_format='PNG')
@@ -191,7 +192,7 @@ def main():
             st.rerun()
 
         st.sidebar.button("🏠HomePage", on_click=lambda: st.session_state.update(page="🏠HomePage"))
-        st.sidebar.button("📖Review", on_click=lambda: st.session_state.update(page="📖Review"))
+        st.sidebar.button("📖Topics", on_click=lambda: st.session_state.update(page="📖Topics"))
         st.sidebar.button("🚀Quiz", on_click=lambda: st.session_state.update(page="🚀Quiz"))
         st.sidebar.button("😎AboutMe", on_click=lambda: st.session_state.update(page="😎AboutMe"))
         
@@ -209,8 +210,8 @@ def main():
 
     if st.session_state.page == "🏠HomePage":
         homepage.page_homepage()
-    elif st.session_state.page == "📖Review":
-        review.page_review()
+    elif st.session_state.page == "📖Topics":
+        topics.page_topics()
     elif st.session_state.page == "🚀Quiz":
         if 'timer_placeholder' not in st.session_state:
             st.session_state.timer_placeholder = st.empty()
