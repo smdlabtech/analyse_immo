@@ -19,15 +19,15 @@ Investir dans l'immobilier peut être une étape cruciale et bénéfique dans la
 
 ### Rentabilité Brute
 - **Loyer Annuel / Prix d’achat :**
-  \[
+  $$
   \text{Rentabilité brute} = \frac{\text{Loyer annuel}}{\text{Prix d’achat}} \times 100
-  \]
+  $$
 
 ### Rentabilité Nette
 - **Loyer Annuel - (Charges + Impôts) / Prix d’achat :**
-  \[
+  $$
   \text{Rentabilité nette} = \frac{\text{Loyer annuel} - (\text{Charges + Impôts})}{\text{Prix d’achat}} \times 100
-  \]
+  $$
 
 ## 3. Financer son Investissement
 
@@ -59,18 +59,18 @@ Investir dans l'immobilier peut être une étape cruciale et bénéfique dans la
 - **Loyer mensuel :** 800 €
 - **Loyer annuel :** 9 600 €
 - **Rentabilité brute :** 
-  \[
+  $$
   \frac{9 600 €}{200 000 €} \times 100 = 4,8\%
-  \]
+  $$
 
 ### Exemple 2 : Investissement dans un Quartier en Développement
 - **Montant de l'achat :** 150 000 €
 - **Loyer mensuel :** 700 €
 - **Loyer annuel :** 8 400 €
 - **Rentabilité brute :**
-  \[
+  $$
   \frac{8 400 €}{150 000 €} \times 100 = 5,6\%
-  \]
+  $$
 
 ## Conclusion
 

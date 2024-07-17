@@ -1,3 +1,4 @@
+
 # Coût Total du Crédit
 
 ## Introduction
@@ -16,19 +17,19 @@ Lorsqu'on souscrit à un prêt immobilier, il est crucial de comprendre le coût
 Le prêt est remboursé en 239 mensualités de 220,41 €, suivies d'une dernière mensualité de 221,21 €. Calculons le total de ces mensualités :
 
 - **239 mensualités de 220,41 €**
-  \[
-  239 \times 220,41 € = 52 678,39 €
-  \]
+  $$
+  239 \times 220,41 = 52 678,39
+  $$
 
 - **Dernière mensualité de 221,21 €**
-  \[
-  221,21 €
-  \]
+  $$
+  221,21
+  $$
 
 - **Total des remboursements mensuels :**
-  \[
-  52 678,39 € + 221,21 € = 52 899,60 €
-  \]
+  $$
+  52 678,39 + 221,21 = 52 899,60
+  $$
 
 ### 2. Frais de Garantie
 Le prêt comprend des frais de garantie (Crédit Logement) de 925 €.
@@ -39,15 +40,15 @@ L'assurance emprunteur obligatoire a un coût total de 2 900 € sur 20 ans.
 ### Coût Total du Crédit
 Le coût total du crédit est donc la somme des remboursements mensuels, des frais de garantie et du coût de l’assurance.
 
-\[
+$$
 \text{Coût total du crédit} = \text{Total des remboursements mensuels} + \text{Frais de garantie} + \text{Coût total de l’assurance}
-\]
+$$
 
 En substituant les valeurs calculées :
 
-\[
-\text{Coût total du crédit} = 52 899,60 € + 925 € + 2 900 € = 56 724,60 €
-\]
+$$
+\text{Coût total du crédit} = 52 899,60 + 925 + 2 900 = 56 724,60
+$$
 
 ## Exemples Concrets
 
