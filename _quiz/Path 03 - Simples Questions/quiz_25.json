@@ -1,0 +1,139 @@
+{
+  "quiz": {
+    "instructions": "This quiz covers BigQuery SQL queries for data cleaning, machine learning, data pipeline preparation, and model evaluation using Google Cloud. Answer all questions to get your final score.",
+    "questions": [
+      {
+        "questionText": "How do you remove duplicate rows from a table in BigQuery?",
+        "options": [
+          "Using ROW_NUMBER() and DELETE statement",
+          "Using SELECT DISTINCT",
+          "Using JOIN and DELETE",
+          "Using MERGE statement"
+        ],
+        "answerIndex": [0],
+        "explanation": "ROW_NUMBER() can be used to identify duplicates, and DELETE statement to remove them.",
+        "validationQuery": "WITH ranked AS (SELECT *, ROW_NUMBER() OVER (PARTITION BY column ORDER BY column) as rn FROM my_table) DELETE FROM ranked WHERE rn > 1;"
+      },
+      {
+        "questionText": "How would you replace NULL values in a BigQuery table with a default value?",
+        "options": [
+          "Using IFNULL() function",
+          "Using REPLACE() function",
+          "Using COALESCE() function",
+          "Using ISNULL() function"
+        ],
+        "answerIndex": [2],
+        "explanation": "COALESCE() function returns the first non-NULL value in the list.",
+        "validationQuery": "SELECT COALESCE(column, 'default_value') FROM my_table;"
+      },
+      {
+        "questionText": "Which BigQuery ML model type would you use for a binary classification task?",
+        "options": [
+          "LINEAR_REG",
+          "LOGISTIC_REG",
+          "KMEANS",
+          "AUTOENCODER"
+        ],
+        "answerIndex": [1],
+        "explanation": "LOGISTIC_REG is used for binary classification tasks in BigQuery ML.",
+        "validationQuery": "CREATE OR REPLACE MODEL my_model OPTIONS(model_type='logistic_reg') AS SELECT * FROM my_table;"
+      },
+      {
+        "questionText": "Which gcloud command is used to create a Dataflow job from a template?",
+        "options": [
+          "gcloud dataflow jobs run",
+          "gcloud dataflow templates create",
+          "gcloud dataflow jobs submit",
+          "gcloud dataflow templates run"
+        ],
+        "answerIndex": [3],
+        "explanation": "The command 'gcloud dataflow templates run' is used to execute a Dataflow job from a template.",
+        "validationCommand": "gcloud dataflow templates run my-job --template gs://my-bucket/templates/my-template"
+      },
+      {
+        "questionText": "Which command in Python Apache Beam is used to filter elements in a PCollection?",
+        "options": [
+          "beam.Filter()",
+          "beam.Map()",
+          "beam.FlatMap()",
+          "beam.GroupByKey()"
+        ],
+        "answerIndex": [0],
+        "explanation": "beam.Filter() is used to filter elements in a PCollection based on a condition.",
+        "validationCommand": "pcollection | 'FilterAdults' >> beam.Filter(lambda x: x['age'] > 18)"
+      },
+      {
+        "questionText": "How would you create a BigQuery dataset using SQL?",
+        "options": [
+          "CREATE DATASET my_dataset",
+          "CREATE SCHEMA my_dataset",
+          "CREATE DATABASE my_dataset",
+          "CREATE TABLE my_dataset"
+        ],
+        "answerIndex": [1],
+        "explanation": "To create a new dataset in BigQuery, the SQL command is 'CREATE SCHEMA my_dataset'.",
+        "validationQuery": "CREATE SCHEMA my_dataset;"
+      },
+      {
+        "questionText": "What is the correct SQL query to count the number of trips in the 'nyc_taxi' table?",
+        "options": [
+          "SELECT COUNT(*) FROM nyc_taxi.trips",
+          "SELECT TOTAL(trip_id) FROM nyc_taxi.trips",
+          "SELECT SUM(trip_id) FROM nyc_taxi.trips",
+          "SELECT COUNT(trip) FROM nyc_taxi.trips"
+        ],
+        "answerIndex": [0],
+        "explanation": "The correct SQL query to count the number of trips is 'SELECT COUNT(*) FROM nyc_taxi.trips'.",
+        "validationQuery": "SELECT COUNT(*) FROM `bigquery-public-data.new_york_taxi_trips.tlc_yellow_trips_2015`;"
+      },
+      {
+        "questionText": "How do you preprocess data for a BigQuery ML model?",
+        "options": [
+          "Using TRANSFORM clause",
+          "Using FEATURE clause",
+          "Using PREPROCESS clause",
+          "Using TRANSFORMER clause"
+        ],
+        "answerIndex": [0],
+        "explanation": "The TRANSFORM clause in BigQuery ML is used to preprocess input data before model training.",
+        "validationQuery": "CREATE OR REPLACE MODEL my_model OPTIONS(model_type='linear_reg', input_label_cols=['label']) AS (SELECT * FROM my_table);"
+      },
+      {
+        "questionText": "Which feature engineering technique is commonly used for time-series data in the New York Taxis Trips dataset?",
+        "options": [
+          "Lag features",
+          "Normalization",
+          "One-hot encoding",
+          "Text tokenization"
+        ],
+        "answerIndex": [0],
+        "explanation": "Lag features are used to capture the relationship between past and current values in time-series data.",
+        "validationQuery": "SELECT trip_id, trip_distance, LAG(trip_distance, 1) OVER (ORDER BY trip_start_timestamp) AS prev_trip_distance FROM `bigquery-public-data.new_york_taxi_trips.tlc_yellow_trips_2015`;"
+      },
+      {
+        "questionText": "How do you evaluate a BigQuery ML model?",
+        "options": [
+          "Using ML.EVALUATE() function",
+          "Using EVALUATE_MODEL() function",
+          "Using ASSESS_MODEL() function",
+          "Using ML.TEST() function"
+        ],
+        "answerIndex": [0],
+        "explanation": "ML.EVALUATE() function in BigQuery ML is used to evaluate the performance of a model.",
+        "validationQuery": "SELECT * FROM ML.EVALUATE(MODEL my_model, (SELECT * FROM my_test_data));"
+      },
+      {
+        "questionText": "Which SQL function is used to extract a JSON field in BigQuery?",
+        "options": [
+          "JSON_EXTRACT()",
+          "PARSE_JSON()",
+          "EXTRACT_JSON()",
+          "GET_JSON_FIELD()"
+        ],
+        "answerIndex": [0],
+        "explanation": "JSON_EXTRACT() is used to extract data from JSON strings in BigQuery.",
+        "validationQuery": "SELECT JSON_EXTRACT(json_column, '$.key') FROM my_table;"
+      }
+    ]
+  }
+}

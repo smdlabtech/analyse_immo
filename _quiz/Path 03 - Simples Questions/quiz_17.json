@@ -1,0 +1,139 @@
+{
+  "quiz": {
+    "instructions": "This quiz contains 20 multiple-choice questions covering various topics related to Google Cloud Platform's Data Engineer certification. Answer all questions to get your final score.",
+    "questions": [
+      {
+	  "questionText": "What is a key consideration when planning for data migration to Google Cloud Platform?",
+	  "options": [
+		"Minimizing data redundancy",
+		"Maximizing data locality",
+		"Ensuring data integrity",
+		"Optimizing for offline processing"
+	  ],
+	  "answerIndex": [2],
+	  "explanation": "Data integrity ensures that data is accurate, consistent, and reliable throughout the migration process."
+	},
+	{
+	  "questionText": "Which Google Cloud service is commonly used for building and managing data lakes?",
+	  "options": [
+		"BigQuery",
+		"Dataflow",
+		"Dataproc",
+		"Firestore"
+	  ],
+	  "answerIndex": [2],
+	  "explanation": "Dataproc is a fully managed cloud service for running Apache Spark and Apache Hadoop clusters."
+	},
+	{
+	  "questionText": "What is a primary benefit of using Dataflow for batch processing?",
+	  "options": [
+		"Ease of use for SQL queries",
+		"Low operational overhead",
+		"Real-time analytics capabilities",
+		"Integration with TensorFlow"
+	  ],
+	  "answerIndex": [1],
+	  "explanation": "Dataflow manages the underlying infrastructure, allowing focus on pipeline logic rather than operational details."
+	},
+	{
+	  "questionText": "Which feature of Cloud Pub/Sub makes it suitable for streaming data analytics?",
+	  "options": [
+		"Support for multiple data formats",
+		"Integration with Dataproc",
+		"Exactly-once message delivery",
+		"Batch processing capabilities"
+	  ],
+	  "answerIndex": [2],
+	  "explanation": "Exactly-once delivery ensures that each message is processed exactly once, crucial for accurate analytics."
+	},
+	{
+	  "questionText": "What machine learning service on Google Cloud is designed for building custom models?",
+	  "options": [
+		"AutoML",
+		"BigQuery ML",
+		"Vertex AI",
+		"AI Platform"
+	  ],
+	  "answerIndex": [2],
+	  "explanation": "Vertex AI provides a unified platform to build, deploy, and manage machine learning models."
+	},
+	{
+	  "questionText": "What is a key feature of serverless data processing with Dataflow?",
+	  "options": [
+		"Manual scaling of resources",
+		"Cost optimization",
+		"Complex infrastructure management",
+		"Limited data source integrations"
+	  ],
+	  "answerIndex": [1],
+	  "explanation": "Dataflow automatically scales resources based on workload, optimizing costs and reducing management overhead."
+	},
+	{
+	  "questionText": "Which programming languages are supported for developing Dataflow pipelines?",
+	  "options": [
+		"Java and Python",
+		"Python and Go",
+		"Java and Ruby",
+		"Go and PHP"
+	  ],
+	  "answerIndex": [0],
+	  "explanation": "Dataflow supports Java and Python SDKs for developing data processing pipelines."
+	},
+	{
+	  "questionText": "What is a recommended approach for monitoring Dataflow pipeline performance?",
+	  "options": [
+		"Using Cloud Logging and Cloud Monitoring",
+		"Manual inspection of pipeline code",
+		"Regular restart of Dataflow instances",
+		"Dependency on third-party monitoring tools"
+	  ],
+	  "answerIndex": [0],
+	  "explanation": "Cloud Logging and Cloud Monitoring provide real-time insights into pipeline performance and health."
+	},
+	{
+	  "questionText": "What is a common preprocessing step before training machine learning models?",
+	  "options": [
+		"Data sampling",
+		"Feature scaling",
+		"Model validation",
+		"Hyperparameter tuning"
+	  ],
+	  "answerIndex": [1],
+	  "explanation": "Feature scaling ensures that all input features have the same scale, preventing bias in model training."
+	},
+	{
+	  "questionText": "Which statement best describes the scalability of BigQuery?",
+	  "options": [
+		"Scalability is limited by hardware resources",
+		"Scalability is unlimited",
+		"Scalability is constrained by network bandwidth",
+		"Scalability is limited to regional availability"
+	  ],
+	  "answerIndex": [1],
+	  "explanation": "BigQuery's serverless architecture allows it to automatically scale to handle large datasets."
+	},
+	{
+	  "questionText": "What is a primary advantage of using BigQuery ML for predictive modeling?",
+	  "options": [
+		"Requires minimal data preprocessing",
+		"Supports only linear regression models",
+		"Limited scalability",
+		"Restricted to batch predictions"
+	  ],
+	  "answerIndex": [0],
+	  "explanation": "BigQuery ML simplifies machine learning by integrating directly with SQL queries and minimizing preprocessing steps."
+	},
+	{
+	  "questionText": "What is a key principle of a data mesh architecture?",
+	  "options": [
+		"Centralized data governance",
+		"Monolithic data infrastructure",
+		"Data ownership by domain teams",
+		"Shared data pipelines"
+	  ],
+	  "answerIndex": [2],
+	  "explanation": "In a data mesh architecture, domain teams take ownership of data and manage it independently using standardized interfaces."
+	}
+    ]
+  }
+}

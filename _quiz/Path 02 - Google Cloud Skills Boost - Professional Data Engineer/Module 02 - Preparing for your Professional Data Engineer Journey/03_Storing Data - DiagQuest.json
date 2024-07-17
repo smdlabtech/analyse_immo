@@ -1,0 +1,120 @@
+{
+  "quiz": {
+    "title": "Google Cloud Platform Data Management and Security Quiz",
+    "score": 80,
+    "passingScore": 75,
+    "congratulationsMessage": "Congratulations! You passed this assessment.",
+    "questions": [
+      {
+        "questionText": "Your analysts repeatedly run the same complex queries that combine and filter through a lot of data on BigQuery. The data changes frequently. You need to reduce the effort for the analysts. What should you do?",
+        "options": [
+          "A. Export the frequently queried data into Cloud SQL.",
+          "B. Export the frequently queried data into a new table.",
+          "C. Create a view of the frequently queried data.",
+          "D. Create a dataset with the data that is frequently queried."
+        ],
+        "answerIndex": [2],
+        "explanation": "Creating a view will rerun the complex query automatically. Meanwhile, the analysts need only reference the name of the view, which makes it easier for them."
+      },
+      {
+        "questionText": "You have large amounts of data stored on Cloud Storage and BigQuery. Some of it is processed, but some is yet unprocessed. You have a data mesh created in Dataplex. You need to make it convenient for internal users of the data to discover and use the data. What should you do?",
+        "options": [
+          "A. Create a raw zone for the unprocessed data and a curated zone for the processed data.",
+          "B. Create a lake for BigQuery data and a zone for Cloud Storage data.",
+          "C. Create a lake for Cloud Storage data and a zone for BigQuery data.",
+          "D. Create a lake for unprocessed data and assets for processed data."
+        ],
+        "answerIndex": [0],
+        "explanation": "Creating separate zones for processed and unprocessed data within a data mesh helps users easily identify and utilize the data appropriate to their needs."
+      },
+      {
+        "questionText": "You have data stored in a Cloud Storage bucket. You are using both Identity and Access Management (IAM) and Access Control Lists (ACLs) to configure access control. Which statement describes a user's access to objects in the bucket?",
+        "options": [
+          "A. The user has no access if either IAM or ACLs deny a permission.",
+          "B. The user has access if either IAM or ACLs grant a permission.",
+          "C. The user only has access if both IAM and ACLs grant a permission.",
+          "D. The user has no access if IAM denies the permission."
+        ],
+        "answerIndex": [1],
+        "explanation": "IAM and ACLs work in parallel. If either of the systems grants the user access permission, the user will have access."
+      },
+      {
+        "questionText": "You need to store data long term and use it to create quarterly reports. What storage class should you choose?",
+        "options": [
+          "A. Nearline",
+          "B. Standard",
+          "C. Archive",
+          "D. Coldline"
+        ],
+        "answerIndex": [3],
+        "explanation": "Coldline storage class is the recommended option when the data is accessed infrequently, such as once a quarter."
+      },
+      {
+        "questionText": "You need to choose a data storage solution to support a transactional system. Your customers are primarily based in one region. You want to reduce your administration tasks and focus engineering effort on building your business application. What should you do?",
+        "options": [
+          "A. Use Cloud SQL.",
+          "B. Use Cloud Spanner.",
+          "C. Install a database of your choice on a Compute Engine VM.",
+          "D. Create a Cloud Storage bucket with a regional bucket."
+        ],
+        "answerIndex": [0],
+        "explanation": "Cloud SQL provides a managed relational database service that reduces administration tasks and allows focus on application development, suitable for regional customer bases."
+      },
+      {
+        "questionText": "You have several large tables in your transaction databases. You need to move all the data to BigQuery for the business analysts to explore and analyze the data. How should you design the schema in BigQuery?",
+        "options": [
+          "A. Combine all the transactional database tables into a single table using outer joins.",
+          "B. Retain the data on BigQuery with the same schema as the source.",
+          "C. Redesign the schema to denormalize the data with nested and repeated data.",
+          "D. Redesign the schema to normalize the data by removing all redundancies."
+        ],
+        "answerIndex": [2],
+        "explanation": "Denormalizing the data in BigQuery optimizes performance and cost for large-scale data analysis by reducing the need for extensive joins."
+      },
+      {
+        "questionText": "You have data that is ingested daily and frequently analyzed in the first month. Thereafter, the data is retained only for audits, which happen occasionally every few years. You need to configure cost-effective storage. What should you do?",
+        "options": [
+          "A. Create a bucket on Cloud Storage with Autoclass configured.",
+          "B. Create a bucket on Cloud Storage with object versioning configured.",
+          "C. Configure a lifecycle policy on Cloud Storage.",
+          "D. Configure a data retention policy on Cloud Storage."
+        ],
+        "answerIndex": [2],
+        "explanation": "A lifecycle policy on Cloud Storage allows you to manage your data automatically as it moves through its lifecycle, moving data to cheaper storage classes as access needs decrease."
+      },
+      {
+        "questionText": "Cymbal Retail has accumulated a large amount of data. Analysts and leadership are finding it difficult to understand the meaning of the data, such as BigQuery columns. Users of the data don't know who owns what. You need to improve the searchability of the data. What should you do?",
+        "options": [
+          "A. Rename BigQuery columns with more descriptive names.",
+          "B. Create tags for data entries in Cloud Catalog.",
+          "C. Export the data to Cloud Storage with descriptive file names.",
+          "D. Add a description column corresponding to each data column."
+        ],
+        "answerIndex": [1],
+        "explanation": "Creating tags for data entries in Cloud Catalog enhances the discoverability and understanding of data by providing contextual metadata."
+      },
+      {
+        "questionText": "You are ingesting data that is spread out over a wide range of dates into BigQuery at a fast rate. You need to partition the table to make queries performant. What should you do?",
+        "options": [
+          "A. Create a time-unit column-partitioned table with yearly partitioning type.",
+          "B. Create an integer-range partitioned table.",
+          "C. Create an ingestion-time partitioned table with yearly partitioning type.",
+          "D. Create an ingestion-time partitioned table with daily partitioning type."
+        ],
+        "answerIndex": [3],
+        "explanation": "Creating an ingestion-time partitioned table with daily partitioning type optimizes query performance by reducing the amount of data scanned during each query."
+      },
+      {
+        "questionText": "A manager at Cymbal Retail expresses concern about unauthorized access to objects in your Cloud Storage bucket. You need to evaluate all access on all objects in the bucket. What should you do?",
+        "options": [
+          "A. Enable and then review the Data Access audit logs.",
+          "B. Review the Admin Activity audit logs.",
+          "C. Change the permissions on the bucket to only trusted employees.",
+          "D. Route the Admin Activity logs to a BigQuery sink and analyze the logs with SQL queries."
+        ],
+        "answerIndex": [0],
+        "explanation": "Enabling and reviewing Data Access audit logs is essential to evaluate all access on objects in the bucket, providing insights into reads and writes."
+      }
+    ]
+  }
+}

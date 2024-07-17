@@ -1,0 +1,20 @@
+{
+  "quiz": {
+    "title": "Google Cloud Platform Advanced Scenario-Based Quiz",
+    "score": 100,
+    "questions": [
+      {
+        "questionText": "Your organization is partnering with multiple research institutions to analyze a vast amount of climate data. You need a solution that allows secure sharing and analysis of this data, while ensuring you maintain control over the datasets. What is the best approach for this collaborative environment?",
+        "options": [
+          "Share the climate data through a public-facing website where partners can download and use the data as needed.",
+          "Set up a Looker Studio report and grant Edit access to the partners for interactive data analysis.",
+          "Use Analytics Hub to share datasets with the research institutions, ensuring secure and controlled access.",
+          "Use Cloud Storage to store the datasets and set up IAM roles to control access for each research institution."
+        ],
+        "answerIndex": [2],
+        "explanation": "Using Analytics Hub to share datasets with the research institutions is the most effective solution. This approach allows for secure and controlled access to large datasets, ensuring that data integrity is maintained and that collaborators can efficiently analyze the data. Sharing through a public website lacks security. While Cloud Storage with IAM roles can control access, it does not offer the same level of ease and features tailored for dataset sharing and analysis as Analytics Hub. Looker Studio is more suited for data visualization rather than managing and securing large datasets.",
+        "links": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "quiz": {
+    "title": "Google Cloud Data Protection and Security Best Practices Quiz",
+    "score": 100,
+    "passingScore": 75,
+    "congratulationsMessage": "Congratulations! You passed this assessment.",
+    "questions": [
+      {
+        "questionText": "A company collects lots of consumer data from online marketing campaigns. The top management is worried about exposing personally identifiable information (PII) that may be present in this data. What should you do to reduce the risk of exposing PII data?",
+        "options": [
+          "A. Ensure that all stored data is monitored by Security Command Center.",
+          "B. Ensure that all PII data is removed from the collected data before storing it on Google Cloud.",
+          "C. Store all data in BigQuery and turn on column level access to protect sensitive data.",
+          "D. Use Cloud Data Loss Prevention (Cloud DLP) to inspect and redact PII data."
+        ],
+        "answerIndex": [3],
+        "explanation": "Using Cloud DLP helps to automatically inspect, classify, and redact sensitive data, which reduces the risk of exposing PII."
+      },
+      {
+        "questionText": "Your company is very serious about data protection and hence decides to implement the Principle of Least Privilege. What should you do to comply with this policy?",
+        "options": [
+          "A. Ensure that the access permissions are given strictly based on the person’s title and job role.",
+          "B. Give just enough permissions to get the task done.",
+          "C. When a task is assigned, ensure that it gets assigned to a person with the minimum privileges.",
+          "D. Ensure that the users are verified every time they request access, even if they were authenticated earlier."
+        ],
+        "answerIndex": [1],
+        "explanation": "The Principle of Least Privilege involves providing only the minimal level of permissions required to perform a task, which enhances security by limiting access rights for users to the bare minimum necessary to perform their work."
+      }
+    ]
+  }
+}

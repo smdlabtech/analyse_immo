@@ -1,0 +1,129 @@
+{
+  "quiz": {
+    "title": "Google Cloud Platform Advanced Scenario-Based Quiz",
+    "score": 100,
+    "questions": [
+      {
+        "questionText": "Your organization is partnering with multiple research institutions to analyze a vast amount of climate data. You need a solution that allows secure sharing and analysis of this data, while ensuring you maintain control over the datasets. What is the best approach for this collaborative environment?",
+        "options": [
+          "Share the climate data through a public-facing website where partners can download and use the data as needed.",
+          "Set up a Looker Studio report and grant Edit access to the partners for interactive data analysis.",
+          "Use Analytics Hub to share datasets with the research institutions, ensuring secure and controlled access.",
+          "Use Cloud Storage to store the datasets and set up IAM roles to control access for each research institution."
+        ],
+        "answerIndex": [2],
+        "explanation": "Using Analytics Hub to share datasets with the research institutions is the most effective solution. This approach allows for secure and controlled access to large datasets, ensuring that data integrity is maintained and that collaborators can efficiently analyze the data. Sharing through a public website lacks security. While Cloud Storage with IAM roles can control access, it does not offer the same level of ease and features tailored for dataset sharing and analysis as Analytics Hub. Looker Studio is more suited for data visualization rather than managing and securing large datasets.",
+        "links": []
+      },
+      {
+        "questionText": "Your organization is setting up access controls for a new data analytics platform on Google Cloud. The platform will be used by multiple teams, and each team should only be able to access its own data. Team leads need permissions to create, update, and share data within their team, while team members should only be able to read data without making modifications. How should your organization configure these permissions?",
+		"options": [
+			"Create a dataset for each team, assign the team leads the role of BigQuery Data Admin, and assign the team members the role of BigQuery Data Viewer.",
+			"Create a table for each team, assign the team leads the role of Owner, and assign the team members the role of Viewer on the project the table is in.",
+			"Create a dataset for each team, assign the team leads the role of BigQuery Data Editor on their dataset, and assign the team members the role of BigQuery Data Viewer on their dataset.",
+			"Create a project for each team, assign the team leads the role of Editor, and assign the team members the role of Viewer on the project."
+		],
+        "answerIndex": [0],
+        "explanation": "Creating a dataset for each team, assigning the team leads the role of BigQuery Data Editor on their dataset, and assigning the team members the role of BigQuery Data Viewer on their dataset is the optimal approach. This configuration ensures that each team has access to its own data without interfering with other teams' data. Assigning team leads the role of BigQuery Data Editor allows them to manage and share data within their team, while assigning team members the role of BigQuery Data Viewer restricts them to read-only access. Creating tables or projects for each team is less efficient and may not provide the necessary granularity in access control. Assigning team leads the role of Owner could grant excessive permissions, and assigning the role of Viewer to team members without proper configuration may not restrict access effectively.",
+        "links": []
+      },
+      {
+        "questionText": "Your company has a Dataflow pipeline that ingests CSV data from Pub/Sub, processes it, and stores the results in BigQuery. During testing, you find that some CSV files contain invalid records. Since the data source is beyond your control, you need to update the Dataflow pipeline to filter out these invalid records and ensure only valid data is stored in BigQuery. How should you modify the pipeline to achieve this?",
+        "options": [
+          "Add a DoFn with a Side Output that separates invalid records into a different pipeline branch.",
+          "Use a CombinePerKey transform in the pipeline to aggregate valid records and exclude invalid ones.",
+          "Implement a Window transform to group records and then filter out invalid records in a subsequent step.",
+          "Include a ParDo transform in the pipeline to filter out the invalid CSV records."
+        ],
+        "answerIndex": [3],
+        "explanation": "Including a ParDo transform in the pipeline to filter out the invalid CSV records is the correct approach because ParDo enables custom processing and filtering of each element, allowing you to exclude invalid records efficiently. Adding a DoFn with a Side Output would separate the records but complicate the pipeline unnecessarily. Using a CombinePerKey transform is meant for aggregating data rather than filtering invalid records. Implementing a Window transform is intended for grouping records over time or count windows and is not suitable for filtering invalid data directly.",
+        "links": []
+      },
+      {
+        "questionText": "You need to ensure that sensitive data in BigQuery is protected and cannot be accessed by unauthorized users. What should you do?",
+        "options": [
+          "Use the Cloud Data Loss Prevention (Cloud DLP) API to detect and redact sensitive data, and create a Cloud Function to move flagged entries to a secure Cloud Storage location.",
+          "Implement BigQuery data access controls to restrict access to sensitive columns.",
+          "Schedule a Cloud Composer job that scans BigQuery for sensitive data and deletes any found.",
+          "Enable Google Cloud Armor to restrict access to the BigQuery dataset and manually review any queries accessing sensitive data."
+        ],
+        "answerIndex": [0],
+        "explanation": "Using the Cloud Data Loss Prevention (Cloud DLP) API to detect and redact sensitive data, and creating a Cloud Function to move flagged entries to a secure Cloud Storage location is the best approach. This ensures that sensitive data is identified and managed automatically, preventing unauthorized access. Implementing BigQuery data access controls might not catch all instances of sensitive data and doesn't offer automated detection and redaction. Scheduling a Cloud Composer job to delete sensitive data can be risky as it may lead to data loss. Google Cloud Armor is not designed for data-specific security within BigQuery but for network security.",
+        "links": []
+      },
+      {
+        "questionText": "Your organization is setting up a data pipeline that processes e-commerce transaction logs to be queried in BigQuery. The initial dataset is 2 petabytes with an additional 5 terabytes added daily. The data science team plans to use this data for real-time analytics and machine learning model training. Considering the structured nature of the data and the need for high performance and accessibility, which two methods should you implement to optimize both performance and accessibility for your data science team? (Select two.)",
+        "options": [
+          "Maintain the normalized structure of the data to preserve storage efficiency.",
+          "Denormalize the data as much as possible to enhance query performance.",
+          "Use the UPDATE statement in BigQuery to frequently update transaction statuses.",
+          "Archive the daily transaction logs to Cloud Storage and query them as external data sources in BigQuery.",
+          "Construct a data pipeline that continuously appends new transaction logs rather than updating existing records."
+        ],
+        "answerIndex": [1, 4],
+        "explanation": "Denormalizing the data improves query performance by reducing the need for complex joins, making the data more accessible for analytics and machine learning tasks. Constructing a data pipeline that appends new transaction logs rather than updating records leverages BigQuery's optimization for appending data, which enhances performance and scalability. Maintaining the normalized structure might save storage but can slow down complex queries. Using the UPDATE statement frequently can be inefficient and costly for large datasets. Archiving transaction logs to Cloud Storage and querying them as external data sources may not provide the required real-time accessibility and performance.",
+        "links": []
+      },
+      {
+        "questionText": "Your company has exported Parquet files from an on-premises data warehouse to a Cloud Storage bucket in Google Cloud. You need to process and store some of this data in Dataproc's HDFS for further analysis using Hive. What are two methods to achieve this with Dataproc?",
+        "options": [
+          "Use gsutil to transfer the Parquet files directly from Cloud Storage to Dataproc HDFS, and then create Hive tables from HDFS.",
+          "Utilize the Cloud Storage Connector to mount the Parquet files as external Hive tables and then copy them to HDFS in Dataproc.",
+          "Transfer the Parquet files to the Dataproc cluster’s master node, use the Hadoop utility to copy the necessary data to HDFS, and then mount the Hive tables from HDFS.",
+          "Use gsutil to transfer all Parquet files from Cloud Storage to any Dataproc node in the cluster, then mount the Hive tables from there."
+        ],
+        "answerIndex": [1, 2],
+        "explanation": "Utilize the Cloud Storage Connector to mount the Parquet files as external Hive tables and then copy them to HDFS in Dataproc is correct because it leverages the Cloud Storage Connector for direct access and integration with HDFS. Transfer the Parquet files to the Dataproc cluster’s master node, use the Hadoop utility to copy the necessary data to HDFS, and then mount the Hive tables from HDFS is also correct as it ensures the data is correctly copied and integrated into HDFS using familiar Hadoop utilities. Using gsutil to transfer files directly to HDFS and creating Hive tables from HDFS is less efficient than leveraging the Cloud Storage Connector. Transferring files to any Dataproc node and mounting Hive tables from there does not ensure that the data is properly integrated into HDFS for efficient processing.",
+        "links": []
+      },
+      {
+        "questionText": "Your organization operates in a hybrid cloud environment, storing critical business data in Google Cloud Storage and Azure Blob Storage. All data is confined to European regions. To facilitate data analysis, you need a solution that allows your data scientists to query the latest data using BigQuery without providing them direct access to the underlying storage. How should you achieve this?",
+        "options": [
+          "Set up a BigQuery Omni connection to the Azure Blob Storage data and create external tables over the Cloud Storage and Blob Storage data to query using BigQuery.",
+          "Establish a BigQuery Omni connection to the Azure Blob Storage data and create BigLake tables over the Cloud Storage and Blob Storage data to query using BigQuery.",
+          "Utilize the Storage Transfer Service to migrate data from the Azure Blob Storage to Cloud Storage, then create BigLake tables over the Cloud Storage data to query using BigQuery.",
+          "Utilize the Storage Transfer Service to migrate data from the Azure Blob Storage to Cloud Storage, then create external tables over the Cloud Storage data to query using BigQuery."
+        ],
+        "answerIndex": [1],
+        "explanation": "Establishing a BigQuery Omni connection to the Azure Blob Storage data and creating BigLake tables over the Cloud Storage and Blob Storage data is the most effective solution. This method allows seamless querying of data across both Google Cloud Storage and Azure Blob Storage without needing to move data, ensuring up-to-date access and avoiding direct exposure of storage systems. Setting up a BigQuery Omni connection with external tables offers less performance and flexibility compared to BigLake tables. Using the Storage Transfer Service adds unnecessary complexity and potential data transfer costs while not ensuring real-time data availability.",
+        "links": []
+      },
+      {
+        "questionText": "You are managing a small PostgreSQL database in Cloud SQL for a growing e-commerce platform. To keep costs down, you have chosen a lower-tier instance, but you need to ensure that you do not hit storage or performance limits unexpectedly. You need to be alerted in advance when resource usage approaches critical thresholds so you can plan upgrades without service disruptions. What is the best way to achieve this?",
+        "options": [
+          "Set up a Cloud Monitoring alert based on the 'Memory Utilization' metric to notify you when memory usage approaches the instance limit.",
+          "Periodically check the database metrics manually in the Google Cloud Console and upgrade when necessary.",
+          "Enable automatic scaling for the database instance to handle unexpected increases in storage or CPU usage.",
+          "Configure a Cloud Function to run periodically and check resource usage, sending an email if thresholds are exceeded."
+        ],
+        "answerIndex": [0],
+        "explanation": "Setting up a Cloud Monitoring alert based on the 'Memory Utilization' metric is the most effective solution. This approach provides real-time alerts when memory usage reaches predefined thresholds, allowing for proactive management and planning of upgrades. Manually monitoring the usage is inefficient and can lead to missed thresholds. Automatic scaling is not available for Cloud Memorystore, and configuring a Cloud Scheduler job to check memory usage adds unnecessary complexity compared to native Cloud Monitoring alerts.",
+        "links": []
+      },
+      {
+        "questionText": "Your organization is implementing a data pipeline in BigQuery using Dataform to streamline the ETL process. You need to ensure that the data loaded into the final tables meets your data quality standards, which include checking for duplicate entries and ensuring that no null values exist in critical fields. The goal is to integrate these data quality checks directly into the pipeline to automate validation. What is the best way to efficiently add these checks into your pipeline?",
+        "options": [
+          "Write custom SQL scripts to validate the data and run these scripts after the data is loaded.",
+          "Integrate assertions in your Dataform code to perform the checks.",
+          "Use Dataflow to validate the data before loading it into BigQuery.",
+          "Set up Dataplex to manage data quality rules and apply them to your BigQuery tables."
+        ],
+        "answerIndex": [1],
+        "explanation": "Integrating assertions in your Dataform code to perform the checks is the most efficient approach because it allows you to automate the data validation process within the ETL pipeline, ensuring data quality is maintained without additional manual steps. Writing custom SQL scripts for validation adds complexity and delays the detection of issues. Using Dataflow for data quality checks is more suitable for streaming data and adds unnecessary overhead. Setting up Dataplex for data quality rules is an alternative for managing data quality across a data lake, but it may not integrate as seamlessly with the specific ETL pipeline managed by Dataform.",
+        "links": []
+      },
+      {
+        "questionText": "Your company is expanding its e-commerce operations and needs to process a large stream of customer activity data from various regions in real-time. The data must be ingested and analyzed to optimize the user experience by personalizing recommendations, requiring a solution that supports high throughput, low latency, and ensures message ordering for accurate session tracking. How should you design the solution?",
+        "options": [
+          "Utilize Apache Kafka for message ingestion and Hadoop for analysis.",
+          "Implement Cloud Pub/Sub for message ingestion and use BigQuery for analysis.",
+          "Use Cloud Functions for message ingestion and Cloud Dataprep for analysis.",
+          "Deploy Cloud Pub/Sub for message ingestion and use Cloud Dataflow for analysis."
+        ],
+        "answerIndex": [3],
+        "explanation": "Deploying Cloud Pub/Sub for message ingestion and using Cloud Dataflow for analysis is the best solution. This combination supports high throughput and low latency, ensuring that messages are ingested and processed efficiently in real-time. Cloud Pub/Sub guarantees message ordering, which is essential for accurate session tracking. Apache Kafka with Hadoop lacks the ease of integration and real-time processing capabilities of Cloud Dataflow. Cloud Functions and Cloud Dataprep are not suitable for handling high-throughput real-time data streams. Using BigQuery directly for analysis does not address the requirement for real-time data processing.",
+        "links": []
+      }
+    ]
+  }
+}

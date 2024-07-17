@@ -1,0 +1,258 @@
+{
+  "quiz": {
+    "instructions": "This quiz contains multiple-choice questions covering various topics related to Google Cloud Platform's Data Engineer certification. Answer all questions to get your final score.",
+    "questions": [
+      {
+        "questionText": "What BigQuery function can be used to convert a string to a date?",
+        "options": [
+          "PARSE_DATE",
+          "FORMAT_DATE",
+          "CAST",
+          "CONVERT"
+        ],
+        "answerIndex": [0],
+        "explanation": "The PARSE_DATE function is used to convert a string to a date in BigQuery.",
+        "validationQuery": "SELECT PARSE_DATE('%Y-%m-%d', '2024-06-19') AS date;"
+      },
+      {
+        "questionText": "Which SQL clause is used to filter rows before aggregation in BigQuery?",
+        "options": [
+          "WHERE",
+          "HAVING",
+          "FILTER",
+          "GROUP BY"
+        ],
+        "answerIndex": [0],
+        "explanation": "The WHERE clause is used to filter rows before aggregation in BigQuery.",
+        "validationQuery": "SELECT COUNT(*) FROM dataset.table WHERE column > 10;"
+      },
+      {
+        "questionText": "How do you create a time-series forecasting model in BigQuery ML?",
+        "options": [
+          "ML.TIME_SERIES",
+          "ML.FORECAST",
+          "ML.TRAIN",
+          "ML.ARIMA"
+        ],
+        "answerIndex": [3],
+        "explanation": "ML.ARIMA is used to create a time-series forecasting model in BigQuery ML.",
+        "validationQuery": "CREATE MODEL `project.dataset.model` OPTIONS(model_type='ARIMA') AS SELECT * FROM `project.dataset.table`;"
+      },
+      {
+        "questionText": "Which command is used to create a new Dataflow job from a template in the console?",
+        "options": [
+          "gcloud dataflow jobs run template",
+          "gcloud dataflow jobs submit job",
+          "gcloud dataflow jobs submit from-template",
+          "gcloud dataflow jobs create template"
+        ],
+        "answerIndex": [2],
+        "explanation": "The command 'gcloud dataflow jobs submit from-template' is used to create a new Dataflow job from a template.",
+        "validationCommand": "gcloud dataflow jobs submit from-template --template-file-gcs-location=gs://my-bucket/template --parameters inputFile=gs://my-bucket/input.csv,outputTable=my-project:dataset.table"
+      },
+      {
+        "questionText": "Which Python command is used to apply a GroupByKey transform in Apache Beam?",
+        "options": [
+          "beam.GroupByKey()",
+          "beam.KeyBy()",
+          "beam.CombinePerKey()",
+          "beam.Group()"
+        ],
+        "answerIndex": [0],
+        "explanation": "beam.GroupByKey() is used to apply a GroupByKey transform in Apache Beam.",
+        "validationCommand": "pcollection.apply(beam.GroupByKey())"
+      },
+      {
+        "questionText": "What is the primary purpose of feature scaling in machine learning?",
+        "options": [
+          "To clean the dataset",
+          "To normalize the range of independent variables",
+          "To handle missing values",
+          "To split the dataset into training and testing sets"
+        ],
+        "answerIndex": [1],
+        "explanation": "Feature scaling is used to normalize the range of independent variables in machine learning."
+      },
+      {
+        "questionText": "Which BigQuery function is used to return the current date?",
+        "options": [
+          "CURRENT_DATE()",
+          "NOW()",
+          "TODAY()",
+          "GETDATE()"
+        ],
+        "answerIndex": [0],
+        "explanation": "The CURRENT_DATE() function is used to return the current date in BigQuery.",
+        "validationQuery": "SELECT CURRENT_DATE();"
+      },
+      {
+        "questionText": "How do you use BigQuery ML to create a k-means clustering model?",
+        "options": [
+          "ML.CREATE_MODEL",
+          "ML.TRAIN",
+          "ML.KMEANS",
+          "ML.CREATE_KMEANS_MODEL"
+        ],
+        "answerIndex": [1],
+        "explanation": "ML.TRAIN is used to create and train a k-means clustering model in BigQuery ML.",
+        "validationQuery": "CREATE MODEL `project.dataset.model` OPTIONS(model_type='kmeans') AS SELECT * FROM `project.dataset.table`;"
+      },
+      {
+        "questionText": "Which command is used to deploy a model to a Vertex AI endpoint?",
+        "options": [
+          "gcloud ai models deploy",
+          "gcloud ai endpoints deploy",
+          "gcloud ai endpoints create",
+          "gcloud ai models create"
+        ],
+        "answerIndex": [1],
+        "explanation": "The command 'gcloud ai endpoints deploy' is used to deploy a model to a Vertex AI endpoint.",
+        "validationCommand": "gcloud ai endpoints deploy --model=projects/my-project/locations/us-central1/models/my-model --endpoint=projects/my-project/locations/us-central1/endpoints/my-endpoint"
+      },
+      {
+        "questionText": "What is a common method for handling outliers in a dataset before training a machine learning model?",
+        "options": [
+          "Ignoring them",
+          "Replacing them with the median value",
+          "Removing them",
+          "Scaling them"
+        ],
+        "answerIndex": [2],
+        "explanation": "A common method for handling outliers is to remove them from the dataset."
+      },
+      {
+        "questionText": "Which BigQuery function can be used to concatenate two strings?",
+        "options": [
+          "CONCAT()",
+          "JOIN()",
+          "MERGE()",
+          "APPEND()"
+        ],
+        "answerIndex": [0],
+        "explanation": "The CONCAT() function is used to concatenate two strings in BigQuery.",
+        "validationQuery": "SELECT CONCAT('Hello', 'World');"
+      },
+      {
+        "questionText": "How do you create a new table in BigQuery using the bq command-line tool?",
+        "options": [
+          "bq mk table",
+          "bq create table",
+          "bq new table",
+          "bq table create"
+        ],
+        "answerIndex": [0],
+        "explanation": "The command 'bq mk table' is used to create a new table in BigQuery.",
+        "validationCommand": "bq mk --table my_dataset.my_table schema.json"
+      },
+      {
+        "questionText": "Which Python command is used to combine elements in Apache Beam?",
+        "options": [
+          "beam.Combine()",
+          "beam.Group()",
+          "beam.Merge()",
+          "beam.CombinePerKey()"
+        ],
+        "answerIndex": [3],
+        "explanation": "beam.CombinePerKey() is used to combine elements per key in Apache Beam.",
+        "validationCommand": "pcollection.apply(beam.CombinePerKey(sum))"
+      },
+      {
+        "questionText": "How do you load data from Google Sheets into BigQuery?",
+        "options": [
+          "Export the Google Sheets data as CSV and then load into BigQuery",
+          "Use the BigQuery Data Transfer Service",
+          "Manually enter the data in BigQuery",
+          "Use Google Sheets API"
+        ],
+        "answerIndex": [1],
+        "explanation": "The BigQuery Data Transfer Service can be used to load data directly from Google Sheets into BigQuery."
+      },
+      {
+        "questionText": "What is the command to list all BigQuery tables in a dataset?",
+        "options": [
+          "bq ls",
+          "bq show",
+          "bq list",
+          "bq tables"
+        ],
+        "answerIndex": [0],
+        "explanation": "The command 'bq ls' is used to list all tables in a BigQuery dataset.",
+        "validationCommand": "bq ls my_dataset"
+      },
+      {
+        "questionText": "Which function is used to extract the year from a date in BigQuery?",
+        "options": [
+          "EXTRACT_YEAR()",
+          "YEAR()",
+          "EXTRACT()",
+          "GET_YEAR()"
+        ],
+        "answerIndex": [2],
+        "explanation": "The EXTRACT() function is used to extract parts of a date, such as the year, in BigQuery.",
+        "validationQuery": "SELECT EXTRACT(YEAR FROM date_column) FROM dataset.table;"
+      },
+      {
+        "questionText": "Which command is used to delete a BigQuery table?",
+        "options": [
+          "bq delete table",
+          "bq rm",
+          "bq drop table",
+          "bq del"
+        ],
+        "answerIndex": [1],
+        "explanation": "The command 'bq rm' is used to delete a BigQuery table.",
+        "validationCommand": "bq rm -f my_dataset.my_table"
+      },
+      {
+        "questionText": "What is the purpose of the BigQuery ML PREDICT clause?",
+        "options": [
+          "To make predictions using a trained model",
+          "To evaluate the performance of a model",
+          "To train a new model",
+          "To preprocess data before training"
+        ],
+        "answerIndex": [0],
+        "explanation": "The PREDICT clause in BigQuery ML is used to make predictions using a trained model.",
+        "validationQuery": "SELECT * FROM ML.PREDICT(MODEL `project.dataset.model`, (SELECT * FROM `project.dataset.input_table`));"
+      },
+      {
+        "questionText": "Which BigQuery function is used to return the length of a string?",
+        "options": [
+          "LEN()",
+          "LENGTH()",
+          "STRING_LENGTH()",
+          "SIZE()"
+        ],
+        "answerIndex": [1],
+        "explanation": "The LENGTH() function is used to return the length of a string in BigQuery.",
+        "validationQuery": "SELECT LENGTH('Hello World');"
+      },
+      {
+        "questionText": "How do you create a new bucket in Google Cloud Storage using the gcloud command-line tool?",
+        "options": [
+          "gsutil mb",
+          "gcloud storage buckets create",
+          "gsutil create bucket",
+          "gcloud mb bucket"
+        ],
+        "answerIndex": [0],
+        "explanation": "The command 'gsutil mb' is used to create a new bucket in Google Cloud Storage.",
+        "validationCommand": "gsutil mb gs://my_new_bucket/"
+      },
+      {
+        "questionText": "Which Python command is used to write data to a BigQuery table in Apache Beam?",
+        "options": [
+          "beam.io.WriteToBigQuery()",
+          "beam.io.BigQuerySink()",
+          "beam.io.bigquery.Table()",
+          "beam.io.BigQuery.Write()"
+        ],
+        "answerIndex": [0],
+        "explanation": "beam.io.WriteToBigQuery() is used to write data to a BigQuery table in Apache Beam.",
+        "validationCommand": "pcollection | 'Write to BigQuery' >> beam.io.WriteToBigQuery(table='project:dataset.table')"
+      }
+    ]
+  }
+}
+
+

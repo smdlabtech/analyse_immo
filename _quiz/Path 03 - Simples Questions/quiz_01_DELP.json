@@ -1,0 +1,497 @@
+{
+  "quiz": {
+    "questions": [
+      {
+        "questionText": "Quel service GCP permet de créer des pipelines de données entièrement gérés ?",
+        "options": [
+          "A. Cloud Dataflow",
+          "B. Cloud Dataproc",
+          "C. Cloud Composer",
+          "D. Cloud Pub/Sub"
+        ],
+        "answerIndex": [0, 2]
+      },
+      {
+        "questionText": "Lequel de ces services GCP est principalement utilisé pour le stockage de données non structurées ?",
+        "options": [
+          "A. Cloud SQL",
+          "B. Cloud Storage",
+          "C. BigQuery",
+          "D. Cloud Spanner"
+        ],
+        "answerIndex": [1]
+      },
+      {
+        "questionText": "Quelle fonctionnalité de BigQuery permet l'analyse de flux de données en temps réel ?",
+        "options": [
+          "A. BigQuery ML",
+          "B. BigQuery GIS",
+          "C. BigQuery BI Engine",
+          "D. BigQuery Streaming"
+        ],
+        "answerIndex": [3]
+      },
+      {
+        "questionText": "Quel service GCP est utilisé pour orchestrer des workflows de données complexes ?",
+        "options": [
+          "A. Cloud Dataflow",
+          "B. Cloud Dataproc",
+          "C. Cloud Composer",
+          "D. Cloud Pub/Sub"
+        ],
+        "answerIndex": [2]
+      },
+      {
+        "questionText": "Dans GCP, lequel des services suivants est un data warehouse sans serveur et évolutif ?",
+        "options": [
+          "A. BigQuery",
+          "B. Cloud SQL",
+          "C. Cloud Bigtable",
+          "D. Cloud Spanner"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel outil GCP est utilisé pour la migration de bases de données ?",
+        "options": [
+          "A. Database Migration Service",
+          "B. Data Transfer Appliance",
+          "C. Transfer Service for On-premises Data",
+          "D. Cloud Storage Transfer Service"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est utilisé pour l'intégration continue et le déploiement continu (CI/CD) ?",
+        "options": [
+          "A. Cloud Build",
+          "B. Cloud Functions",
+          "C. Cloud Run",
+          "D. Cloud Endpoints"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP fournit une infrastructure gérée pour Apache Hadoop et Apache Spark ?",
+        "options": [
+          "A. Cloud Dataproc",
+          "B. Cloud Dataflow",
+          "C. BigQuery",
+          "D. Cloud Pub/Sub"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est conçu pour des traitements analytiques en batch et en flux ?",
+        "options": [
+          "A. Cloud Dataflow",
+          "B. Cloud Dataproc",
+          "C. Cloud Composer",
+          "D. Cloud Pub/Sub"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Dans GCP, lequel des services suivants est une base de données NoSQL à faible latence ?",
+        "options": [
+          "A. Cloud Firestore",
+          "B. Cloud SQL",
+          "C. Cloud Bigtable",
+          "D. Cloud Spanner"
+        ],
+        "answerIndex": [2]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour transférer de grandes quantités de données vers GCP ?",
+        "options": [
+          "A. Cloud Storage Transfer Service",
+          "B. Data Transfer Appliance",
+          "C. Transfer Service for On-premises Data",
+          "D. BigQuery Data Transfer Service"
+        ],
+        "answerIndex": [1]
+      },
+      {
+        "questionText": "Quel service GCP fournit des fonctionnalités d'apprentissage automatique intégrées à SQL ?",
+        "options": [
+          "A. Cloud AutoML",
+          "B. AI Platform",
+          "C. BigQuery ML",
+          "D. TensorFlow"
+        ],
+        "answerIndex": [2]
+      },
+      {
+        "questionText": "Quel service GCP est utilisé pour la gestion des secrets et des clés d'API ?",
+        "options": [
+          "A. Cloud Key Management Service",
+          "B. Cloud IAM",
+          "C. Cloud HSM",
+          "D. Cloud KMS"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Lequel des services suivants est utilisé pour surveiller et diagnostiquer les performances des applications sur GCP ?",
+        "options": [
+          "A. Stackdriver Monitoring",
+          "B. Cloud Trace",
+          "C. Cloud Debugger",
+          "D. Stackdriver Logging"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la meilleure option pour stocker des données structurées dans GCP ?",
+        "options": [
+          "A. Cloud SQL",
+          "B. Cloud Bigtable",
+          "C. Cloud Storage",
+          "D. BigQuery"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est utilisé pour analyser les journaux en temps réel ?",
+        "options": [
+          "A. Stackdriver Logging",
+          "B. BigQuery",
+          "C. Cloud Pub/Sub",
+          "D. Cloud Dataflow"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est recommandé pour l'analyse de grandes quantités de données en streaming ?",
+        "options": [
+          "A. Cloud Pub/Sub",
+          "B. Cloud Dataflow",
+          "C. BigQuery",
+          "D. Cloud Dataproc"
+        ],
+        "answerIndex": [1]
+      },
+      {
+        "questionText": "Lequel des services suivants permet de déployer des applications conteneurisées sans gérer de serveurs ?",
+        "options": [
+          "A. Cloud Functions",
+          "B. Cloud Run",
+          "C. Google Kubernetes Engine",
+          "D. App Engine"
+        ],
+        "answerIndex": [1]
+      },
+      {
+        "questionText": "Quel service GCP est utilisé pour gérer et orchestrer des conteneurs Docker à grande échelle ?",
+        "options": [
+          "A. Cloud Run",
+          "B. Google Kubernetes Engine",
+          "C. Cloud Functions",
+          "D. App Engine"
+        ],
+        "answerIndex": [1]
+      },
+      {
+        "questionText": "Quelle est la meilleure pratique pour sécuriser les données au repos sur GCP ?",
+        "options": [
+          "A. Utiliser des clés de chiffrement gérées par le client (CMEK)",
+          "B. Utiliser des clés de chiffrement gérées par Google (GMEK)",
+          "C. Activer la vérification en deux étapes pour les comptes utilisateurs",
+          "D. Restreindre l'accès via des politiques IAM"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP fournit des API pour le traitement naturel du langage (NLP) ?",
+        "options": [
+          "A. Cloud Speech-to-Text",
+          "B. Cloud Translation",
+          "C. Cloud Natural Language",
+          "D. Cloud Text-to-Speech"
+        ],
+        "answerIndex": [2]
+      },
+      {
+        "questionText": "Quel outil GCP permet de visualiser des métriques et des journaux de performances ?",
+        "options": [
+          "A. Stackdriver Monitoring",
+          "B. Stackdriver Trace",
+          "C. Stackdriver Debugger",
+          "D. Stackdriver Profiler"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est utilisé pour automatiser le déploiement des infrastructures ?",
+        "options": [
+          "A. Deployment Manager",
+          "B. Cloud Build",
+          "C. Cloud Scheduler",
+          "D. Cloud Tasks"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Lequel des services suivants est utilisé pour la transformation et l'enrichissement des données en temps réel ?",
+        "options": [
+          "A. Cloud Dataflow",
+          "B. Cloud Dataprep",
+          "C. Cloud Dataproc",
+          "D. BigQuery"
+        ],
+        "answerIndex": [1]
+      },
+      {
+        "questionText": "Quel service GCP est recommandé pour les analyses de données géospatiales ?",
+        "options": [
+          "A. BigQuery GIS",
+          "B. Cloud Bigtable",
+          "C. Cloud Spanner",
+          "D. Cloud SQL"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet d'exécuter du code en réponse à des événements sans provisionner ou gérer des serveurs ?",
+        "options": [
+          "A. Cloud Functions",
+          "B. Cloud Run",
+          "C. App Engine",
+          "D. Google Kubernetes Engine"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel est le rôle principal de Cloud Pub/Sub dans une architecture de données GCP ?",
+        "options": [
+          "A. Stocker des données non structurées",
+          "B. Orchestrer des workflows de données",
+          "C. Transmettre des messages et des événements",
+          "D. Analyser des données en batch"
+        ],
+        "answerIndex": [2]
+      },
+      {
+        "questionText": "Quel service GCP est idéal pour des analyses ad hoc et l'exploration de grandes quantités de données ?",
+        "options": [
+          "A. BigQuery",
+          "B. Cloud SQL",
+          "C. Cloud Spanner",
+          "D. Cloud Bigtable"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des modèles de machine learning à partir de données structurées en utilisant SQL ?",
+        "options": [
+          "A. BigQuery ML",
+          "B. Cloud AutoML",
+          "C. AI Platform",
+          "D. TensorFlow"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est conçu pour la gestion et l'analyse des métadonnées de données massives ?",
+        "options": [
+          "A. Data Catalog",
+          "B. BigQuery",
+          "C. Cloud Dataproc",
+          "D. Cloud Dataflow"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP offre une solution de base de données relationnelle entièrement managée ?",
+        "options": [
+          "A. Cloud SQL",
+          "B. Cloud Bigtable",
+          "C. Cloud Spanner",
+          "D. BigQuery"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel outil GCP permet de visualiser, explorer et partager des données avec des tableaux de bord et des rapports ?",
+        "options": [
+          "A. Data Studio",
+          "B. Looker",
+          "C. BigQuery BI Engine",
+          "D. Google Sheets"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est conçu pour l'analyse des performances des applications en production ?",
+        "options": [
+          "A. Stackdriver Trace",
+          "B. Stackdriver Debugger",
+          "C. Stackdriver Profiler",
+          "D. Stackdriver Monitoring"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet d'importer des données dans BigQuery à partir de sources multiples ?",
+        "options": [
+          "A. BigQuery Data Transfer Service",
+          "B. Cloud Dataflow",
+          "C. Cloud Dataprep",
+          "D. Cloud Pub/Sub"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel est le principal avantage de l'utilisation de Cloud Dataprep ?",
+        "options": [
+          "A. Préparation et nettoyage des données",
+          "B. Orchestration de workflows",
+          "C. Exécution de requêtes SQL",
+          "D. Stockage de données non structurées"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des solutions de data warehousing sans gérer de serveurs ?",
+        "options": [
+          "A. BigQuery",
+          "B. Cloud SQL",
+          "C. Cloud Spanner",
+          "D. Cloud Storage"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est utilisé pour automatiser et orchestrer des pipelines de données complexes ?",
+        "options": [
+          "A. Cloud Composer",
+          "B. Cloud Dataflow",
+          "C. Cloud Dataproc",
+          "D. Cloud Pub/Sub"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de gérer les secrets et les clés de chiffrement ?",
+        "options": [
+          "A. Cloud Key Management Service",
+          "B. Cloud IAM",
+          "C. Cloud HSM",
+          "D. Cloud KMS"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel outil GCP permet de surveiller et de gérer les coûts des ressources cloud ?",
+        "options": [
+          "A. Cloud Billing",
+          "B. Cloud Monitoring",
+          "C. Cloud Trace",
+          "D. Cloud Profiler"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est conçu pour la gestion des workflows et l'automatisation des tâches répétitives ?",
+        "options": [
+          "A. Cloud Composer",
+          "B. Cloud Scheduler",
+          "C. Cloud Tasks",
+          "D. Cloud Functions"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est utilisé pour analyser des données IoT en temps réel ?",
+        "options": [
+          "A. Cloud IoT Core",
+          "B. Cloud Dataflow",
+          "C. Cloud Pub/Sub",
+          "D. BigQuery"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de développer des applications cloud natives avec des microservices ?",
+        "options": [
+          "A. Google Kubernetes Engine",
+          "B. App Engine",
+          "C. Cloud Run",
+          "D. Cloud Functions"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est utilisé pour créer des tableaux de bord en temps réel et des visualisations interactives ?",
+        "options": [
+          "A. Data Studio",
+          "B. Looker",
+          "C. Google Sheets",
+          "D. BigQuery"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est idéal pour des traitements par lots de données massives ?",
+        "options": [
+          "A. Cloud Dataflow",
+          "B. Cloud Dataproc",
+          "C. Cloud Composer",
+          "D. BigQuery"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet l'intégration de données entre différentes sources et destinations ?",
+        "options": [
+          "A. Cloud Dataflow",
+          "B. Cloud Pub/Sub",
+          "C. Cloud Data Transfer Service",
+          "D. Cloud Dataprep"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP fournit des API pour l'identification et l'authentification des utilisateurs ?",
+        "options": [
+          "A. Cloud Identity",
+          "B. Cloud IAM",
+          "C. Cloud Directory",
+          "D. Cloud Security Scanner"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel outil GCP est utilisé pour le provisionnement, la supervision et la sécurité des ressources cloud ?",
+        "options": [
+          "A. Deployment Manager",
+          "B. Cloud Shell",
+          "C. Cloud Console",
+          "D. Cloud SDK"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est utilisé pour le déploiement et la gestion de conteneurs Kubernetes ?",
+        "options": [
+          "A. Google Kubernetes Engine",
+          "B. Cloud Run",
+          "C. Cloud Functions",
+          "D. App Engine"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP fournit des fonctionnalités de surveillance, de journalisation et de diagnostic unifiées pour les applications sur le cloud ?",
+        "options": [
+          "A. Stackdriver",
+          "B. Cloud Monitoring",
+          "C. Cloud Trace",
+          "D. Cloud Logging"
+        ],
+        "answerIndex": [0]
+      }
+    ]
+  }
+}
+

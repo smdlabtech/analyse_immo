@@ -1,0 +1,208 @@
+{
+  "quiz": {
+    "instructions": "This quiz contains 20 multiple-choice questions covering various topics related to Google Cloud Platform's Data Engineer certification. Answer all questions to get your final score.",
+    "questions": [
+      {
+        "questionText": "What is the recommended way to clean and preprocess data in BigQuery?",
+        "options": [
+          "Using SQL directly in the BigQuery console",
+          "Using BigQuery Data Transfer Service",
+          "Using Google Sheets",
+          "Using Dataflow for ETL processes"
+        ],
+        "answerIndex": [0, 3],
+        "explanation": "Cleaning and preprocessing can be done using SQL directly in BigQuery or using Dataflow for more complex ETL processes.",
+        "validationQuery": "SELECT column FROM dataset.table WHERE condition;"
+      },
+      {
+        "questionText": "Which SQL command would you use to remove duplicates in BigQuery?",
+        "options": [
+          "SELECT DISTINCT",
+          "GROUP BY",
+          "DELETE",
+          "REPLACE"
+        ],
+        "answerIndex": [0],
+        "explanation": "The SELECT DISTINCT command is used to remove duplicates from the result set.",
+        "validationQuery": "SELECT DISTINCT column FROM dataset.table;"
+      },
+      {
+        "questionText": "How do you create a logistic regression model in BigQuery ML?",
+        "options": [
+          "ML.CREATE_MODEL",
+          "ML.TRAIN",
+          "ML.LOGISTIC_REGRESSION",
+          "ML.CREATE_LOGISTIC_MODEL"
+        ],
+        "answerIndex": [1],
+        "explanation": "ML.TRAIN is used to create and train a logistic regression model in BigQuery ML.",
+        "validationQuery": "CREATE MODEL `project.dataset.model` OPTIONS(model_type='logistic_reg') AS SELECT * FROM `project.dataset.table`;"
+      },
+      {
+        "questionText": "Which command is used to deploy a Dataflow job from a template?",
+        "options": [
+          "gcloud dataflow jobs submit template",
+          "gcloud dataflow jobs run",
+          "gcloud dataflow jobs deploy",
+          "gcloud dataflow pipelines run"
+        ],
+        "answerIndex": [0],
+        "explanation": "The command 'gcloud dataflow jobs submit template' is used to deploy a Dataflow job from a template.",
+        "validationCommand": "gcloud dataflow jobs submit template --template-file-gcs-location=gs://my-bucket/template --parameters inputFile=gs://my-bucket/input.csv,outputTable=my-project:dataset.table"
+      },
+      {
+        "questionText": "Which Python command is used to apply a ParDo transform in Apache Beam?",
+        "options": [
+          "beam.ParDo()",
+          "beam.Apply()",
+          "beam.DoFn()",
+          "beam.Transform()"
+        ],
+        "answerIndex": [0],
+        "explanation": "beam.ParDo() is used to apply a ParDo transform in Apache Beam.",
+        "validationCommand": "pcollection.apply(beam.ParDo(MyDoFn()))"
+      },
+      {
+        "questionText": "What is the purpose of feature engineering in machine learning?",
+        "options": [
+          "To clean the dataset",
+          "To create new features that make machine learning algorithms work better",
+          "To split the dataset into training and testing sets",
+          "To select the model type"
+        ],
+        "answerIndex": [1],
+        "explanation": "Feature engineering involves creating new features from raw data to improve the performance of machine learning models."
+      },
+      {
+        "questionText": "Which BigQuery function is used to calculate the average of a numeric column?",
+        "options": [
+          "AVG()",
+          "SUM()",
+          "MEAN()",
+          "MEDIAN()"
+        ],
+        "answerIndex": [0],
+        "explanation": "The AVG() function is used to calculate the average of a numeric column in BigQuery.",
+        "validationQuery": "SELECT AVG(numeric_column) FROM dataset.table;"
+      },
+      {
+        "questionText": "How do you evaluate a machine learning model in BigQuery ML?",
+        "options": [
+          "ML.EVALUATE",
+          "ML.TEST",
+          "ML.CALCULATE",
+          "ML.PREDICT"
+        ],
+        "answerIndex": [0],
+        "explanation": "ML.EVALUATE is used to evaluate a machine learning model in BigQuery ML.",
+        "validationQuery": "SELECT * FROM ML.EVALUATE(MODEL project.dataset.model, (SELECT * FROM dataset.test_table));"
+      },
+      {
+        "questionText": "Which command would you use to create a new Vertex AI endpoint?",
+        "options": [
+          "gcloud ai endpoints create",
+          "gcloud ai models create",
+          "gcloud ai endpoints deploy",
+          "gcloud ai models deploy"
+        ],
+        "answerIndex": [0],
+        "explanation": "The command 'gcloud ai endpoints create' is used to create a new Vertex AI endpoint.",
+        "validationCommand": "gcloud ai endpoints create --region=us-central1 --display-name=my-endpoint"
+      },
+      {
+        "questionText": "What is the best practice for handling null values in a dataset before training a machine learning model?",
+        "options": [
+          "Removing rows with null values",
+          "Replacing null values with the mean or median",
+          "Using the default value",
+          "Ignoring null values"
+        ],
+        "answerIndex": [0, 1],
+        "explanation": "Removing rows with null values or replacing them with the mean or median are common practices for handling null values in a dataset."
+      },
+      {
+        "questionText": "Which BigQuery function can be used to count the number of unique values in a column?",
+        "options": [
+          "COUNT()",
+          "COUNTIF()",
+          "COUNTUNIQUE()",
+          "COUNT(DISTINCT)"
+        ],
+        "answerIndex": [3],
+        "explanation": "The COUNT(DISTINCT) function is used to count the number of unique values in a column.",
+        "validationQuery": "SELECT COUNT(DISTINCT column) FROM dataset.table;"
+      },
+      {
+        "questionText": "How do you create a new dataset in BigQuery using the bq command-line tool?",
+        "options": [
+          "bq mk dataset",
+          "bq create dataset",
+          "bq new dataset",
+          "bq dataset create"
+        ],
+        "answerIndex": [0],
+        "explanation": "The command 'bq mk dataset' is used to create a new dataset in BigQuery.",
+        "validationCommand": "bq mk my_new_dataset"
+      },
+      {
+        "questionText": "Which Python command is used to group elements in Apache Beam?",
+        "options": [
+          "beam.GroupBy()",
+          "beam.Combine()",
+          "beam.GroupByKey()",
+          "beam.Aggregate()"
+        ],
+        "answerIndex": [2],
+        "explanation": "beam.GroupByKey() is used to group elements by key in Apache Beam.",
+        "validationCommand": "pcollection.apply(beam.GroupByKey())"
+      },
+      {
+        "questionText": "How do you load data from Google Cloud Storage into BigQuery using the web UI?",
+        "options": [
+          "Click on 'Create Table' and select 'Google Cloud Storage' as the source",
+          "Run a SQL query to load the data",
+          "Use the bq command-line tool",
+          "Use the BigQuery Data Transfer Service"
+        ],
+        "answerIndex": [0],
+        "explanation": "In the BigQuery web UI, you can click on 'Create Table' and select 'Google Cloud Storage' as the source to load data."
+      },
+      {
+        "questionText": "What is the command to list all BigQuery datasets in a project?",
+        "options": [
+          "bq ls",
+          "bq show",
+          "bq list",
+          "bq datasets"
+        ],
+        "answerIndex": [0],
+        "explanation": "The command 'bq ls' is used to list all datasets in a BigQuery project.",
+        "validationCommand": "bq ls my_project"
+      },
+      {
+        "questionText": "Which function is used to create a new column with transformed data in BigQuery?",
+        "options": [
+          "CREATE COLUMN",
+          "SELECT AS",
+          "GENERATE COLUMN",
+          "ALTER TABLE"
+        ],
+        "answerIndex": [1],
+        "explanation": "The SELECT AS clause is used to create a new column with transformed data in BigQuery.",
+        "validationQuery": "SELECT column1, column2, column1 + column2 AS new_column FROM dataset.table;"
+      },
+      {
+        "questionText": "Which command is used to delete a BigQuery dataset?",
+        "options": [
+          "bq delete dataset",
+          "bq rm",
+          "bq drop",
+          "bq del"
+        ],
+        "answerIndex": [1],
+        "explanation": "The command 'bq rm' is used to delete a BigQuery dataset.",
+        "validationCommand": "bq rm -r -f my_project:my_dataset"
+      }
+    ]
+  }
+}

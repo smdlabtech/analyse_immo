@@ -1,0 +1,32 @@
+{
+  "quiz": {
+    "title": "Supporting ML Operations and Data Sharing in Google Cloud",
+    "score": 100,
+    "passingScore": 50,
+    "congratulationsMessage": "Congratulations! You passed this assessment.",
+    "questions": [
+      {
+        "questionText": "Cymbal Retail has a team of ML engineers that builds and maintains machine learning models. As a Professional Data Engineer, how will you support this team?",
+        "options": [
+          "A. Finalize the type of machine learning model to use.",
+          "B. Identify what type of data is required to build ML models.",
+          "C. Keep on improving the machine learning model after initial deployment.",
+          "D. Process and prepare existing data to enable feature engineering."
+        ],
+        "answerIndex": [3],
+        "explanation": "Supporting ML engineers by processing and preparing data for feature engineering is crucial as it enables them to effectively build and tune their models."
+      },
+      {
+        "questionText": "You need to share inventory data from Cymbal Retail with a partner company that uses BigQuery to store and analyze its data. What tool can you use to securely and efficiently share the data?",
+        "options": [
+          "A. Data Catalog",
+          "B. Analytics Hub",
+          "C. Data Loss Prevention (DLP)",
+          "D. Cloud Storage"
+        ],
+        "answerIndex": [1],
+        "explanation": "Analytics Hub allows secure and efficient sharing of data across organizational boundaries, making it ideal for sharing inventory data with a partner company using BigQuery."
+      }
+    ]
+  }
+}

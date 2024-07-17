@@ -1,0 +1,33 @@
+{
+  "quiz": {
+    "title": "Google Cloud Data Protection and Security Best Practices Quiz",
+    "score": 100,
+    "passingScore": 50,
+    "questions": [
+      {
+        "questionText": "There are a number of common challenges encountered by data engineers. Which of the following approaches best address the challenge of data accuracy and quality?",
+        "options": [
+          "A. Consolidate disparate datasets and data formats into a data lake.",
+          "B. Optimize queries for performance.",
+          "C. Manage server and cluster capacity and make sure that enough capacity exists to carry out the ETL jobs.",
+          "D. Build ETL pipelines to clean and transform data that is then stored in a data warehouse."
+        ],
+        "answerIndex": [3],
+        "explanation": "Building ETL pipelines to clean and transform data ensures data accuracy and quality by processing the data to remove errors and inconsistencies before it is stored in a data warehouse.",
+        "links": []
+      },
+      {
+        "questionText": "Which of the following statements are true? (Choose TWO)",
+        "options": [
+          "A. BigQuery is a row-based storage.",
+          "B. Cloud SQL is optimized for high-throughput writes.",
+          "C. BigQuery is optimized for high-read data.",
+          "D. Cloud SQL is optimized for high-read data."
+        ],
+        "answerIndex": [1, 2],
+        "explanation": "Cloud SQL is optimized for high-throughput writes, making it suitable for transactional workloads. BigQuery is optimized for high-read data, making it ideal for analytical workloads.",
+        "links": []
+      }
+    ]
+  }
+}

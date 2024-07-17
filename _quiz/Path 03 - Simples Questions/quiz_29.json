@@ -1,0 +1,278 @@
+{
+  "quiz": {
+    "instructions": "This quiz contains 20 multiple-choice questions covering various topics related to Google Cloud Platform's Data Engineer certification. Answer all questions to get your final score.",
+    "questions": [
+      {
+        "questionText": "What is the purpose of the 'PARTITION BY' clause in a BigQuery SQL query?",
+        "options": [
+          "To divide the data into partitions for parallel processing",
+          "To limit the number of rows processed",
+          "To specify the order of rows",
+          "To filter data before processing"
+        ],
+        "answerIndex": [0],
+        "explanation": "The 'PARTITION BY' clause is used to divide the data into partitions for parallel processing.",
+        "validationQuery": "SELECT col1, col2, SUM(col3) OVER (PARTITION BY col1) FROM my_table;"
+      },
+      {
+        "questionText": "Which machine learning model type can be created using BigQuery ML?",
+        "options": [
+          "Linear Regression",
+          "Decision Trees",
+          "Support Vector Machines",
+          "Convolutional Neural Networks"
+        ],
+        "answerIndex": [0],
+        "explanation": "BigQuery ML supports creating linear regression models among other types of models.",
+        "validationQuery": "CREATE OR REPLACE MODEL my_dataset.my_model OPTIONS (model_type='linear_reg') AS SELECT * FROM my_table;"
+      },
+      {
+        "questionText": "In what order should you validate the processes of data analysis in BigQuery?",
+        "options": [
+          "Cleaning, Transformation, Loading, Analysis",
+          "Loading, Transformation, Cleaning, Analysis",
+          "Transformation, Loading, Cleaning, Analysis",
+          "Analysis, Loading, Cleaning, Transformation"
+        ],
+        "answerIndex": [0],
+        "explanation": "The correct order is Cleaning, Transformation, Loading, Analysis to ensure data quality and integrity."
+      },
+      {
+        "questionText": "Which gcloud command is used to deploy a Dataflow job?",
+        "options": [
+          "gcloud dataflow jobs create",
+          "gcloud dataflow jobs run",
+          "gcloud dataflow pipelines launch",
+          "gcloud dataflow pipelines run"
+        ],
+        "answerIndex": [1],
+        "explanation": "The 'gcloud dataflow jobs run' command is used to deploy a Dataflow job.",
+        "validationCommand": "gcloud dataflow jobs run my-job --gcs-location=gs://my-bucket/templates/my-template"
+      },
+      {
+        "questionText": "Which Python Apache Beam function is used to read data from BigQuery?",
+        "options": [
+          "beam.io.ReadFromBigQuery()",
+          "beam.io.BigQuerySource()",
+          "beam.io.Read()",
+          "beam.io.bigquery.Read()"
+        ],
+        "answerIndex": [0],
+        "explanation": "beam.io.ReadFromBigQuery() is used to read data from BigQuery in Apache Beam.",
+        "validationCommand": "pcollection = pipeline | 'Read from BigQuery' >> beam.io.ReadFromBigQuery(query='SELECT * FROM my_table')"
+      },
+      {
+        "questionText": "What is a typical use case for using BigQuery ML for the New York Taxi Trips dataset?",
+        "options": [
+          "Predicting trip durations",
+          "Storing trip records",
+          "Visualizing trip routes",
+          "Cleaning trip data"
+        ],
+        "answerIndex": [0],
+        "explanation": "BigQuery ML can be used to predict trip durations based on historical trip data."
+      },
+      {
+        "questionText": "Which feature engineering technique is commonly used on the New York Taxi Trips dataset?",
+        "options": [
+          "One-hot encoding for categorical features",
+          "Normalization of numerical features",
+          "Tokenization of text features",
+          "Image augmentation"
+        ],
+        "answerIndex": [0, 1],
+        "explanation": "One-hot encoding for categorical features and normalization of numerical features are common feature engineering techniques."
+      },
+      {
+        "questionText": "How do you evaluate a machine learning model in BigQuery ML?",
+        "options": [
+          "Using the EVALUATE statement",
+          "Using the ML.EVALUATE function",
+          "Using the MODEL.EVALUATE function",
+          "Using the PREDICT statement"
+        ],
+        "answerIndex": [1],
+        "explanation": "The ML.EVALUATE function is used to evaluate a machine learning model in BigQuery ML.",
+        "validationQuery": "SELECT * FROM ML.EVALUATE(MODEL `project.dataset.model`, (SELECT * FROM `project.dataset.eval_data`));"
+      },
+      {
+        "questionText": "Which SQL function in BigQuery is used to remove duplicate rows from a result set?",
+        "options": [
+          "DISTINCT",
+          "UNIQUE",
+          "REMOVE_DUPLICATES",
+          "DELETE_DUPLICATES"
+        ],
+        "answerIndex": [0],
+        "explanation": "The DISTINCT function is used to remove duplicate rows from a result set.",
+        "validationQuery": "SELECT DISTINCT * FROM my_table;"
+      },
+      {
+        "questionText": "Which command is used to set up a new Dataproc cluster?",
+        "options": [
+          "gcloud dataproc clusters create",
+          "gcloud dataproc clusters new",
+          "gcloud dataproc clusters setup",
+          "gcloud dataproc clusters init"
+        ],
+        "answerIndex": [0],
+        "explanation": "The 'gcloud dataproc clusters create' command is used to set up a new Dataproc cluster.",
+        "validationCommand": "gcloud dataproc clusters create my-cluster --region=us-central1 --zone=us-central1-a"
+      },
+      {
+        "questionText": "Which function is used to clean missing data in BigQuery?",
+        "options": [
+          "IFNULL()",
+          "NULLIF()",
+          "COALESCE()",
+          "ISNULL()"
+        ],
+        "answerIndex": [2],
+        "explanation": "The COALESCE() function is used to return the first non-null value in a list of values, which can be used to clean missing data.",
+        "validationQuery": "SELECT COALESCE(column1, 'default_value') FROM my_table;"
+      },
+      {
+        "questionText": "Which service in GCP is best suited for running SQL queries on large datasets?",
+        "options": [
+          "BigQuery",
+          "Cloud SQL",
+          "Cloud Datastore",
+          "Firestore"
+        ],
+        "answerIndex": [0],
+        "explanation": "BigQuery is designed for running SQL queries on large datasets."
+      },
+      {
+        "questionText": "How do you export a BigQuery table to Google Cloud Storage?",
+        "options": [
+          "bq extract",
+          "bq export",
+          "gcloud bq extract",
+          "gcloud bq export"
+        ],
+        "answerIndex": [0],
+        "explanation": "The 'bq extract' command is used to export a BigQuery table to Google Cloud Storage.",
+        "validationCommand": "bq extract --destination_format=CSV my_dataset.my_table gs://my_bucket/my_file.csv"
+      },
+      {
+        "questionText": "Which BigQuery function is used to concatenate strings?",
+        "options": [
+          "CONCAT()",
+          "JOIN()",
+          "MERGE()",
+          "STRING_JOIN()"
+        ],
+        "answerIndex": [0],
+        "explanation": "The CONCAT() function is used to concatenate strings in BigQuery.",
+        "validationQuery": "SELECT CONCAT('Hello', ' ', 'World');"
+      },
+      {
+        "questionText": "Which gcloud command is used to list all active Dataflow jobs?",
+        "options": [
+          "gcloud dataflow jobs list",
+          "gcloud dataflow jobs active",
+          "gcloud dataflow jobs show",
+          "gcloud dataflow jobs status"
+        ],
+        "answerIndex": [0],
+        "explanation": "The 'gcloud dataflow jobs list' command is used to list all active Dataflow jobs.",
+        "validationCommand": "gcloud dataflow jobs list --status=active"
+      },
+      {
+        "questionText": "How do you create a new dataset in BigQuery using the bq command-line tool?",
+        "options": [
+          "bq mk",
+          "bq create dataset",
+          "bq add dataset",
+          "bq new dataset"
+        ],
+        "answerIndex": [0],
+        "explanation": "The 'bq mk' command is used to create a new dataset in BigQuery.",
+        "validationCommand": "bq mk my_new_dataset"
+      },
+      {
+        "questionText": "Which Python Apache Beam function is used to write data to Google Cloud Storage?",
+        "options": [
+          "beam.io.WriteToText()",
+          "beam.io.WriteToGCS()",
+          "beam.io.WriteToStorage()",
+          "beam.io.Write()"
+        ],
+        "answerIndex": [0],
+        "explanation": "beam.io.WriteToText() is used to write data to Google Cloud Storage in Apache Beam.",
+        "validationCommand": "pcollection | 'Write to GCS' >> beam.io.WriteToText('gs://my_bucket/my_output')"
+      },
+      {
+        "questionText": "Which command is used to start a new Dataplex task?",
+        "options": [
+          "gcloud dataplex tasks create",
+          "gcloud dataplex tasks run",
+          "gcloud dataplex tasks start",
+		  "gcloud dataplex tasks execute"
+		],
+		"answerIndex": [0],
+		"explanation": "The 'gcloud dataplex tasks create' command is used to start a new Dataplex task.",
+		"validationCommand": "gcloud dataplex tasks create my-task --location=us-central1 --type=notebook --notebook=gs://my_bucket/my_notebook.ipynb"
+	  },
+	  {
+		"questionText": "Which BigQuery SQL function is used to create an array from a subquery?",
+		"options": [
+		  "ARRAY()",
+		  "ARRAY_AGG()",
+		  "ARRAY_CONSTRUCT()",
+		  "ARRAY_MERGE()"
+		],
+		"answerIndex": [1],
+		"explanation": "The ARRAY_AGG() function is used to create an array from a subquery in BigQuery.",
+		"validationQuery": "SELECT ARRAY_AGG(column1) FROM my_table;"
+	  },
+	  {
+		"questionText": "Which feature is often used for feature engineering in the New York Taxi Trips dataset?",
+		"options": [
+		  "Trip distance",
+		  "Pickup location",
+		  "Dropoff location",
+		  "Passenger count"
+		],
+		"answerIndex": [0, 1, 2],
+		"explanation": "Trip distance, pickup location, and dropoff location are often used for feature engineering in the New York Taxi Trips dataset."
+	  },
+	  {
+		"questionText": "Which SQL clause in BigQuery is used to filter rows before aggregation?",
+		"options": [
+		  "WHERE",
+		  "HAVING",
+		  "FILTER",
+		  "QUALIFY"
+		],
+		"answerIndex": [0],
+		"explanation": "The WHERE clause is used to filter rows before aggregation in BigQuery.",
+		"validationQuery": "SELECT column1, SUM(column2) FROM my_table WHERE column3 = 'value' GROUP BY column1;"
+	  },
+	  {
+		"questionText": "Which command is used to schedule a recurring Dataflow job?",
+		"options": [
+		  "gcloud scheduler jobs create",
+		  "gcloud scheduler jobs run",
+		  "gcloud dataflow jobs schedule",
+		  "gcloud scheduler jobs set"
+		],
+		"answerIndex": [0],
+		"explanation": "The 'gcloud scheduler jobs create' command is used to schedule a recurring Dataflow job.",
+		"validationCommand": "gcloud scheduler jobs create pubsub my-job --schedule='0 * * * *' --topic=my-topic --message-body='{}'"
+	  },
+	  {
+		"questionText": "Which BigQuery function is used to split a string into an array of substrings?",
+		"options": [
+		  "SPLIT()",
+		  "STRING_SPLIT()",
+		  "ARRAY_SPLIT()",
+		  "STRING_TO_ARRAY()"
+		],
+		"answerIndex": [0],
+		"explanation": "The SPLIT() function is used to split a string into an array of substrings in BigQuery.",
+		"validationQuery": "SELECT SPLIT('a,b,c', ',');"
+	  }
+	]
+  }
+}

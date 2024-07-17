@@ -1,0 +1,59 @@
+{
+  "quiz": {
+    "title": "Google Cloud Platform Advanced Scenario-Based Quiz",
+    "score": 100,
+    "questions": [
+
+		{
+		"questionText": "What does 'On-prem' refer to in IT terminology?",
+		"options": [
+			"On premises, within the company's own facilities",
+			"In the cloud",
+			"Third-party hosted services",
+			"Offshore IT services"
+		],
+		"answerIndex": [0],
+		"explanation": "'On-prem' is short for 'on premises,' which means the organization's infrastructure is physically located within its own facilities.",
+		"links": []
+		},
+		{
+		"questionText": "What is a common example of a cloud service provider?",
+		"options": [
+			"Ubisoft",
+			"GCP",
+			"Adobe",
+			"Adobe",
+			"SAP"
+		],
+		"answerIndex": [1],
+		"explanation": "Google Cloud Platform (GCP) is one of the major cloud service providers, alongside AWS and Azure.",
+		"links": []
+		},
+		
+		{
+		"questionText": "What are relational databases known for?",
+		"options": [
+			"Flexible schema design",
+			"Lack of structured query language",
+			"Highly structured and standardized format",
+			"Best for storing unstructured data"
+		],
+		"answerIndex": [2],
+		"explanation": "Relational databases are known for their highly structured and standardized format, containing tables with rows and columns, and emphasizing data integrity and consistency.",
+		"links": []
+		},
+		{
+		"questionText": "Which of the following is NOT a relational database?",
+		"options": [
+			"Oracle",
+			"PostgreSQL",
+			"MongoDB",
+			"Microsoft SQL Server"
+		],
+		"answerIndex": [2],
+		"explanation": "MongoDB is a document-oriented database, which is a type of NoSQL database, not a relational database.",
+		"links": []
+		}
+    ]
+  }
+}

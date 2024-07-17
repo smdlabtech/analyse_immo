@@ -1,0 +1,151 @@
+{
+  "quiz": {
+    "title": "Google Cloud Platform Scenario-Based Quiz",
+    "score": 100,
+    "questions": [
+      {
+        "questionText": "Every employee of your company has a Google account. Your operational team needs to manage a large number of instances on Compute Engine. Each member of this team needs only administrative access to the servers. Your security team wants to ensure that the deployment of credentials is operationally efficient and must be able to determine who accessed a given instance. What should you do?",
+        "options": [
+          "A. Generate a new SSH key pair. Give the private key to each member of your team. Configure the public key in the metadata of each instance.",
+          "B. Ask each member of the team to generate a new SSH key pair and to send you their public key. Use a configuration management tool to deploy those keys on each instance.",
+          "C. Ask each member of the team to generate a new SSH key pair and to add the public key to their Google account. Grant the `compute.osAdminLogin` role to the Google group corresponding to this team.",
+          "D. Generate a new SSH key pair. Give the private key to each member of your team. Configure the public key as a project-wide public SSH key in your Cloud Platform project and allow project-wide public SSH keys on each instance."
+        ],
+        "answerIndex": [2],
+        "explanation": "C is the most appropriate. In this option, each team member generates their own SSH key pair and adds the public key to their Google account. By granting the `compute.osAdminLogin` role to the corresponding Google group for this team, security is enhanced, and operational efficiency is improved. This setup also allows precise tracking of which member accessed which instance.",
+        "links": [
+          "https://cloud.google.com/compute/docs/instances/managing-instance-access",
+          "https://www.itexamslab.com/google/associate-cloud-engineer-dumps.html"
+        ]
+      },
+      {
+        "questionText": "You need to create a custom VPC with a single subnet. The subnet's range must be as large as possible. Which range should you use?",
+        "options": [
+          "A. 0.0.0.0/0",
+          "B. 10.0.0.0/8",
+          "C. 172.16.0.0/12",
+          "D. 192.168.0.0/16"
+        ],
+        "answerIndex": [1],
+        "explanation": "The best option is B. 10.0.0.0/8. This is because the `/8` in `10.0.0.0/8` denotes that only the first 8 bits (out of 32 bits in an IPv4 address) are reserved for identifying the network part of the address. The remaining 24 bits are available for host addresses within the network, which makes the subnet range as large as possible. Option A (`0.0.0.0/0`) represents all possible IPv4 addresses, which is not a valid or safe range for a single subnet. Options C (`172.16.0.0/12`) and D (`192.168.0.0/16`) have more bits reserved for the network part of the address, which leaves fewer bits for host addresses within the network, thus making the subnet range smaller than `10.0.0.0/8`. Therefore, option B is the best choice for a subnet with the largest possible range.",
+        "links": [
+          "https://www.udemy.com/course/google-cloud-associate-engineer-exam-practice-tests/?referralCode=810D02D4A159FC3E36CC&couponCode=LETSLEARNNOWPP"
+        ]
+      },
+      {
+        "questionText": "You want to select and configure a cost-effective solution for relational data on Google Cloud Platform. You are working with a small set of operational data in one geographic location. You need to support point-in-time recovery. What should you do?",
+        "options": [
+          "A. Select Cloud SQL (MySQL). Verify that the enable binary logging option is selected.",
+          "B. Select Cloud SQL (MySQL). Select the create failover replicas option.",
+          "C. Select Cloud Spanner. Set up your instance with 2 nodes.",
+          "D. Select Cloud Spanner. Set up your instance as multi-regional."
+        ],
+        "answerIndex": [0],
+        "explanation": "You must enable binary logging to use point-in-time recovery. Enabling binary logging causes a slight reduction in write performance. Correct answer is A. Cloud SQL is a fully-managed relational database service that supports MySQL, PostgreSQL, and SQL Server. It offers high availability, automatic backups, and point-in-time recovery. By enabling binary logging, you can restore your database to a specific point in time. Cloud SQL is a cost-effective solution for small sets of operational data in one geographic location. It is also a good choice for developers who are familiar.",
+        "links": [
+          "https://cloud.google.com/sql/docs/mysql/backup-recovery/restore",
+          "https://cloud.google.com/sql/docs/mysql/backup-recovery/backups"
+        ]
+      },
+      {
+        "questionText": "You want to configure autohealing for network load balancing for a group of Compute Engine instances that run in multiple zones, using the fewest possible steps. You need to configure re-creation of VMs if they are unresponsive after 3 attempts of 10 seconds each. What should you do?",
+        "options": [
+          "A. Create an HTTP load balancer with a backend configuration that references an existing instance group. Set the health check to healthy (HTTP).",
+          "B. Create an HTTP load balancer with a backend configuration that references an existing instance group. Define a balancing mode and set the maximum RPS to 10.",
+          "C. Create a managed instance group. Set the Autohealing health check to healthy (HTTP).",
+          "D. Create a managed instance group. Verify that the autoscaling setting is on."
+        ],
+        "answerIndex": [3],
+        "explanation": "D. Although creating a managed instance group is correct, enabling autoscaling is not directly related to autohealing and does not meet the specific requirements of the question. The answer is D. this is because by being ambiguous enough. C implies you just set the health check protocol being HTTP and nothing else as an action taken. but D 'verify that the autoscaling setting is on' implies a multi-steps actions including setting the health check protocol to HTTP, set the interval to be 10 and attempts to be 3 and so on. I am shocked GCP test is being such a play of word games, but this is it."
+      },
+      {
+        "questionText": "You are using multiple configurations for gcloud. You want to review the configured Kubernetes Engine cluster of an inactive configuration using the fewest possible steps. What should you do?",
+        "options": [
+          "A. Use gcloud config configurations describe to review the output.",
+          "B. Use gcloud config configurations activate and gcloud config list to review the output.",
+          "C. Use kubectl config get-contexts to review the output.",
+          "D. Use kubectl config use-context and kubectl config view to review the output."
+        ],
+        "answerIndex": [2],
+        "explanation": "Option C, using kubectl config get-contexts, allows you to directly see the available contexts, including those from inactive configurations, and review the Kubernetes Engine clusters associated with them. This approach provides the necessary information efficiently. Option D (Use kubectl config use-context and kubectl config view to review the output) involves changing the active context and viewing the Kubernetes configuration but may involve unnecessary steps.",
+        "links": [
+          "https://medium.com/google-cloud/kubernetes-engine-kubectl-config-b6270d2b656c"
+        ]
+      },
+      {
+        "questionText": "You need to reduce the number of unplanned rollbacks of erroneous production deployments in your company's web hosting platform. Improvement to the QA/ Test processes accomplished an 80% reduction. Which additional two approaches can you take to further reduce the rollbacks? (Choose two.)",
+        "options": [
+          "A. Introduce a green-blue deployment model",
+          "B. Replace the QA environment with canary releases",
+          "C. Fragment the monolithic platform into microservices",
+          "D. Reduce the platform's dependency on relational database systems",
+          "E. Replace the platform's relational database systems with a NoSQL database"
+        ],
+        "answerIndex": [],
+        "explanation": "",
+        "links": [
+          "https://www.examtopics.com/exams/google/professional-cloud-architect/view/2/"
+        ]
+      },
+      {
+        "questionText": "To reduce costs, the Director of Engineering has required all developers to move their development infrastructure resources from on-premises virtual machines (VMs) to Google Cloud Platform. These resources go through multiple start/stop events during the day and require state to persist. You have been asked to design the process of running a development environment in Google Cloud while providing cost visibility to the finance department. Which two steps should you take? (Choose two.)",
+        "options": [
+          "A. Use the --no-auto-delete flag on all persistent disks and stop the VM",
+          "B. Use the --auto-delete flag on all persistent disks and terminate the VM",
+          "C. Apply VM CPU utilization label and include it in the BigQuery billing export",
+          "D. Use Google BigQuery billing export and labels to associate cost to groups",
+          "E. Store all state into local SSD, snapshot the persistent disks, and terminate the VM",
+          "F. Store all state in Google Cloud Storage, snapshot the persistent disks, and terminate the VM"
+        ],
+        "answerIndex": [0, 3],
+        "explanation": "Billing export to BigQuery enables you to export your daily usage and cost estimates automatically throughout the day to a BigQuery dataset you specify. You can then access your billing data from BigQuery.",
+        "links": [
+          "https://www.examtopics.com/exams/google/professional-cloud-architect/view/2/"
+        ]
+      },
+      {
+        "questionText": "Your company wants to track whether someone is present in a meeting room reserved for a scheduled meeting. There are 1000 meeting rooms across 5 offices on 3 continents. Each room is equipped with a motion sensor that reports its status every second. The data from the motion detector includes only a sensor ID and several different discrete items of information. Analysts will use this data, together with information about account owners and office locations. Which database type should you use?",
+        "options": [
+          "A. Flat file",
+          "B. NoSQL",
+          "C. Relational",
+          "D. Blobstore"
+        ],
+        "answerIndex": [1],
+        "explanation": "Relational databases were not designed to cope with the scale and agility challenges that face modern applications, nor were they built to take advantage of the commodity storage and processing power available today. NoSQL fits well for: Developers are working with applications that create massive volumes of new, rapidly changing data types ג€\" structured, semi-structured, unstructured and polymorphic data. Incorrect Answers: D: The Blobstore API allows your application to serve data objects, called blobs, that are much larger than the size allowed for objects in the Datastore service. Blobs are useful for serving large files, such as video or image files, and for allowing users to upload large data files.",
+        "links": [
+          "https://www.mongodb.com/nosql-explained"
+        ]
+      },
+      {
+        "questionText": "You set up an autoscaling instance group to serve web traffic for an upcoming launch. After configuring the instance group as a backend service to an HTTP(S) load balancer, you notice that virtual machine (VM) instances are being terminated and re-launched every minute. The instances do not have a public IP address. You have verified the appropriate web response is coming from each instance using the curl command. You want to ensure the backend is configured correctly. What should you do?",
+        "options": [
+          "A. Ensure that a firewall rules exists to allow source traffic on HTTP/HTTPS to reach the load balancer.",
+          "B. Assign a public IP to each instance and configure a firewall rule to allow the load balancer to reach the instance public IP.",
+          "C. Ensure that a firewall rule exists to allow load balancer health checks to reach the instances in the instance group.",
+          "D. Create a tag on each instance with the name of the load balancer. Configure a firewall rule with the name of the load balancer as the source and the instance tag as the destination."
+        ],
+        "answerIndex": [2],
+        "explanation": "The best practice when configuring a health check is to check health and serve traffic on the same port. However, it is possible to perform health checks on one port, but serve traffic on another. If you do use two different ports, ensure that firewall rules and services running on instances are configured appropriately. If you run health checks and serve traffic on the same port, but decide to switch ports at some point, be sure to update both the backend service and the health check. Backend services that do not have a valid global forwarding rule referencing it will not be health checked and will have no health status.",
+        "links": [
+          "https://cloud.google.com/compute/docs/load-balancing/http/backend-service"
+        ]
+      },
+      {
+        "questionText": "You write a Python script to connect to Google BigQuery from a Google Compute Engine virtual machine. The script is printing errors that it cannot connect to BigQuery. What should you do to fix the script?",
+        "options": [
+          "A. Install the latest BigQuery API client library for Python",
+          "B. Run your script on a new virtual machine with the BigQuery access scope enabled",
+          "C. Create a new service account with BigQuery access and execute your script with that user",
+          "D. Install the bq component for gcloud with the command gcloud components install bq."
+        ],
+        "answerIndex": [1],
+        "explanation": "Configure the Python API to use a service account with relevant BigQuery access enabled. is the right answer. It is likely that this service account this script is running under does not have the permissions to connect to BigQuery and that could be causing issues. You can prevent these by using a service account that has the necessary roles to access BigQuery.",
+        "links": [
+          "https://cloud.google.com/iam/docs/service-accounts",
+          "https://cloud.google.com/bigquery/docs/reference/libraries#cloud-console"
+        ]
+      }
+    ]
+  }
+}

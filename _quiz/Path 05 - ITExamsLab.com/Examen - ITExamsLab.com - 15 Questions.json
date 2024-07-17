@@ -1,0 +1,286 @@
+
+
+{
+  "quiz": {
+    "instructions": "This quiz contains 15 multiple-choice questions covering various topics related to Google Cloud Platform. Answer all questions to get your final score.",
+    "questions": [
+      {
+        "questionText": "Your company has developed a new application that consists of multiple microservices. You want to deploy the application to Google Kubernetes Engine (GKE), and you want to ensure that the cluster can scale as more applications are deployed in the future. You want to avoid manual intervention when each new application is deployed. What should you do?",
+        "options": [
+          "A. Deploy the application on GKE, and add a HorizontalPodAutoscaler to the deployment.",
+          "B. Deploy the application on GKE, and add a VerticalPodAutoscaler to the deployment.",
+          "C. Create a GKE cluster with autoscaling enabled on the node pool. Set a minimum and maximum for the size of the node pool.",
+          "D. Create a separate node pool for each application, and deploy each application to its dedicated node pool."
+        ],
+        "answerIndex": [2],
+        "feedback": [
+          "Option C is correct. Creating a GKE cluster with autoscaling enabled on the node pool allows the cluster to automatically scale in response to workload changes without manual intervention.",
+          "Option A is incorrect. HorizontalPodAutoscaler scales the number of pods based on CPU usage or custom metrics, not the cluster size.",
+          "Option B is incorrect. VerticalPodAutoscaler adjusts the CPU and memory requests for containers, not the cluster size.",
+          "Option D is incorrect. Creating separate node pools for each application can increase complexity and doesn't provide automatic cluster-wide scaling."
+        ],
+        "links": [
+          "https://cloud.google.com/kubernetes-engine/docs/how-to/clusterautoscaler#adding_a_node_pool_with_autoscaler"
+        ]
+      },
+      {
+        "questionText": "You are assigned to maintain a Google Kubernetes Engine (GKE) cluster named dev that was deployed on Google Cloud. You want to manage the GKE configuration using the command line interface (CLI). You have just downloaded and installed the Cloud SDK. You want to ensure that future CLI commands by default address this specific cluster. What should you do?",
+        "options": [
+          "A. Use the command gcloud config set container/cluster dev.",
+          "B. Use the command gcloud container clusters update dev.",
+          "C. Create a file called gke.default in the ~/.gcloud folder that contains the cluster name.",
+          "D. Create a file called defaults.json in the ~/.gcloud folder that contains the cluster name."
+        ],
+        "answerIndex": [0],
+        "feedback": [
+          "Option A is correct. Using 'gcloud config set container/cluster dev' sets the default cluster for gcloud commands to 'dev'.",
+          "Option B is incorrect. 'gcloud container clusters update dev' updates cluster properties, not setting defaults for gcloud commands.",
+          "Option C is incorrect. Creating a file 'gke.default' does not configure gcloud command defaults.",
+          "Option D is incorrect. There is no 'defaults.json' configuration for setting gcloud command defaults."
+        ],
+        "links": [
+          "https://cloud.google.com/kubernetesengine/docs/how-to/managing-clusters?hl=en"
+        ]
+      },
+      {
+        "questionText": "Your company developed a mobile game that is deployed on Google Cloud. Gamers are connecting to the game with their personal phones over the Internet. The game sends UDP packets to update the servers about the gamers' actions while they are playing in multiplayer mode. Your game backend can scale over multiple virtual machines (VMs), and you want to expose the VMs over a single IP address. What should you do?",
+        "options": [
+          "A. Configure an SSL Proxy load balancer in front of the application servers.",
+          "B. Configure an Internal UDP load balancer in front of the application servers.",
+          "C. Configure an External HTTP(s) load balancer in front of the application servers.",
+          "D. Configure an External Network load balancer in front of the application servers."
+        ],
+        "answerIndex": [3],
+        "feedback": [
+          "Option D is correct. Configuring an External Network load balancer allows UDP traffic and provides a single IP address for external access to your VMs.",
+          "Option A is incorrect. SSL Proxy load balancer is for HTTPS traffic, not suitable for UDP traffic.",
+          "Option B is incorrect. Internal UDP load balancer is for internal traffic within Google Cloud.",
+          "Option C is incorrect. External HTTP(s) load balancer is for HTTP/HTTPS traffic, not suitable for UDP traffic."
+        ],
+        "links": [
+          "https://cloud.google.com/load-balancing/docs/network",
+          "https://cloud.google.com/load-balancing/docs/choosing-load-balancer#lb-decision-tree"
+        ]
+      },
+      {
+        "questionText": "You want to deploy an application on Cloud Run that processes messages from a Cloud Pub/Sub topic. You want to follow Google-recommended practices. What should you do?",
+        "options": [
+          "A. Create a Cloud Function that uses a Cloud Pub/Sub trigger on that topic. Call your application on Cloud Run from the Cloud Function for every message.",
+          "B. Grant the Pub/Sub Subscriber role to the service account used by Cloud Run. Create a Cloud Pub/Sub subscription for that topic. Make your application pull messages from that subscription.",
+          "C. Create a service account. Give the Cloud Run Invoker role to that service account for your Cloud Run application. Create a Cloud Pub/Sub subscription that uses that service account and uses your Cloud Run application as the push endpoint.",
+          "D. Deploy your application on Cloud Run on GKE with the connectivity set to Internal. Create a Cloud Pub/Sub subscription for that topic. In the same Google Kubernetes Engine cluster as your application, deploy a container that takes the messages and sends them to your application."
+        ],
+        "answerIndex": [3],
+        "feedback": [
+          "Option D is correct. Deploying your application on Cloud Run with Internal connectivity and using a Kubernetes Engine cluster to process and forward messages from Cloud Pub/Sub ensures efficient message handling and scalability.",
+          "Option A is incorrect. Using a Cloud Function to call Cloud Run for every message adds unnecessary complexity and cost.",
+          "Option B is incorrect. Directly pulling messages from Cloud Pub/Sub to Cloud Run can lead to inefficiencies and is not a recommended practice.",
+          "Option C is incorrect. Configuring Cloud Run with a service account as a push endpoint for Pub/Sub is not the optimal way to handle message processing."
+        ],
+        "links": []
+      },
+      {
+        "questionText": "You are about to deploy a new Enterprise Resource Planning (ERP) system on Google Cloud. The application holds the full database in-memory for fast data access, and you need to configure the most appropriate resources on Google Cloud for this application. What should you do?",
+        "options": [
+          "A. Provision preemptible Compute Engine instances.",
+          "B. Provision Compute Engine instances with GPUs attached.",
+          "C. Provision Compute Engine instances with local SSDs attached.",
+          "D. Provision Compute Engine instances with M1 machine type."
+        ],
+        "answerIndex": [3],
+        "feedback": [
+          "Option D is correct. Provisioning Compute Engine instances with the M1 machine type provides high-memory configurations suitable for in-memory databases like ERP systems.",
+          "Option A is incorrect. Preemptible instances are cost-effective but not suitable for mission-critical applications like ERP systems.",
+          "Option B is incorrect. GPUs are used for accelerating specific workloads like machine learning, not for in-memory databases.",
+          "Option C is incorrect. Local SSDs provide high-performance storage but are not directly related to memory-intensive applications like ERP systems."
+        ],
+        "links": [
+          "https://cloud.google.com/compute/docs/machine-types"
+        ]
+      },
+      {
+        "questionText": "You have created a new project in Google Cloud through the gcloud command line interface (CLI) and linked a billing account. You need to create a new Compute Engine instance using the CLI. You need to perform the prerequisite steps. What should you do?",
+        "options": [
+          "A. Create a Cloud Monitoring Workspace.",
+          "B. Create a VPC network in the project.",
+          "C. Enable the compute.googleapis.com API.",
+          "D. Grant yourself the IAM role of Compute Admin."
+        ],
+        "answerIndex": [2],
+        "feedback": [
+          "Option C is correct. Enabling the compute.googleapis.com API is a prerequisite for creating Compute Engine instances using the CLI.",
+          "Option A is incorrect. Creating a Cloud Monitoring Workspace is unrelated to creating Compute Engine instances.",
+          "Option B is incorrect. Creating a VPC network is not required before creating a Compute Engine instance.",
+          "Option D is incorrect. Granting the IAM role of Compute Admin is unrelated to the prerequisite steps for creating a Compute Engine instance."
+        ],
+        "links": []
+      },
+      {
+        "questionText": "You have experimented with Google Cloud using your own credit card and expensed the costs to your company. Your company wants to streamline the billing process and charge the costs of your projects to their monthly invoice. What should you do?",
+        "options": [
+          "A. Grant the financial team the IAM role of 'Billing Account User' on the billing account linked to your credit card.",
+          "B. Set up BigQuery billing export and grant your financial department IAM access to query the data.",
+          "C. Create a ticket with Google Billing Support to ask them to send the invoice to your company.",
+          "D. Change the billing account of your projects to the billing account of your company."
+        ],
+        "answerIndex": [3],
+        "feedback": [
+          "Option D is correct. Changing the billing account to the company's billing account allows the costs to be charged to the company's invoice.",
+          "Option A is incorrect. Granting 'Billing Account User' role doesn't change the billing account used for billing.",
+          "Option B is incorrect. Setting up BigQuery billing export and granting IAM access to query data is unrelated to changing the billing account.",
+          "Option C is incorrect. Creating a ticket with Google Billing Support is not the standard method for changing the billing account."
+        ],
+        "links": []
+      },
+      {
+        "questionText": "Your company is moving its entire workload to Compute Engine. Some servers should be accessible through the Internet, and other servers should only be accessible over the internal network. All servers need to be able to talk to each other over specific ports and protocols. The current on-premises network relies on a demilitarized zone (DMZ) for the public servers and a Local Area Network (LAN) for the private servers. You need to design the networking infrastructure on Google Cloud to match these requirements. What should you do?",
+        "options": [
+          "A. 1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.",
+          "B. 1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ.",
+          "C. 1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.",
+          "D. 1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ."
+        ],
+        "answerIndex": [0],
+        "feedback": [
+          "Option A is correct. Creating a single VPC with subnets for DMZ and LAN and setting up firewall rules to control traffic between them and for public ingress traffic meets the requirements.",
+          "Option B is incorrect. Allowing public egress traffic for DMZ is not necessary and may expose unnecessary access.",
+          "Option C is incorrect. Using multiple VPCs adds complexity and is not necessary for the scenario described.",
+          "Option D is incorrect. Allowing public egress traffic for DMZ is not necessary and may expose unnecessary access."
+        ],
+        "links": [
+          "https://cloud.google.com/vpc/docs/vpc-peering"
+        ]
+      },
+      {
+        "questionText": "You need to manage a third-party application that will run on a Compute Engine instance. Other Compute Engine instances are already running with default configuration. Application installation files are hosted on Cloud Storage. You need to access these files from the new instance without allowing other virtual machines (VMs) to access these files. What should you do?",
+        "options": [
+          "A. Create the instance with the default Compute Engine service account. Grant the service account permissions on Cloud Storage.",
+          "B. Create the instance with the default Compute Engine service account. Add metadata to the objects on Cloud Storage that matches the metadata on the new instance.",
+          "C. Create a new service account and assign this service account to the new instance. Grant the service account permissions on Cloud Storage.",
+          "D. Create a new service account and assign this service account to the new instance. Add metadata to the objects on Cloud Storage that matches the metadata on the new instance."
+        ],
+        "answerIndex": [2],
+        "feedback": [
+          "Option C is correct. Creating a new service account and assigning it to the instance ensures access control to Cloud Storage files.",
+          "Option A is incorrect. Using the default Compute Engine service account doesn't provide granular access control to Cloud Storage.",
+          "Option B is incorrect. Adding metadata to Cloud Storage objects doesn't restrict access from other VMs.",
+          "Option D is incorrect. Adding metadata to Cloud Storage objects doesn't restrict access from other VMs."
+        ],
+        "links": [
+          "https://cloud.google.com/iam/docs/best-practices-for-using-and-managing-service-accounts"
+        ]
+      },
+      {
+        "questionText": "You are performing a monthly security check of your Google Cloud environment and want to know who has access to view data stored in your Google Cloud Project. What should you do?",
+        "options": [
+          "A. Enable Audit Logs for all APIs that are related to data storage.",
+          "B. Review the IAM permissions for any role that allows for data access.",
+          "C. Review the Identity-Aware Proxy settings for each resource.",
+          "D. Create a Data Loss Prevention job."
+        ],
+        "answerIndex": [1],
+        "feedback": [
+          "Option B is correct. Reviewing IAM permissions for roles that allow data access helps identify who has access to view data stored in your Google Cloud Project.",
+          "Option A is incorrect. Enabling Audit Logs logs API requests but doesn't provide visibility into IAM permissions.",
+          "Option C is incorrect. Identity-Aware Proxy settings manage access based on identity, not IAM permissions directly.",
+          "Option D is incorrect. Creating a Data Loss Prevention job is focused on preventing data loss, not on auditing access permissions."
+        ],
+        "links": [
+          "https://cloud.google.com/logging/docs/audit"
+        ]
+      },
+      {
+        "questionText": "The sales team has a project named Sales Data Digest that has the ID acme-data-digest. You need to set up similar Google Cloud resources for the marketing team but their resources must be organized independently of the sales team. What should you do?",
+        "options": [
+          "A. Grant the Project Editor role to the Marketing team for acme-data-digest.",
+          "B. Create a Project Lien on acme-data-digest and then grant the Project Editor role to the Marketing team.",
+          "C. Create another project with the ID acme-marketing-data-digest for the Marketing team and deploy the resources there.",
+          "D. Create a new project named Marketing Data Digest and use the ID acme-data-digest. Grant the Project Editor role to the Marketing team."
+        ],
+        "answerIndex": [2],
+        "feedback": [
+          "Option C is correct. Creating a new project (acme-marketing-data-digest) for the Marketing team ensures independent resource organization from the sales team's project (acme-data-digest).",
+          "Option A is incorrect. Granting Project Editor role to Marketing team on the existing sales team project doesn't separate resources.",
+          "Option B is incorrect. Project Liens are used for other purposes and do not relate to granting permissions.",
+          "Option D is incorrect. Creating a new project with a misleading name doesn't clarify the separation of resources."
+        ],
+        "links": []
+      },
+      {
+        "questionText": "Your company has embraced a hybrid cloud strategy where some of the applications are deployed on Google Cloud. A Virtual Private Network (VPN) tunnel connects your Virtual Private Cloud (VPC) in Google Cloud with your company's on-premises network. Multiple applications in Google Cloud need to connect to an on-premises database server, and you want to avoid having to change the IP configuration in all of your applications when the IP of the database changes. What should you do?",
+        "options": [
+          "A. Configure Cloud NAT for all subnets of your VPC to be used when egressing from the VM instances.",
+          "B. Create a private zone on Cloud DNS, and configure the applications with the DNS name.",
+          "C. Configure the IP of the database as custom metadata for each instance, and query the metadata server.",
+          "D. Query the Compute Engine internal DNS from the applications to retrieve the IP of the database."
+        ],
+        "answerIndex": [1],
+        "feedback": [
+          "Option B is correct. Creating a private zone on Cloud DNS and configuring applications with DNS names avoids the need to update IP configurations in all applications when the database IP changes.",
+          "Option A is incorrect. Cloud NAT is used for outbound internet traffic, not for resolving on-premises database IPs.",
+          "Option C is incorrect. Configuring custom metadata and querying metadata server is not a scalable solution for updating database IP changes.",
+          "Option D is incorrect. Querying Compute Engine internal DNS does not provide a solution for external database IP changes."
+        ],
+        "links": [
+          "https://cloud.google.com/nat/docs/overview",
+          "https://cloud.google.com/vpc/docs/configure-private-google-access-hybrid#configdomain"
+        ]
+      },
+      {
+        "questionText": "Your web application has been running successfully on Cloud Run for Anthos. You want to evaluate an updated version of the application with a specific percentage of your production users (canary deployment). What should you do?",
+        "options": [
+          "A. Create a new service with the new version of the application. Split traffic between this version and the version that is currently running.",
+          "B. Create a new revision with the new version of the application. Split traffic between this version and the version that is currently running.",
+          "C. Create a new service with the new version of the application. Add an HTTP Load Balancer in front of both services.",
+          "D. Create a new revision with the new version of the application. Add an HTTP Load Balancer in front of both revisions."
+        ],
+        "answerIndex": [1],
+        "feedback": [
+          "Option B is correct. Creating a new revision with the updated application version and splitting traffic between the new and current revisions enables canary deployment.",
+          "Option A is incorrect. Creating a new service is not necessary for canary deployment.",
+          "Option C is incorrect. Adding an HTTP Load Balancer for both services is not specific to canary deployment.",
+          "Option D is incorrect. Adding an HTTP Load Balancer for both revisions is not specific to canary deployment."
+        ],
+        "links": [
+          "https://cloud.google.com/kuberun/docs/rollouts-rollbacks-traffic-migration"
+        ]
+      },
+      {
+        "questionText": "You have developed an application that consists of multiple microservices, with each microservice packaged in its own Docker container image. You want to deploy the entire application on Google Kubernetes Engine so that each microservice can be scaled individually. What should you do?",
+        "options": [
+          "A. Create and deploy a Custom Resource Definition per microservice.",
+          "B. Create and deploy a Docker Compose File.",
+          "C. Create and deploy a Job per microservice.",
+          "D. Create and deploy a Deployment per microservice."
+        ],
+        "answerIndex": [3],
+        "feedback": [
+          "Option D is correct. Using Deployments in Google Kubernetes Engine allows you to deploy and scale each microservice individually.",
+          "Option A is incorrect. Custom Resource Definitions are used for extending Kubernetes API with custom resources, not for deployment.",
+          "Option B is incorrect. Docker Compose Files are used for defining multi-container Docker applications, not for Kubernetes deployments.",
+          "Option C is incorrect. Jobs in Kubernetes are for running pods to completion, not for deploying microservices."
+        ],
+        "links": []
+      },
+      {
+        "questionText": "You are managing a project for the Business Intelligence (BI) department in your company. A data pipeline ingests data into BigQuery via streaming. You want the users in the BI department to be able to run custom SQL queries against the latest data in BigQuery. What should you do?",
+        "options": [
+          "A. Create a Data Studio dashboard that uses the related BigQuery tables as a source and give the BI team view access to the Data Studio dashboard.",
+          "B. Create a Service Account for the BI team and distribute a new private key to each member of the BI team.",
+          "C. Use Cloud Scheduler to schedule a batch Dataflow job to copy the data from BigQuery to the BI team's internal data warehouse.",
+          "D. Assign the IAM role of BigQuery User to a Google Group that contains the members of the BI team."
+        ],
+        "answerIndex": [3],
+        "feedback": [
+          "Option D is correct. Assigning the IAM role of BigQuery User to a Google Group that includes the BI team members allows them to run custom SQL queries against BigQuery data.",
+          "Option A is incorrect. Creating a Data Studio dashboard doesn't grant direct SQL query access to BigQuery data.",
+          "Option B is incorrect. Creating a Service Account and distributing keys is not the recommended method for granting access to BigQuery.",
+          "Option C is incorrect. Using Cloud Scheduler and Dataflow for copying data does not provide direct query access to BigQuery data."
+        ],
+        "links": [
+          "https://cloud.google.com/bigquery/docs/access-control"
+        ]
+      }
+    ]
+  }
+}

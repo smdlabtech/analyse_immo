@@ -1,0 +1,207 @@
+{
+  "quiz": {
+    "instructions": "Answer the following 20 multiple-choice questions based on the Google Cloud Data Engineer certification themes. Each question may have one or more correct answers.",
+    "questions": [
+      {
+        "questionText": "What is the primary focus when preparing for your Professional Data Engineer journey?",
+        "options": [
+          "Understanding data engineering concepts",
+          "Building a study plan",
+          "Assessing exam readiness",
+          "Networking with other professionals"
+        ],
+        "answerIndex": [0, 1, 2]
+      },
+      {
+        "questionText": "Which service is best suited for modernizing data lakes and data warehouses on Google Cloud?",
+        "options": [
+          "BigQuery",
+          "Cloud Storage",
+          "Cloud Spanner",
+          "Dataflow"
+        ],
+        "answerIndex": [0, 1]
+      },
+      {
+        "questionText": "When building batch data pipelines on Google Cloud, which tool is primarily used?",
+        "options": [
+          "Dataflow",
+          "Dataproc",
+          "Cloud Composer",
+          "BigQuery"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "What are key considerations when building resilient streaming analytics systems on Google Cloud?",
+        "options": [
+          "Scalability",
+          "Low latency",
+          "Data consistency",
+          "Cost optimization"
+        ],
+        "answerIndex": [0, 1, 2, 3]
+      },
+      {
+        "questionText": "Which Google Cloud service is commonly used for smart analytics, machine learning, and AI?",
+        "options": [
+          "AI Platform",
+          "BigQuery",
+          "Dataflow",
+          "TensorFlow"
+        ],
+        "answerIndex": [0, 1, 3]
+      },
+      {
+        "questionText": "What foundational concept is essential for serverless data processing with Dataflow?",
+        "options": [
+          "Understanding Apache Beam",
+          "Managing server infrastructure",
+          "Writing SQL queries",
+          "Configuring Kubernetes clusters"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "When developing pipelines in Dataflow, which language can you use?",
+        "options": [
+          "Java",
+          "Python",
+          "Go",
+          "JavaScript"
+        ],
+        "answerIndex": [0, 1]
+      },
+      {
+        "questionText": "Which tool helps manage and monitor Dataflow pipelines?",
+        "options": [
+          "Cloud Monitoring",
+          "Cloud Logging",
+          "Data Catalog",
+          "Cloud Trace"
+        ],
+        "answerIndex": [0, 1]
+      },
+      {
+        "questionText": "What is a key step in preparing data for ML APIs on Google Cloud?",
+        "options": [
+          "Data cleaning",
+          "Data visualization",
+          "Model evaluation",
+          "Hyperparameter tuning"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "What is the main advantage of using BigQuery for building a data warehouse?",
+        "options": [
+          "Scalability",
+          "Low cost",
+          "Real-time analytics",
+          "Integration with on-premises databases"
+        ],
+        "answerIndex": [0, 2]
+      },
+      {
+        "questionText": "In BigQuery ML, which model type is used for classification tasks?",
+        "options": [
+          "Linear Regression",
+          "Logistic Regression",
+          "K-means Clustering",
+          "Principal Component Analysis"
+        ],
+        "answerIndex": [1]
+      },
+      {
+        "questionText": "Which service helps create a data mesh with Dataplex?",
+        "options": [
+          "BigQuery",
+          "Dataflow",
+          "Dataproc",
+          "Cloud Pub/Sub"
+        ],
+        "answerIndex": [2]
+      },
+      {
+        "questionText": "What is an important consideration when modernizing data lakes on Google Cloud?",
+        "options": [
+          "Data governance",
+          "Data silos",
+          "Security and compliance",
+          "Infrastructure costs"
+        ],
+        "answerIndex": [0, 2]
+      },
+      {
+        "questionText": "Which Google Cloud service allows for real-time data ingestion?",
+        "options": [
+          "Cloud Pub/Sub",
+          "Cloud Storage",
+          "BigQuery",
+          "Dataproc"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "When designing a data warehouse with BigQuery, which practice is essential?",
+        "options": [
+          "Partitioning tables",
+          "Using nested fields",
+          "Minimizing data transfers",
+          "Optimizing SQL queries"
+        ],
+        "answerIndex": [0, 3]
+      },
+      {
+        "questionText": "Which feature of Dataflow helps ensure pipeline reliability?",
+        "options": [
+          "Automatic scaling",
+          "Built-in retry mechanism",
+          "Pipeline templates",
+          "Flexible windowing"
+        ],
+        "answerIndex": [1]
+      },
+      {
+        "questionText": "What is a key benefit of using Dataproc for batch data processing?",
+        "options": [
+          "Managed Hadoop and Spark",
+          "Low latency",
+          "Real-time processing",
+          "Integrated machine learning"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Which tool assists in managing machine learning workflows on Google Cloud?",
+        "options": [
+          "AI Platform Pipelines",
+          "Kubeflow",
+          "TensorFlow Extended (TFX)",
+          "Vertex AI"
+        ],
+        "answerIndex": [0, 1, 3]
+      },
+      {
+        "questionText": "What is a primary use case for Cloud Spanner in data engineering?",
+        "options": [
+          "Globally distributed databases",
+          "Low-latency applications",
+          "High throughput transactions",
+          "Data warehousing"
+        ],
+        "answerIndex": [0, 1, 2]
+      },
+      {
+        "questionText": "Which feature of BigQuery enhances its performance for large-scale analytics?",
+        "options": [
+          "Columnar storage",
+          "Query optimization",
+          "In-memory processing",
+          "Serverless architecture"
+        ],
+        "answerIndex": [0, 1, 3]
+      }
+    ]
+  }
+}

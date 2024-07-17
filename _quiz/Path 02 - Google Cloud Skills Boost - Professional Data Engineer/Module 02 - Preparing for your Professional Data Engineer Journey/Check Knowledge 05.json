@@ -1,0 +1,32 @@
+{
+  "quiz": {
+    "title": "Google Cloud Platform Data Management and Monitoring Quiz",
+    "score": 100,
+    "passingScore": 50,
+    "congratulationsMessage": "Congratulations! You passed this assessment.",
+    "questions": [
+      {
+        "questionText": "Your company recently migrated to Google Cloud and started using BigQuery. The team members don't know how much querying they are going to do, and they need to be efficient with their spend. As a Professional Data Engineer, what pricing model would you recommend?",
+        "options": [
+          "A. Use IAM service to block access to BigQuery till the team figures out how much querying they are going to do.",
+          "B. Create a pool of resources using BigQuery Reservations.",
+          "C. Use BigQuery's on-demand pricing model.",
+          "D. Decide how much compute capacity you need and reserve it using capacity pricing."
+        ],
+        "answerIndex": [2],
+        "explanation": "BigQuery's on-demand pricing model is ideal for teams that are unsure about their querying volume as it allows them to pay only for the queries they run without needing to reserve capacity ahead of time."
+      },
+      {
+        "questionText": "Cymbal Retail uses Google Cloud and has automated repeatable data processing workloads to achieve reliability and cost efficiency. You want out-of-the-box metric collection dashboards and the ability to generate alerts when specific conditions are met. What tool can you use?",
+        "options": [
+          "A. Cloud Composer",
+          "B. Data Catalog",
+          "C. Data Loss Prevention (DLP)",
+          "D. Cloud Monitoring"
+        ],
+        "answerIndex": [3],
+        "explanation": "Cloud Monitoring offers comprehensive monitoring solutions including metric collection, dashboards, and alerting capabilities, making it suitable for monitoring automated data processing workloads."
+      }
+    ]
+  }
+}

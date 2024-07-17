@@ -1,0 +1,120 @@
+{
+  "quiz": {
+    "title": "Google Cloud Platform Streaming and Data Handling Diagnostic",
+    "score": 90,
+    "passingScore": 75,
+    "congratulationsMessage": "Congratulations! You passed this assessment.",
+    "questions": [
+      {
+        "questionText": "You want to build a streaming data analytics pipeline in Google Cloud. You need to choose the right products that support streaming data. Which of these would you choose?",
+        "options": [
+          "A. Cloud Storage, Dataflow, Cloud SQL",
+          "B. Pub/Sub, Dataflow, BigQuery",
+          "C. Pub/Sub, Dataprep, BigQuery",
+          "D. Cloud Storage, Dataprep, AlloyDB"
+        ],
+        "answerIndex": [1],
+        "explanation": "Pub/Sub, Dataflow, and BigQuery support streaming data and form the recommended pipeline for continuous data processing."
+      },
+      {
+        "questionText": "Your data engineering team receives data in JSON format from external sources at the end of each day. You need to design the data pipeline. What should you do?",
+        "options": [
+          "A. Store the data in persistent disks and create an ETL pipeline.",
+          "B. Store the data in Cloud Storage and create an extract, transform, and load (ETL) pipeline.",
+          "C. Create a public API to allow external applications to add the data to your warehouse.",
+          "D. Make your BigQuery data warehouse public and ask the external sources to insert the data."
+        ],
+        "answerIndex": [1],
+        "explanation": "The recommended approach for batch data pipelines is to store data in Cloud Storage. Then, create an ETL (or ELT, depending on the use case) pipeline to move the data into a data warehouse."
+      },
+      {
+        "questionText": "The first stage of your data pipeline processes tens of terabytes of financial data and creates a sparse, time-series dataset as a key-value pair. Which of these is a suitable sink for the pipeline's first stage?",
+        "options": [
+          "A. Cloud SQL",
+          "B. AlloyDB",
+          "C. Bigtable",
+          "D. Cloud Storage"
+        ],
+        "answerIndex": [2],
+        "explanation": "Bigtable is ideal for applications that need high throughput and scalability for key/value data, where each value is typically no larger than 10 MB: Bigtable is suitable for applications that work on time-series data, such as financial applications."
+      },
+      {
+        "questionText": "You have a data pipeline that requires you to monitor a Cloud Storage bucket for a file, start a Dataflow job to process data in the file, run a shell script to validate the processed data in BigQuery, and then delete the original file. You need to orchestrate this pipeline by using recommended tools. Which product should you choose?",
+        "options": [
+          "A. Cloud Tasks",
+          "B. Cloud Run",
+          "C. Cloud Scheduler",
+          "D. Cloud Composer"
+        ],
+        "answerIndex": [3],
+        "explanation": "Cloud Composer, a managed version of Apache Airflow, can orchestrate a series of data pipeline tasks."
+      },
+      {
+        "questionText": "You are creating a data pipeline for streaming data on Dataflow for Cymbal Retail's point of sales data. You want to calculate the total sales per hour on a continuous basis. Which of these windowing options should you use?",
+        "options": [
+          "A. Tumbling windows (fixed windows in Apache Beam)",
+          "B. Session windows",
+          "C. Global window",
+          "D. Hopping windows (sliding windows in Apache Beam)"
+        ],
+        "answerIndex": [0],
+        "explanation": "Tumbling windows (or fixed windows in Apache Beam) are the right option for calculating total sales per hour on a continuous basis."
+      },
+      {
+        "questionText": "You manage a PySpark batch data pipeline by using Dataproc. You want to take a hands-off approach to running the workload, and you do not want to provision and manage your own cluster. What should you do?",
+        "options": [
+          "A. Configure the job to run on Dataproc Serverless.",
+          "B. Rewrite the job in Dataflow with SQL.",
+          "C. Rewrite the job in Spark SQL.",
+          "D. Configure the job to run with Spot VMs."
+        ],
+        "answerIndex": [0],
+        "explanation": "Dataproc Serverless will automatically provision the resources to run your Dataproc jobs."
+      },
+      {
+        "questionText": "You need to run batch jobs, which could take many days to complete. You do not want to manage the infrastructure provisioning. What should you do?",
+        "options": [
+          "A. Use Workflows to run the jobs.",
+          "B. Run the jobs on Batch.",
+          "C. Use Cloud Run to run the jobs.",
+          "D. Use Cloud Scheduler to run the jobs."
+        ],
+        "answerIndex": [1],
+        "explanation": "Batch is a fully managed service that schedules, queues, and executes batch processing workloads on Google Cloud. Resources and capacity are provisioned and managed for you based on your requirements."
+      },
+      {
+        "questionText": "You are processing large amounts of input data in BigQuery. You need to combine this data with a small amount of frequently changing data that is available in Cloud SQL. What should you do?",
+        "options": [
+          "A. Copy the data from Cloud SQL and create a combined, normalized table hourly.",
+          "B. Use a federated query to get data from Cloud SQL.",
+          "C. Create a Dataflow pipeline to combine the BigQuery and Cloud SQL data when the Cloud SQL data changes.",
+          "D. Copy the data from Cloud SQL to a new BigQuery table hourly."
+        ],
+        "answerIndex": [1],
+        "explanation": "Because the data is frequently changing, you can query the data in-place by using federated queries from BigQuery."
+      },
+      {
+        "questionText": "You are running Dataflow jobs for data processing. When developers update the code in Cloud Source Repositories, you need to test and deploy the updated code with minimal effort. Which of these would you use to build your continuous integration and delivery (CI/CD) pipeline for data processing?",
+        "options": [
+          "A. Compute Engine",
+          "B. Cloud Code",
+          "C. Cloud Build",
+          "D. Terraform"
+        ],
+        "answerIndex": [2],
+        "explanation": "Cloud Build can be configured to watch for updates in the source repository and trigger a series of steps, as required, to implement a CI/CD pipeline."
+      },
+      {
+        "questionText": "Your company has multiple data analysts but a limited data engineering team. You need to choose a tool where the analysts can build data pipelines themselves with a graphical user interface. Which of these products is the most appropriate?",
+        "options": [
+          "A. Dataproc",
+          "B. Dataflow",
+          "C. Cloud Data Fusion",
+          "D. Cloud Composer"
+        ],
+        "answerIndex": [2],
+        "explanation": "The Cloud Data Fusion web UI lets you build scalable data integration solutions to clean, prepare, blend, transfer, and transform data, without having to manage the infrastructure."
+      }
+    ]
+  }
+}

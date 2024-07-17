@@ -1,0 +1,32 @@
+{
+  "quiz": {
+    "title": "Google Cloud Platform Workflow Automation and Data Management Quiz",
+    "score": 100,
+    "passingScore": 50,
+    "congratulationsMessage": "Congratulations! You passed this assessment.",
+    "questions": [
+      {
+        "questionText": "A company wants to improve productivity and decides to programmatically schedule and monitor workflows. What tool can you use to automate your workflows?",
+        "options": [
+          "A. Dataproc",
+          "B. Apache Beam and Dataflow",
+          "C. Cloud Composer",
+          "D. Data Fusion"
+        ],
+        "answerIndex": [2],
+        "explanation": "Cloud Composer is a fully managed workflow orchestration service built on Apache Airflow. It is designed to automate, schedule, and monitor workflows."
+      },
+      {
+        "questionText": "A company collects large amounts of data that is useful for improving business operations. The collected data is already clean and is in a format that is suitable for further analysis. The company uses Google Cloud BigQuery as a data warehouse. What approach will you recommend to move this data to BigQuery?",
+        "options": [
+          "A. Implement Extract, Transform, and Load (ETL) pipelines using tools like Dataflow.",
+          "B. Directly load the data using an Extract and Load approach (EL).",
+          "C. Split the data into smaller files and then move to Google Cloud.",
+          "D. Do transformation using Extract, Load & Transform (ELT)."
+        ],
+        "answerIndex": [1],
+        "explanation": "Since the data is already clean and formatted, the most straightforward and efficient approach is to use an Extract and Load (EL) method to move it directly to BigQuery."
+      }
+    ]
+  }
+}

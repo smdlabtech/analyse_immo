@@ -1,0 +1,194 @@
+{
+  "quiz": {
+    "title": "Google Cloud Platform Advanced Scenario-Based Quiz",
+    "score": 100,
+    "questions": [
+
+		{
+		"questionText": "What does 'On-prem' refer to in IT terminology?",
+		"options": [
+			"On premises, within the company's own facilities",
+			"In the cloud",
+			"Third-party hosted services",
+			"Offshore IT services"
+		],
+		"answerIndex": [0],
+		"explanation": "'On-prem' is short for 'on premises,' which means the organization's infrastructure is physically located within its own facilities.",
+		"links": []
+		},
+		{
+		"questionText": "What is a common example of a cloud service provider?",
+		"options": [
+			"Ubisoft",
+			"GCP",
+			"Adobe",
+			"Adobe",
+			"SAP"
+		],
+		"answerIndex": [1],
+		"explanation": "Google Cloud Platform (GCP) is one of the major cloud service providers, alongside AWS and Azure.",
+		"links": []
+		},
+		
+		{
+		"questionText": "What are relational databases known for?",
+		"options": [
+			"Flexible schema design",
+			"Lack of structured query language",
+			"Highly structured and standardized format",
+			"Best for storing unstructured data"
+		],
+		"answerIndex": [2],
+		"explanation": "Relational databases are known for their highly structured and standardized format, containing tables with rows and columns, and emphasizing data integrity and consistency.",
+		"links": []
+		},
+		{
+		"questionText": "Which of the following is NOT a relational database?",
+		"options": [
+			"Oracle",
+			"PostgreSQL",
+			"MongoDB",
+			"Microsoft SQL Server"
+		],
+		"answerIndex": [2],
+		"explanation": "MongoDB is a document-oriented database, which is a type of NoSQL database, not a relational database.",
+		"links": []
+		},
+		{
+		"questionText": "The primary types of databases are:",
+		"options": [
+			"Distributed and Centralized",
+			"SQL and Python-based",
+			"Relational/SQL and Non-relational/NoSQL",
+			"Cloud-based and Local"
+		],
+		"answerIndex": [2],
+		"explanation": "The two primary types of databases are relational (SQL) and non-relational (NoSQL), differentiated by their schema requirements and the type of data they best handle.",
+		"links": []
+		},
+		{
+		"questionText": "Which GCP service is commonly used for real-time data ingestion?",
+		"options": [
+			"Cloud Storage",
+			"Pub/Sub",
+			"Bigtable",
+			"Firestore"
+		],
+		"answerIndex": [1],
+		"explanation": "Google Cloud Pub/Sub is a messaging service that enables real-time and asynchronous event-driven systems by providing message storage and real-time message delivery.",
+		"links": []
+		},
+		{
+		"questionText": "What type of processing does Dataflow support?",
+		"options": [
+			"Only batch processing",
+			"Only streaming processing",
+			"Both batch and streaming processing",
+			"Neither batch nor streaming processing"
+		],
+		"answerIndex": [2],
+		"explanation": "Google Cloud Dataflow supports both batch and streaming data processing, making it a versatile tool for various use cases. It is built on Apache Beam, which is the open source tool designed to handle both batch and streaming data.",
+		"links": []
+		},
+
+		{
+		"questionText": "When deciding between batch and streaming data processing, which is NOT a consideration?",
+		"options": [
+			"How much data you're ingesting/processing",
+			"The color of the data",
+			"How quickly analysis is needed",
+			"Infrastructure/resources available"
+		],
+		"answerIndex": [1],
+		"explanation": "The color of the data is not a consideration in data processing. Factors such as the volume of data, the need for timely analysis, and available infrastructure are what matter.",
+		"links": []
+		},
+
+		{
+		"questionText": "Which of the following is an example use case for streaming data?",
+		"options": [
+			"Annual financial reporting",
+			"Monthly inventory checks",
+			"Fraud detection",
+			"Yearly customer surveys"
+		],
+		"answerIndex": [2],
+		"explanation": "Fraud detection often requires real-time or near real-time processing to identify and act upon potentially fraudulent activity quickly.",
+		"links": []
+		},		
+		{
+		"questionText": "What is 'batch' data processing characterized by?",
+		"options": [
+			"Real-time processing",
+			"Processing large, scheduled chunks at specific intervals",
+			"Unbounded data processing",
+			"Processing each data point as it's created"
+		],
+		"answerIndex": [1],
+		"explanation": "Batch processing involves handling large volumes of data at scheduled intervals, as opposed to processing data in real-time or as it's created.",
+		"links": []
+		},
+		
+		{
+		"questionText": "In GCP, what service is primarily used for unstructured data?",
+		"options": [
+			"BigQuery",
+			"Cloud SQL",
+			"Cloud Storage",
+			"Spanner"
+		],
+		"answerIndex": [2],
+		"explanation": "Google Cloud Storage is optimized for storing large amounts of unstructured data, such as binary or object data.",
+		"links": []
+		},
+		{
+		"questionText": "Which of the following best defines semi-structured data?",
+		"options": [
+			"Data with a rigid and unchangeable structure",
+			"Data lacking any form of structure or organization",
+			"Data with no fixed schema but with some metadata",
+			"Data organized in a hierarchical database system"
+		],
+		"answerIndex": [2],
+		"explanation": "Semi-structured data doesn't have a rigid schema like structured data, but it does contain tags or other markers to separate semantic elements and enforce hierarchies of records and fields.",
+		"links": []
+		},
+		{
+		"questionText": "Which GCP service is designed for the analytical examination of large datasets?",
+		"options": [
+			"Cloud Storage",
+			"BigQuery",
+			"Firestore",
+			"Spanner"
+		],
+		"answerIndex": [1],
+		"explanation": "BigQuery is Google's fully managed, petabyte scale, low-cost analytics data warehouse designed for business agility.",
+		"links": []
+		},
+		{
+		"questionText": "What does 'ingest' refer to in the data lifecycle?",
+		"options": [
+			"Storing data long-term for archival purposes",
+			"Analyzing data for insights",
+			"Pulling in raw data from various sources",
+			"Visualizing data for reporting"
+		],
+		"answerIndex": [2],
+		"explanation": "In the data lifecycle, 'ingest' is the step where raw data is collected or pulled in from various sources.",
+		"links": []
+		},
+		{
+		"questionText": "What is the primary difference between structured and unstructured data?",
+		"options": [
+			"Structured data is less organized and does not adhere to a predefined data model, while unstructured data is highly organized and typically stored in relational databases.",
+			"Structured data is highly organized and easily queried with languages such as SQL, while unstructured data does not follow a specific format and is more complex to analyze.",
+			"Structured data and unstructured data are the same; the terms can be used interchangeably.",
+			"Unstructured data is always text-based, while structured data consists of numbers and dates only."
+		],
+		"answerIndex": [1],
+		"explanation": "Structured data refers to any data that resides in a fixed field within a record or file, like data contained in relational databases and spreadsheets. It's easy to enter, search, and analyze. Unstructured data, on the other hand, is information that either does not have a predefined data model or is not organized in a predefined manner. It's typically text-heavy, but may contain data such as dates, numbers, and facts as well. This includes emails, videos, photos, web pages, and other forms of unstructured data. The key difference lies in the ease of processing and analysis, with structured data being more straightforward due to its organized nature.",
+		"links": []
+		}
+    ]
+  }
+}

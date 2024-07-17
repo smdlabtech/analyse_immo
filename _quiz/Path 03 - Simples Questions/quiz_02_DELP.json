@@ -1,0 +1,528 @@
+
+{
+  "quiz": {
+    "instructions": "Ce test contient 50 questions à choix multiples. Il peut y avoir 1, 2, 3, ou parfois même 4 réponses correctes par question. Répondez à toutes les questions pour obtenir votre score final. Lorsque vous avez terminé, saisissez 'TERMINER' ou 'FIN' pour obtenir votre score.",
+    "questions": [
+      {
+        "questionText": "Quelle est la méthode recommandée pour importer des données volumineuses dans BigQuery ?",
+        "options": [
+          "Utiliser l'interface utilisateur de BigQuery",
+          "Utiliser l'API de chargement de BigQuery",
+          "Utiliser Google Cloud Storage et l'API de chargement de BigQuery",
+          "Utiliser Cloud SQL"
+        ],
+        "answerIndex": [2]
+      },
+      {
+        "questionText": "Quel service GCP est le mieux adapté pour le traitement de flux de données en temps réel ?",
+        "options": [
+          "Cloud Dataflow",
+          "Cloud Dataproc",
+          "BigQuery",
+          "Cloud Pub/Sub"
+        ],
+        "answerIndex": [0, 3]
+      },
+      {
+        "questionText": "Quelle est la meilleure pratique pour optimiser les performances des requêtes dans BigQuery ?",
+        "options": [
+          "Utiliser des tables partitionnées",
+          "Utiliser des tables non partitionnées",
+          "Utiliser des tables externes",
+          "Utiliser des tables temporaires"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des pipelines de données ETL sans serveur ?",
+        "options": [
+          "Cloud Dataflow",
+          "Cloud Dataproc",
+          "Cloud Composer",
+          "Cloud Functions"
+        ],
+        "answerIndex": [0, 2]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour sécuriser les données sensibles dans BigQuery ?",
+        "options": [
+          "Utiliser des clés de chiffrement gérées par le client (CMEK)",
+          "Utiliser des clés de chiffrement gérées par Google (GMEK)",
+          "Utiliser des clés de chiffrement gérées par le matériel (HSM)",
+          "Utiliser des clés de chiffrement gérées par l'utilisateur (UMEK)"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est utilisé pour orchestrer des workflows de données complexes ?",
+        "options": [
+          "Cloud Composer",
+          "Cloud Dataflow",
+          "Cloud Dataproc",
+          "Cloud Functions"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est le mieux adapté pour l'entraînement de modèles de machine learning à grande échelle ?",
+        "options": [
+          "AI Platform",
+          "BigQuery ML",
+          "Cloud AutoML",
+          "TensorFlow"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour surveiller les performances des pipelines de données dans GCP ?",
+        "options": [
+          "Stackdriver Monitoring",
+          "Cloud Logging",
+          "Cloud Trace",
+          "Cloud Debugger"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de stocker des données structurées et semi-structurées avec une faible latence ?",
+        "options": [
+          "Bigtable",
+          "BigQuery",
+          "Cloud SQL",
+          "Cloud Spanner"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour gérer les autorisations et les accès dans GCP ?",
+        "options": [
+          "IAM (Identity and Access Management)",
+          "ACL (Access Control List)",
+          "VPC (Virtual Private Cloud)",
+          "Firewall Rules"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est le mieux adapté pour l'analyse interactive de grandes quantités de données ?",
+        "options": [
+          "BigQuery",
+          "Cloud SQL",
+          "Cloud Spanner",
+          "Cloud Dataproc"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour automatiser le déploiement des infrastructures dans GCP ?",
+        "options": [
+          "Deployment Manager",
+          "Terraform",
+          "Ansible",
+          "Puppet"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des clusters Hadoop et Spark managés ?",
+        "options": [
+          "Cloud Dataflow",
+          "Cloud Dataproc",
+          "BigQuery",
+          "Cloud Composer"
+        ],
+        "answerIndex": [1]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour gérer les versions des modèles de machine learning dans GCP ?",
+        "options": [
+          "AI Platform",
+          "BigQuery ML",
+          "Cloud AutoML",
+          "TensorFlow"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des tableaux de bord et des rapports interactifs ?",
+        "options": [
+          "Data Studio",
+          "Looker",
+          "BigQuery",
+          "Cloud Datalab"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour migrer des bases de données vers GCP ?",
+        "options": [
+          "Database Migration Service",
+          "Cloud SQL",
+          "BigQuery",
+          "Cloud Spanner"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de gérer des bases de données relationnelles managées ?",
+        "options": [
+          "Cloud SQL",
+          "BigQuery",
+          "Cloud Spanner",
+          "Firestore"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour gérer les secrets et les clés d'API dans GCP ?",
+        "options": [
+          "Secret Manager",
+          "Cloud KMS",
+          "IAM",
+          "Cloud Storage"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des applications serverless ?",
+        "options": [
+          "Cloud Functions",
+          "App Engine",
+          "Cloud Run",
+          "Kubernetes Engine"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour gérer les logs et les événements dans GCP ?",
+        "options": [
+          "Cloud Logging",
+          "Cloud Monitoring",
+          "Cloud Trace",
+          "Cloud Debugger"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des environnements de développement intégrés pour le machine learning ?",
+        "options": [
+          "AI Platform Notebooks",
+          "BigQuery ML",
+          "Cloud AutoML",
+          "TensorFlow"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour gérer les identités et les accès dans GCP ?",
+        "options": [
+          "IAM (Identity and Access Management)",
+          "ACL (Access Control List)",
+          "VPC (Virtual Private Cloud)",
+          "Firewall Rules"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des clusters Kubernetes managés ?",
+        "options": [
+          "Kubernetes Engine",
+          "Cloud Run",
+          "App Engine",
+          "Cloud Functions"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour surveiller les performances des applications dans GCP ?",
+        "options": [
+          "Stackdriver Monitoring",
+          "Cloud Logging",
+          "Cloud Trace",
+          "Cloud Debugger"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des pipelines de données ETL sans serveur ?",
+        "options": [
+          "Cloud Dataflow",
+          "Cloud Dataproc",
+          "Cloud Composer",
+          "Cloud Functions"
+        ],
+        "answerIndex": [0, 2]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour sécuriser les données sensibles dans BigQuery ?",
+        "options": [
+          "Utiliser des clés de chiffrement gérées par le client (CMEK)",
+          "Utiliser des clés de chiffrement gérées par Google (GMEK)",
+          "Utiliser des clés de chiffrement gérées par le matériel (HSM)",
+          "Utiliser des clés de chiffrement gérées par l'utilisateur (UMEK)"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de gérer et d'orchestrer des workflows complexes de données ?",
+        "options": [
+          "Cloud Composer",
+          "Cloud Dataflow",
+          "Cloud Dataproc",
+          "Cloud Functions"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est le mieux adapté pour l'entraînement de modèles de machine learning à grande échelle ?",
+        "options": [
+          "AI Platform",
+          "BigQuery ML",
+          "Cloud AutoML",
+          "TensorFlow"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour surveiller les performances des pipelines de données dans GCP ?",
+        "options": [
+          "Stackdriver Monitoring",
+          "Cloud Logging",
+          "Cloud Trace",
+          "Cloud Debugger"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de stocker des données structurées et semi-structurées avec une faible latence ?",
+        "options": [
+          "Bigtable",
+          "BigQuery",
+          "Cloud SQL",
+          "Cloud Spanner"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour gérer les autorisations et les accès dans GCP ?",
+        "options": [
+          "IAM (Identity and Access Management)",
+          "ACL (Access Control List)",
+          "VPC (Virtual Private Cloud)",
+          "Firewall Rules"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP est le mieux adapté pour l'analyse interactive de grandes quantités de données ?",
+        "options": [
+          "BigQuery",
+          "Cloud SQL",
+          "Cloud Spanner",
+          "Cloud Dataproc"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour automatiser le déploiement des infrastructures dans GCP ?",
+        "options": [
+          "Deployment Manager",
+          "Terraform",
+          "Ansible",
+          "Puppet"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des clusters Hadoop et Spark managés ?",
+        "options": [
+          "Cloud Dataflow",
+          "Cloud Dataproc",
+          "BigQuery",
+          "Cloud Composer"
+        ],
+        "answerIndex": [1]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour gérer les versions des modèles de machine learning dans GCP ?",
+        "options": [
+          "AI Platform",
+          "BigQuery ML",
+          "Cloud AutoML",
+          "TensorFlow"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des tableaux de bord et des rapports interactifs ?",
+        "options": [
+          "Data Studio",
+          "Looker",
+          "BigQuery",
+          "Cloud Datalab"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour migrer des bases de données vers GCP ?",
+        "options": [
+          "Database Migration Service",
+          "Cloud SQL",
+          "BigQuery",
+          "Cloud Spanner"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de gérer des bases de données relationnelles managées ?",
+        "options": [
+          "Cloud SQL",
+          "BigQuery",
+          "Cloud Spanner",
+          "Firestore"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour gérer les secrets et les clés d'API dans GCP ?",
+        "options": [
+          "Secret Manager",
+          "Cloud KMS",
+          "IAM",
+          "Cloud Storage"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des applications serverless ?",
+        "options": [
+          "Cloud Functions",
+          "App Engine",
+          "Cloud Run",
+          "Kubernetes Engine"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour gérer les logs et les événements dans GCP ?",
+        "options": [
+          "Cloud Logging",
+          "Cloud Monitoring",
+          "Cloud Trace",
+          "Cloud Debugger"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des environnements de développement intégrés pour le machine learning ?",
+        "options": [
+          "AI Platform Notebooks",
+          "BigQuery ML",
+          "Cloud AutoML",
+          "TensorFlow"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour gérer les identités et les accès dans GCP ?",
+        "options": [
+          "IAM (Identity and Access Management)",
+          "ACL (Access Control List)",
+          "VPC (Virtual Private Cloud)",
+          "Firewall Rules"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des clusters Kubernetes managés ?",
+        "options": [
+          "Kubernetes Engine",
+          "Cloud Run",
+          "App Engine",
+          "Cloud Functions"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour surveiller les performances des applications dans GCP ?",
+        "options": [
+          "Stackdriver Monitoring",
+          "Cloud Logging",
+          "Cloud Trace",
+          "Cloud Debugger"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des environnements de développement intégrés pour le machine learning ?",
+        "options": [
+          "AI Platform Notebooks",
+          "BigQuery ML",
+          "Cloud AutoML",
+          "TensorFlow"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour gérer les identités et les accès dans GCP ?",
+        "options": [
+          "IAM (Identity and Access Management)",
+          "ACL (Access Control List)",
+          "VPC (Virtual Private Cloud)",
+          "Firewall Rules"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des clusters Kubernetes managés ?",
+        "options": [
+          "Kubernetes Engine",
+          "Cloud Run",
+          "App Engine",
+          "Cloud Functions"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour surveiller les performances des applications dans GCP ?",
+        "options": [
+          "Stackdriver Monitoring",
+          "Cloud Logging",
+          "Cloud Trace",
+          "Cloud Debugger"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de créer des pipelines de données ETL sans serveur ?",
+        "options": [
+          "Cloud Dataflow",
+          "Cloud Dataproc",
+          "Cloud Composer",
+          "Cloud Functions"
+        ],
+        "answerIndex": [0, 2]
+      },
+      {
+        "questionText": "Quelle est la méthode recommandée pour sécuriser les données sensibles dans BigQuery ?",
+        "options": [
+          "Utiliser des clés de chiffrement gérées par le client (CMEK)",
+          "Utiliser des clés de chiffrement gérées par Google (GMEK)",
+          "Utiliser des clés de chiffrement gérées par le matériel (HSM)",
+          "Utiliser des clés de chiffrement gérées par l'utilisateur (UMEK)"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "Quel service GCP permet de gérer et d'orchestrer des workflows complexes de données ?",
+        "options": [
+          "Cloud Composer",
+          "Cloud Dataflow",
+          "Cloud Dataproc",
+          "Cloud Functions"
+        ],
+        "answerIndex": [0]
+      }
+    ]
+  }
+}

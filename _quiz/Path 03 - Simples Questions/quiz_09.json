@@ -1,0 +1,207 @@
+{
+  "quiz": {
+    "instructions": "This quiz contains 20 multiple-choice questions. Each question may have 1, 2, 3, or 4 correct answers. Answer all questions to get your final score. When finished, type 'TERMINER' or 'FIN' to get your score.",
+    "questions": [
+      {
+        "questionText": "Which Google Cloud service is most suitable for processing and analyzing New York taxi trip data in real-time?",
+        "options": [
+          "BigQuery",
+          "Dataflow",
+          "Pub/Sub",
+          "Cloud Storage"
+        ],
+        "answerIndex": [1, 2]
+      },
+      {
+        "questionText": "How can Cymbal Retail use BigQuery to gain insights into customer purchasing patterns?",
+        "options": [
+          "Running SQL queries on sales data",
+          "Using BigQuery ML for predictive analytics",
+          "Integrating with Data Studio for visualization",
+          "Storing raw sales data"
+        ],
+        "answerIndex": [0, 1, 2]
+      },
+      {
+        "questionText": "What is a primary use case for using Google Cloud Dataproc in analyzing large datasets?",
+        "options": [
+          "Processing data using Hadoop",
+          "Running Apache Spark jobs",
+          "Real-time data analysis",
+          "Batch processing"
+        ],
+        "answerIndex": [0, 1, 3]
+      },
+      {
+        "questionText": "Which feature of Pub/Sub is beneficial for Cymbal Retail's inventory management system?",
+        "options": [
+          "Real-time message streaming",
+          "Event-driven architecture",
+          "Data storage capabilities",
+          "Integrated security features"
+        ],
+        "answerIndex": [0, 1]
+      },
+      {
+        "questionText": "How can BigQuery's data partitioning help in analyzing New York taxi trips data?",
+        "options": [
+          "Improve query performance",
+          "Reduce query costs",
+          "Organize data by trip dates",
+          "Enable real-time data updates"
+        ],
+        "answerIndex": [0, 1, 2]
+      },
+      {
+        "questionText": "In the context of Cymbal Retail, what is an advantage of using Cloud Dataflow for ETL processes?",
+        "options": [
+          "Scalable data transformation",
+          "Real-time data processing",
+          "Automated data quality checks",
+          "Cost-effective batch processing"
+        ],
+        "answerIndex": [0, 1, 3]
+      },
+      {
+        "questionText": "Which Google Cloud service would you use to create a machine learning model to predict customer churn for Cymbal Retail?",
+        "options": [
+          "AI Platform",
+          "BigQuery ML",
+          "Dataflow",
+          "Pub/Sub"
+        ],
+        "answerIndex": [0, 1]
+      },
+      {
+        "questionText": "What is a key benefit of using Looker for Cymbal Retail's data analysis?",
+        "options": [
+          "Advanced data visualization",
+          "Real-time dashboarding",
+          "Integration with BigQuery",
+          "Automated machine learning"
+        ],
+        "answerIndex": [0, 1, 2]
+      },
+      {
+        "questionText": "How can Cloud Functions enhance the processing of New York taxi trip data?",
+        "options": [
+          "Triggering data processing pipelines",
+          "Automating data ingest from APIs",
+          "Handling real-time data events",
+          "Storing large volumes of data"
+        ],
+        "answerIndex": [0, 1, 3]
+      },
+      {
+        "questionText": "Which Google Cloud service is ideal for storing raw and processed data from Cymbal Retail's operations?",
+        "options": [
+          "Cloud Storage",
+          "BigQuery",
+          "Firestore",
+          "Spanner"
+        ],
+        "answerIndex": [0, 1]
+      },
+      {
+        "questionText": "What kind of analysis can be performed on New York taxi trip data using BigQuery's geospatial capabilities?",
+        "options": [
+          "Route optimization",
+          "Heatmap generation",
+          "Distance calculations",
+          "Traffic pattern analysis"
+        ],
+        "answerIndex": [0, 1, 3]
+      },
+      {
+        "questionText": "How can Cloud Dataprep assist Cymbal Retail in cleaning and preparing sales data for analysis?",
+        "options": [
+          "Automated data cleaning",
+          "Interactive data wrangling",
+          "Integration with Dataflow",
+          "Batch processing"
+        ],
+        "answerIndex": [0, 1, 2]
+      },
+      {
+        "questionText": "Which Google Cloud service can provide real-time analytics for New York taxi trip data?",
+        "options": [
+          "BigQuery",
+          "Dataflow",
+          "Pub/Sub",
+          "Bigtable"
+        ],
+        "answerIndex": [1, 2]
+      },
+      {
+        "questionText": "What is a common use case for BigQuery ML in retail analytics?",
+        "options": [
+          "Predicting sales trends",
+          "Customer segmentation",
+          "Inventory forecasting",
+          "Automating email campaigns"
+        ],
+        "answerIndex": [0, 1, 2]
+      },
+      {
+        "questionText": "How can Dataflow's streaming analytics capabilities be utilized in New York taxi trip analysis?",
+        "options": [
+          "Real-time traffic updates",
+          "Dynamic pricing models",
+          "Predictive maintenance for taxis",
+          "Live location tracking"
+        ],
+        "answerIndex": [0, 1, 3]
+      },
+      {
+        "questionText": "Which service allows Cymbal Retail to create and deploy machine learning models with minimal coding?",
+        "options": [
+          "BigQuery ML",
+          "AI Platform",
+          "AutoML",
+          "Dataproc"
+        ],
+        "answerIndex": [0, 2]
+      },
+      {
+        "questionText": "How can Google Cloud's IAM (Identity and Access Management) enhance security for Cymbal Retail's data?",
+        "options": [
+          "Role-based access control",
+          "Fine-grained permissions",
+          "Automated security audits",
+          "Data encryption at rest"
+        ],
+        "answerIndex": [0, 1]
+      },
+      {
+        "questionText": "What is a benefit of using Cloud Spanner for Cymbal Retail's transactional data?",
+        "options": [
+          "Scalability",
+          "High availability",
+          "SQL query support",
+          "Real-time analytics"
+        ],
+        "answerIndex": [0, 1, 2]
+      },
+      {
+        "questionText": "Which Google Cloud service can be used for orchestrating complex workflows in Cymbal Retail's data pipelines?",
+        "options": [
+          "Cloud Composer",
+          "Dataflow",
+          "Pub/Sub",
+          "BigQuery"
+        ],
+        "answerIndex": [0]
+      },
+      {
+        "questionText": "How can Looker help Cymbal Retail in creating actionable insights from sales data?",
+        "options": [
+          "Customizable dashboards",
+          "Advanced data modeling",
+          "Real-time data exploration",
+          "Automated machine learning"
+        ],
+        "answerIndex": [0, 1, 2]
+      }
+    ]
+  }
+}

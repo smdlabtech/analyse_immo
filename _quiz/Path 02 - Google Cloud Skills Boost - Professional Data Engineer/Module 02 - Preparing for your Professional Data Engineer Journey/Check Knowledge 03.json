@@ -1,0 +1,32 @@
+{
+  "quiz": {
+    "title": "Google Cloud Data Storage Solutions Quiz",
+    "score": 100,
+    "passingScore": 50,
+    "congratulationsMessage": "Congratulations! You passed this assessment.",
+    "questions": [
+      {
+        "questionText": "Cymbal Retail collects large amounts of data that is useful for improving business operations. The company wants to store and analyze this data in a serverless and cost-effective manner using Google Cloud. The analysts need to use SQL to write the queries. What tool can you use to meet these requirements?",
+        "options": [
+          "A. Data Fusion",
+          "B. Cloud Spanner",
+          "C. Memorystore",
+          "D. BigQuery"
+        ],
+        "answerIndex": [3],
+        "explanation": "BigQuery is a serverless, highly scalable, and cost-effective multi-cloud data warehouse designed for business agility that supports SQL for querying."
+      },
+      {
+        "questionText": "Cymbal Retail also collects large amounts of structured, semistructured, and unstructured data. The company wants a centralized repository to store this data in a cost-effective manner using Google Cloud. What tool can you use to meet these requirements?",
+        "options": [
+          "A. Cloud SQL",
+          "B. Dataflow",
+          "C. Cloud Storage",
+          "D. Bigtable"
+        ],
+        "answerIndex": [2],
+        "explanation": "Cloud Storage is an excellent choice for storing large amounts of structured, semistructured, and unstructured data in a centralized and cost-effective manner on Google Cloud."
+      }
+    ]
+  }
+}
