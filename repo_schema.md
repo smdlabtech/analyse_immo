@@ -2,28 +2,28 @@
 # 📂Repository diagram
 
 ```md
-expenses_tracker_streamlit/
+analyse_immo/
 │
+├── .env_windows/
+├── .streamlit/
+├── __pycache__/
+├── _data/
+│   └── dvf/
+│       └── 202404/
+├── _docs/
 ├── _pages/
-│   ├── details.py
-│   ├── overview.py
-│   ├── homepage.py
-│   ├── raw_data.py
-├── __data/
-│   ├── data_brsma/
-│   ├── data_lcl/
-├── __docs/
-│   ├── expenses_tracker_app_pbi_desktop.pdf
+├── _quiz prompts/
+├── _quiz/
+│   └── Path 06 - GCP Hub/
+├── _topics/
 ├── assets/
-│   ├── css/
-│   ├── html/
-│   ├── img/
-│   ├── js/
-├── app_styles.py
-├── app_data_loader.py
-├── app.py
+├── country/
 ├── README.md
-├── dev_documentations.md
+├── app.py
+├── app_data_loader.py
+├── app_styles.py
+├── demarches.md
 ├── dev_generate_docs.py
-├── requirements.txt
+├── gen_topics_with_images.py
+├── repo_schema.md
 ```
