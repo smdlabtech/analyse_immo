@@ -13,7 +13,7 @@ Pour lancer lancer l'application veuillez cliquez sur ce lien : [ANALYSE IMMOBIL
 🚀 Deployer une application sur Streamlit : [📕docs.com](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app)  
 Pour suivre toutes les étapes appliquées pour réaliser cette application, veuillez [➡️cliquez-ici🔗](demarches.md).
 
-
+Here's the application [➡️**diagram📂**](repo_schema.md) :  
 
 <!--------------------->
 ### 💡 Conseils : 
