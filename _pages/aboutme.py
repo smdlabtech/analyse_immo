@@ -57,7 +57,7 @@ def page_aboutme():
     github_icon = create_icon_link("fab fa-github", "https://github.com/smdlabtech", "black")
     st.markdown(f"""
     <div style="display: flex; justify-content: left; gap: 10px;">
-        {github_icon}
+        "Media : " {github_icon}
     </div>
     """, unsafe_allow_html=True)
 
