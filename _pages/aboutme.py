@@ -47,7 +47,7 @@ def page_aboutme():
     st.subheader("About Me :")     # Ajouter les icônes côte à côte    
     st.markdown("""
         👋 Hi, I'm Daya
-        I'm a data scientist with a passion for soccer and basketball.
+        I'm a data scientist with a passion for soccer and basketball.  
         I'm passionate about Business Intelligence, data science and programming through the languages :
         Python, R, SQL, Javascript and tools like Power BI, Shiny, Streamlit, Excel VBA and Google Sheets (via Google Apps Script).
         And love working on topics of : Web Scraping, Chatbot Assistant, Text Mining & NLP and Web App Machine Learning, Deep Learning and AI Assistant. ⭐
