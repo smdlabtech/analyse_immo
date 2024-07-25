@@ -113,7 +113,7 @@ def page_topics():
 
                 if selected_info:
                     _, num_lines, full_file_path = selected_info
-                    st.write(f"Total rows: {num_lines}")
+                    st.write(f"Total rows : {num_lines}")
                     display_markdown_with_images(full_file_path)
             else:
                 st.error("No Markdown files found in the specified directory.")
