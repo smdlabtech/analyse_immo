@@ -16,6 +16,7 @@ def extract_image_links(markdown_content):
     
     # If no link was found with the width attribute empty, try the second regular expression
     if not links_with_no_width:
+        # Using Regex to keep image Links
         pattern_any_width = r'<img\s+[^>]*?src="(.*?)"'
         links_with_any_width = re.findall(pattern_any_width, markdown_content)
     
@@ -112,7 +113,7 @@ def page_topics():
 
                 if selected_info:
                     _, num_lines, full_file_path = selected_info
-                    st.write(f"Total Lines: {num_lines}")
+                    st.write(f"Total rows: {num_lines}")
                     display_markdown_with_images(full_file_path)
             else:
                 st.error("No Markdown files found in the specified directory.")
