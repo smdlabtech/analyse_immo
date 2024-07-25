@@ -44,7 +44,7 @@ def page_aboutme():
     """, unsafe_allow_html=True)
 
     # Afficher l'image avec app_styles
-    st.subheader("About Me :")     # Ajouter les icônes côte à côte    
+    st.subheader("About Me : ✨ Data Scientist | Data Engineer ✨")     # Ajouter les icônes côte à côte    
     st.markdown("""
         👋 Hi, I'm Daya
         I'm a data scientist with a passion for soccer and basketball.  
