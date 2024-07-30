@@ -183,6 +183,7 @@ def main():
         # app_styles.styles_img("senlab_ia_gen_rmv_bgrd.png", caption="", width=10, use_column_width=True, output_format='PNG')
         # app_styles.styles_img("logo_immo (1).png", caption="🏛️Analyse Immo", width=10, use_column_width=True, output_format='PNG')
         app_styles.styles_img("logo_immo (2).png", caption="", width=10, use_column_width=True, output_format='PNG')
+        st.sidebar.markdown("<h3 style='text-align: left; color: grey;'>Filters :</h3>", unsafe_allow_html=True)
         
         if "page" not in st.session_state:
             st.session_state.page = "🏠Home"
