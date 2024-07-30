@@ -30,7 +30,7 @@ h3 {
 
 
 .stButton > button {
-	background: linear-gradient(to right, #162F47, #75D6DE);
+	background: linear-gradient(to right, #162F47, #289ABB);
     /* background-color: #243447; /* Couleur de fond des boutons */
     color: white; /* Couleur du texte des boutons */
 }
