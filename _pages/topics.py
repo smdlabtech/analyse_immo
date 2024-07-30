@@ -79,9 +79,15 @@ def list_subdirectories(directory):
     """Lists all subdirectories in a given directory."""
     return sorted([d for d in os.listdir(directory) if os.path.isdir(os.path.join(directory, d))])
 
+
+#---------------#
+# MAIN 
+#---------------#
 def page_topics():
     """Displays the review page with options to select a module/Topic, subfolder, and Markdown file."""
-    st.subheader("📖 Topics :")
+
+    st.markdown("<h1 style='text-align: center;'>📖 Topics</h1>", unsafe_allow_html=True)
+    st.write("---")
 
     # Path to the root directory of the courses
     root_directory = "_topics"
@@ -122,5 +128,10 @@ def page_topics():
     else:
         st.error("No modules/Topics found in the specified directory.")
 
+
+
+#-------------------------#
+# Main function
+#-------------------------#
 if __name__ == "__main__":
     page_topics()

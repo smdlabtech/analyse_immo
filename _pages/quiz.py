@@ -107,7 +107,21 @@ def display_quiz(quiz_data):
     return user_answers
 
 
-## MAIN ##
+
+def reset_filter():
+    """
+    Resets the filter and state for user answers and checkbox states.
+    """
+    st.session_state.user_answers = []
+    if 'checkbox_states' in st.session_state:
+        st.session_state.checkbox_states.clear()
+    st.session_state.timer_is_running = False
+    st.session_state.timer_placeholder.empty()
+
+
+#--------------#
+# MAIN
+#--------------#
 def page_quiz():
     """
     Initializes and manages the display of a quiz within the Streamlit application.
@@ -120,7 +134,10 @@ def page_quiz():
     Once the file is loaded, they can choose among several quizzes available in the same directory.
     After completing the quiz, the user's answers are returned for validation.
     """
-    st.subheader("🚀Quiz Session:")
+    # st.subheader("🚀Quiz Session:")
+    st.markdown("<h1 style='text-align: center;'>🚀Quiz Session</h1>", unsafe_allow_html=True)
+    st.write("---")
+    
 
     # Directory containing quiz files
     quiz_directory = "_quiz"
@@ -142,12 +159,5 @@ def page_quiz():
 
     return None, None
 
-def reset_filter():
-    """
-    Resets the filter and state for user answers and checkbox states.
-    """
-    st.session_state.user_answers = []
-    if 'checkbox_states' in st.session_state:
-        st.session_state.checkbox_states.clear()
-    st.session_state.timer_is_running = False
-    st.session_state.timer_placeholder.empty()
+
+

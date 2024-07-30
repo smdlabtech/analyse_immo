@@ -37,17 +37,25 @@ def create_icon_link(icon_class, link, color, size="2x"):
     """
     return html_code
 
+
+
+#-------------------#
+# Page : "aboutme.py"
+#-------------------#
 def page_aboutme():
+    st.markdown("<h1 style='text-align: center;'>😎About Me</h1>", unsafe_allow_html=True)
+    st.write("---")
+    
     # Inclure le lien vers la bibliothèque Font Awesome
     st.markdown("""
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     """, unsafe_allow_html=True)
 
     # Afficher l'image avec app_styles
-    st.subheader("About Me : ✨ Data Scientist | Data Engineer ✨")     # Ajouter les icônes côte à côte    
+    st.subheader("✨Data Scientist✨")     # Ajouter les icônes côte à côte    
     st.markdown("""
         👋 Hi, I'm Daya
-        I'm a data scientist with a passion for soccer and basketball.  
+        I'm like to play soccer and basketball too.  
         I'm passionate about Business Intelligence, data science and programming through the languages :
         Python, R, SQL, Javascript and tools like Power BI, Shiny, Streamlit, Excel VBA and Google Sheets (via Google Apps Script).
         And love working on topics of : Web Scraping, Chatbot Assistant, Text Mining & NLP and Web App Machine Learning, Deep Learning and AI Assistant. ⭐
@@ -57,9 +65,11 @@ def page_aboutme():
     github_icon = create_icon_link("fab fa-github", "https://github.com/smdlabtech", "black")
     st.markdown(f"""
     <div style="display: flex; justify-content: left; gap: 10px;">
-        <strong>Media</strong> :  {github_icon}
+         {github_icon}
     </div>
     """, unsafe_allow_html=True)
+
+
 
 #------------------------#
 #       MAIN 

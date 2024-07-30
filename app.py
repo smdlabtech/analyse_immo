@@ -4,7 +4,7 @@ import json
 import latexifier
 import time
 import app_styles as app_styles
-from _pages import homepage, topics, quiz, aboutme
+from _pages import home, topics, quiz, aboutme
 
 ### CONFIGURATIONS de la mise en page ###
 
@@ -82,7 +82,7 @@ def go_to_previous_page():
     """
     Navigates to the previous page in the sequence.
     """
-    pages = ["🏠HomePage", "📖Topics", "🚀Quiz", "😎AboutMe"]
+    pages = ["🏠Home", "📖Topics", "🚀Quiz", "😎AboutMe"]
     current_index = pages.index(st.session_state.page)
     if current_index > 0:
         st.session_state.page = pages[current_index - 1]
@@ -91,7 +91,7 @@ def go_to_next_page():
     """
     Navigates to the next page in the sequence.
     """
-    pages = ["🏠HomePage", "📖Topics", "🚀Quiz", "😎AboutMe"]
+    pages = ["🏠Home", "📖Topics", "🚀Quiz", "😎AboutMe"]
     current_index = pages.index(st.session_state.page)
     if current_index < len(pages) - 1:
         st.session_state.page = pages[current_index + 1]
@@ -174,13 +174,18 @@ def main():
     """
     The main function to run the Streamlit app.
     """
-    st.markdown("<h1 style='text-align: center;'>🏡Analyse Immo</h1>", unsafe_allow_html=True)
+    app_styles.load_css("body.css")
+    
+    # st.markdown("<h1 style='text-align: center;'>🏡Analyse Immo</h1>", unsafe_allow_html=True)
 
     with st.sidebar:
-        app_styles.styles_img("senlab_ia_gen_rmv_bgrd.png", caption="SenLab IA", width=10, use_column_width=True, output_format='PNG')
+        st.markdown("<h1 style='text-align: center; color = linear-gradient(to right, #243447, #08866F);'>🏗️Analyse Immo</h1>", unsafe_allow_html=True)
+        # app_styles.styles_img("senlab_ia_gen_rmv_bgrd.png", caption="", width=10, use_column_width=True, output_format='PNG')
+        # app_styles.styles_img("logo_immo (1).png", caption="🏛️Analyse Immo", width=10, use_column_width=True, output_format='PNG')
+        app_styles.styles_img("logo_immo (2).png", caption="", width=10, use_column_width=True, output_format='PNG')
         
         if "page" not in st.session_state:
-            st.session_state.page = "🏠HomePage"
+            st.session_state.page = "🏠Home"
 
         page_size_option = st.sidebar.radio("Page size", ["Normal", "Wide"])
 
@@ -191,7 +196,7 @@ def main():
             st.session_state.page_layout = "wide"
             st.rerun()
 
-        st.sidebar.button("🏠HomePage", on_click=lambda: st.session_state.update(page="🏠HomePage"))
+        st.sidebar.button("🏠Home", on_click=lambda: st.session_state.update(page="🏠Home"))
         st.sidebar.button("📖Topics", on_click=lambda: st.session_state.update(page="📖Topics"))
         st.sidebar.button("🚀Quiz", on_click=lambda: st.session_state.update(page="🚀Quiz"))
         st.sidebar.button("😎AboutMe", on_click=lambda: st.session_state.update(page="😎AboutMe"))
@@ -208,8 +213,8 @@ def main():
         if st.button("Next"):
             go_to_next_page()
 
-    if st.session_state.page == "🏠HomePage":
-        homepage.page_homepage()
+    if st.session_state.page == "🏠Home":
+        home.page_home()
     elif st.session_state.page == "📖Topics":
         topics.page_topics()
     elif st.session_state.page == "🚀Quiz":
@@ -277,5 +282,9 @@ def main():
     with st.sidebar:
         display_html("footer.html")
 
+
+#------------------------#
+#   Main App Function    #
+#------------------------#
 if __name__ == "__main__":
     main()
