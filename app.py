@@ -15,7 +15,7 @@ if 'page_layout' not in st.session_state:
 # Initial page configuration
 st.set_page_config(
     page_title="Analyse Immo",
-    page_icon="📕",
+    page_icon="🏠",
     layout=st.session_state.page_layout,
     initial_sidebar_state="expanded",
     menu_items={
