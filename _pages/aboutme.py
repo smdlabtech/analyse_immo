@@ -62,10 +62,14 @@ def page_aboutme():
     """, unsafe_allow_html=True)
 
     # Générer le HTML pour les icônes
+    linkedin_icon = create_icon_link("fab fa-linkedin", "https://www.linkedin.com/in/dayasylla/", "#0e76a8")
     github_icon = create_icon_link("fab fa-github", "https://github.com/smdlabtech", "black")
+
+    # Ajouter les icônes côte à côte
     st.markdown(f"""
     <div style="display: flex; justify-content: left; gap: 10px;">
-         {github_icon}
+        {linkedin_icon}
+        {github_icon}
     </div>
     """, unsafe_allow_html=True)
 
