@@ -204,14 +204,14 @@ def main():
         
     col1, col2, _ = st.columns([1, 8, 1])
     with col1:
-        # if st.button("P"):
-        if st.button("P"):
+        # if st.button("Prev."):
+        if st.button("Prev."):
             go_to_previous_page()
     with col2:
         empty_space = st.empty()
     with _:
-        # if st.button("N"):
-        if st.button("N"):
+        # if st.button("Next"):
+        if st.button("Next"):
             go_to_next_page()
 
     if st.session_state.page == "🏠Home":
